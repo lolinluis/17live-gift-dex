@@ -19,7 +19,7 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            padding: 20px;
+            padding: 15px;
         }
 
         /* 外層神魔框體 */
@@ -30,7 +30,7 @@
             border: 3px solid #c5a059;
             border-radius: 12px;
             box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
-            padding: 20px;
+            padding: 15px;
             position: relative;
         }
 
@@ -38,42 +38,73 @@
         .dex-header {
             text-align: center;
             border-bottom: 2px solid #c5a059;
-            padding-bottom: 12px;
+            padding-bottom: 10px;
             margin-bottom: 15px;
         }
 
         .dex-header h1 {
-            font-size: 22px;
+            font-size: 20px;
             color: #f39c12;
             text-shadow: 0 0 8px rgba(243, 156, 18, 0.6);
-            letter-spacing: 2px;
+            letter-spacing: 1.5px;
+            line-height: 1.3;
         }
 
-        /* 禮物主選單按鈕區 */
-        .gift-menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
+        .dex-header .subtitle {
+            font-size: 13px;
+            color: #a0a0a0;
+            margin-top: 4px;
+        }
+
+        /* 下拉式選單區塊容器 */
+        .gift-select-container {
             margin-bottom: 15px;
+            position: relative;
+            width: 100%;
         }
 
-        .gift-menu-btn {
-            padding: 8px 12px;
+        /* 下拉選單風格 (針對手機與神魔風格優化) */
+        .gift-select {
+            width: 100%;
+            padding: 12px 15px;
             background: #111;
-            border: 1px solid #45a29e;
+            border: 2px solid #45a29e;
             color: #66fcf1;
             font-weight: bold;
-            font-size: 13px;
-            border-radius: 6px;
+            font-size: 15px;
+            border-radius: 8px;
+            outline: none;
             cursor: pointer;
-            transition: all 0.3s;
+            appearance: none; /* 移除瀏覽器預設箭頭 */
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            box-shadow: 0 0 8px rgba(69, 162, 158, 0.3);
+            transition: all 0.3s ease;
         }
 
-        .gift-menu-btn:hover, .gift-menu-btn.active {
-            background: #45a29e;
-            color: #0b0c10;
-            box-shadow: 0 0 10px rgba(102, 252, 241, 0.6);
+        .gift-select:focus {
+            border-color: #f39c12;
+            box-shadow: 0 0 12px rgba(243, 156, 18, 0.6);
+            color: #f39c12;
+        }
+
+        .gift-select option {
+            background: #151a21;
+            color: #ffffff;
+            font-size: 14px;
+            padding: 10px;
+        }
+
+        /* 下拉選單右側金屬箭頭圖標 */
+        .gift-select-container::after {
+            content: "▼";
+            font-size: 12px;
+            color: #45a29e;
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
         }
 
         /* 卡片展示區 */
@@ -120,7 +151,7 @@
         }
 
         .card-name {
-            font-size: 20px;
+            font-size: 19px;
             font-weight: bold;
             color: #66fcf1;
             margin-top: 8px;
@@ -131,11 +162,12 @@
             color: #c5a059;
             margin: 8px 0;
             min-height: 38px;
+            line-height: 1.4;
         }
 
         /* 升級所需禮物數量標籤區 */
         .req-container {
-            margin: 15px 0 5px 0;
+            margin: 12px 0 5px 0;
             background: rgba(31, 40, 51, 0.8);
             border: 1px solid #c5a059;
             border-radius: 6px;
@@ -161,7 +193,7 @@
         /* 等級選擇按鈕區（自動流動換行網格） */
         .level-selector {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
             gap: 6px;
             margin-top: 15px;
         }
@@ -374,10 +406,46 @@
             levels: [
                 { level: "LV 0", name: "魚LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/fish/LV0.png" },
                 { level: "LV 1", name: "魚LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/fish/LV1.png" },
-                { level: "LV 2", name: "魚LV2", rarity: "★★☆☆☆", desc: "【基礎起點】", reqCount: "累計送出 500 個", img: "images/fish/LV2.png" },
+                { level: "LV 2", name: "魚LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/fish/LV2.png" },
                 { level: "LV 3", name: "魚LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1000 個", img: "images/fish/LV3.png" }
             ]
         },
+		blackpanther: { // 神秘黑豹
+            title: "神秘黑豹(10幣)",
+            levels: [
+                { level: "LV 0", name: "神秘黑豹LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/blackpanther/LV0.png" },
+                { level: "LV 1", name: "神秘黑豹LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/blackpanther/LV1.png" },
+                { level: "LV 2", name: "神秘黑豹LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 200 個", img: "images/blackpanther/LV2.png" },
+                { level: "LV 3", name: "神秘黑豹LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/blackpanther/LV3.png" }
+            ]
+        },
+		ghost: { // 阿飄
+            title: "阿飄(10幣)",
+            levels: [
+                { level: "LV 0", name: "阿飄LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/ghost/LV0.png" },
+                { level: "LV 1", name: "阿飄LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/ghost/LV1.png" },
+                { level: "LV 2", name: "阿飄LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/ghost/LV2.png" },
+                { level: "LV 3", name: "阿飄LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1500 個", img: "images/ghost/LV3.png" }
+            ]
+        },
+		jelly: { // 果凍
+            title: "果凍(15幣)",
+            levels: [
+                { level: "LV 0", name: "果凍LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/jelly/LV0.png" },
+                { level: "LV 1", name: "果凍LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/jelly/LV1.png" },
+                { level: "LV 2", name: "果凍LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/jelly/LV2.png" },
+                { level: "LV 3", name: "果凍LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/jelly/LV3.png" }
+            ]
+        },
+		brat: { // 小鬼
+            title: "小鬼(12幣)",
+            levels: [
+                { level: "LV 0", name: "小鬼LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/brat/LV0.png" },
+                { level: "LV 1", name: "小鬼LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/brat/LV1.png" },
+                { level: "LV 2", name: "小鬼LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 400 個", img: "images/brat/LV2.png" },
+                { level: "LV 3", name: "小鬼LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/brat/LV3.png" }
+            ]
+        },		
 		meat: { // 肉
             title: "肉(20幣)",
             levels: [
@@ -387,6 +455,15 @@
                 { level: "LV 3", name: "肉LV3", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/meat/LV3.png" }
             ]
         },
+		icecream: { // 冰淇淋
+            title: "icecream(15幣)",
+            levels: [
+                { level: "LV 0", name: "冰淇淋LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/icecream/LV0.png" },
+                { level: "LV 1", name: "冰淇淋LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/icecream/LV1.png" },
+                { level: "LV 2", name: "冰淇淋LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/icecream/LV2.png" },
+                { level: "LV 3", name: "冰淇淋LV3", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/icecream/LV3.png" }
+            ]
+        },		
         whisky: { // 威士忌
             title: "威士忌(15幣)",
             levels: [
