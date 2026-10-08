@@ -214,56 +214,56 @@
 <script>
     // 完整禮物資料庫
     const giftsDatabase = {
-        cake: {
+        cake: { #蛋糕
             title: "十週年蛋糕",
             levels: [
                 { level: "LV 0", name: "十週年蛋糕(基礎)", rarity: "★☆☆☆☆", desc: "【基礎起點】盤子上面的一顆小草莓", reqCount: "0 個 (初始解鎖)", img: "images/cake/LV0.png" },
-                { level: "LV 1", name: "十週年蛋糕(一層)", rarity: "★☆☆☆☆", desc: "【基礎起點】單層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 10 個", img: "images/cake/LV1.png" },
-                { level: "LV 2", name: "十週年蛋糕(一層)", rarity: "★★☆☆☆", desc: "【基礎起點】單層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 30 個", img: "images/cake/LV2.png" },
-                { level: "LV 3", name: "十週年蛋糕(一層)", rarity: "★★☆☆☆", desc: "【基礎起點】單層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 60 個", img: "images/cake/LV3.png" },
-                { level: "LV 4", name: "十週年蛋糕(一層)", rarity: "★★☆☆☆", desc: "【基礎起點】單層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 100 個", img: "images/cake/LV4.png" },
-                { level: "LV 5", name: "十週年蛋糕(二層)", rarity: "★★★☆☆", desc: "【初級升級】雙層奶油蛋糕，解鎖動態彩帶與漂浮氣球效果。", reqCount: "累計送出 200 個", img: "images/cake/LV5.png" },
-                { level: "LV 6", name: "十週年蛋糕(六層)", rarity: "★★★★☆", desc: "【璀璨特效】三層宴會蛋糕，觸發全螢幕煙火與禮物盒綻放特效。", reqCount: "累計送出 350 個", img: "images/cake/LV6.png" },
-                { level: "LV 7", name: "十週年蛋糕(七層)", rarity: "★★★★☆", desc: "【璀璨特效】三層宴會蛋糕，觸發全螢幕煙火與禮物盒綻放特效。", reqCount: "累計送出 500 個", img: "images/cake/LV7.png" },
-                { level: "LV 8", name: "十週年蛋糕(八層)", rarity: "★★★★☆", desc: "【璀璨特效】八層宴會蛋糕，全螢幕煙火與禮物盒綻放特效。", reqCount: "累計送出 700 個", img: "images/cake/LV8.png" },
-                { level: "LV 9", name: "十週年蛋糕(九層)", rarity: "★★★★☆", desc: "【璀璨特效】九層宴會蛋糕，全螢幕煙火與禮物盒綻放特效。", reqCount: "累計送出 900 個", img: "images/cake/LV9.png" },
-                { level: "LV 10", name: "十週年蛋糕(十層)", rarity: "★★★★★", desc: "【頂級特效】閃耀大蛋糕！", reqCount: "累計送出 1,200 個 (MAX)", img: "images/cake/LV10.png" }
+                { level: "LV 1", name: "十週年蛋糕(一層)", rarity: "★☆☆☆☆", desc: "【基礎起點】單層小型蛋糕。", reqCount: "累計送出 10 個", img: "images/cake/LV1.png" },
+                { level: "LV 2", name: "十週年蛋糕(一層)", rarity: "★★☆☆☆", desc: "【基礎起點】二層小型蛋糕。", reqCount: "累計送出 30 個", img: "images/cake/LV2.png" },
+                { level: "LV 3", name: "十週年蛋糕(一層)", rarity: "★★☆☆☆", desc: "【基礎起點】三層小型蛋糕。", reqCount: "累計送出 60 個", img: "images/cake/LV3.png" },
+                { level: "LV 4", name: "十週年蛋糕(一層)", rarity: "★★☆☆☆", desc: "【基礎起點】四層奶油中型蛋糕。", reqCount: "累計送出 100 個", img: "images/cake/LV4.png" },
+                { level: "LV 5", name: "十週年蛋糕(二層)", rarity: "★★★☆☆", desc: "【初級升級】五層奶油中型蛋糕。", reqCount: "累計送出 200 個", img: "images/cake/LV5.png" },
+                { level: "LV 6", name: "十週年蛋糕(六層)", rarity: "★★★★☆", desc: "【璀璨特效】六層宴會大型蛋糕。", reqCount: "累計送出 350 個", img: "images/cake/LV6.png" },
+                { level: "LV 7", name: "十週年蛋糕(七層)", rarity: "★★★★☆", desc: "【璀璨特效】七層宴會大型蛋糕。", reqCount: "累計送出 500 個", img: "images/cake/LV7.png" },
+                { level: "LV 8", name: "十週年蛋糕(八層)", rarity: "★★★★☆", desc: "【璀璨特效】八層宴會大型蛋糕。", reqCount: "累計送出 700 個", img: "images/cake/LV8.png" },
+                { level: "LV 9", name: "十週年蛋糕(九層)", rarity: "★★★★☆", desc: "【璀璨特效】九層宴會巨型蛋糕。", reqCount: "累計送出 900 個", img: "images/cake/LV9.png" },
+                { level: "LV 10", name: "十週年蛋糕(十層)", rarity: "★★★★★", desc: "【頂級特效】十層閃耀超級大蛋糕！", reqCount: "累計送出 1,200 個 (MAX)", img: "images/cake/LV10.png" }
             ]
         },
         phoenix: {
             title: "鳳凰",
             levels: [
                 { level: "LV 0", name: "熾鳳幼羽", rarity: "★☆☆☆☆", desc: "【初生型態】發光的火焰羽毛，閃爍著微弱火光。", reqCount: "0 個 (初始解鎖)", img: "images/phoenix/LV0.png" },
-                { level: "LV 3", name: "烈焰飛雛", rarity: "★★★☆☆", desc: "【成長型態】雛鳳展翅，伴隨火星繚繞特效。", reqCount: "累計送出 50 個", img: "images/phoenix/LV3.png" },
-                { level: "LV 6", name: "朱雀翔天", rarity: "★★★★☆", desc: "【進化型態】熾熱鳳凰劃過夜空，解鎖全屏火焰羽翼動畫。", reqCount: "累計送出 200 個", img: "images/phoenix/LV6.png" },
-                { level: "LV 10", name: "鳳凰涅槃．神尊", rarity: "★★★★★", desc: "【終極型態】金光璀璨的浴火鳳凰，全螢幕漫天烈焰與金色光芒震撼呈現！", reqCount: "累計送出 500 個 (MAX)", img: "images/phoenix/LV10.png" }
+                { level: "LV 1", name: "烈焰飛雛", rarity: "★★★☆☆", desc: "【成長型態】雛鳳展翅，伴隨火星繚繞特效。", reqCount: "累計送出 50 個", img: "images/phoenix/LV1.png" },
+                { level: "LV 2", name: "朱雀翔天", rarity: "★★★★☆", desc: "【進化型態】熾熱鳳凰劃過夜空，解鎖全屏火焰羽翼動畫。", reqCount: "累計送出 200 個", img: "images/phoenix/LV2.png" },
+                { level: "LV 3", name: "鳳凰涅槃．神尊", rarity: "★★★★★", desc: "【終極型態】金光璀璨的浴火鳳凰，全螢幕漫天烈焰與金色光芒震撼呈現！", reqCount: "累計送出 500 個 (MAX)", img: "images/phoenix/LV3.png" }
             ]
         },
         banquet: {
             title: "慶生大辦桌",
             levels: [
                 { level: "LV 0", name: "辦桌小吃攤", rarity: "★☆☆☆☆", desc: "【基礎起點】傳統紅圓桌與幾盤經典小菜。", reqCount: "0 個 (初始解鎖)", img: "images/banquet/LV0.png" },
-                { level: "LV 3", name: "豐盛澎湃宴", rarity: "★★★☆☆", desc: "【升級型態】擺滿熱氣騰騰的澎湃佳餚與燈籠裝飾。", reqCount: "累計送出 30 個", img: "images/banquet/LV3.png" },
-                { level: "LV 6", name: "辦桌歌舞秀", rarity: "★★★★☆", desc: "【華麗型態】舞台閃爍霓虹燈光，全螢幕慶生歡呼特效！", reqCount: "累計送出 150 個", img: "images/banquet/LV6.png" },
-                { level: "LV 10", name: "萬人狂歡辦桌宴", rarity: "★★★★★", desc: "【終極型態】金碧輝煌的巨型流水席，滿屏熱鬧煙火與熱烈慶祝動畫！", reqCount: "累計送出 400 個 (MAX)", img: "images/banquet/LV10.png" }
+                { level: "LV 1", name: "豐盛澎湃宴", rarity: "★★★☆☆", desc: "【升級型態】擺滿熱氣騰騰的澎湃佳餚與燈籠裝飾。", reqCount: "累計送出 30 個", img: "images/banquet/LV1.png" },
+                { level: "LV 2", name: "辦桌歌舞秀", rarity: "★★★★☆", desc: "【華麗型態】舞台閃爍霓虹燈光，全螢幕慶生歡呼特效！", reqCount: "累計送出 150 個", img: "images/banquet/LV2.png" },
+                { level: "LV 3", name: "萬人狂歡辦桌宴", rarity: "★★★★★", desc: "【終極型態】金碧輝煌的巨型流水席，滿屏熱鬧煙火與熱烈慶祝動畫！", reqCount: "累計送出 400 個 (MAX)", img: "images/banquet/LV3.png" }
             ]
         },
         capybara: {
             title: "卡皮巴拉",
             levels: [
                 { level: "LV 0", name: "水豚呆呆", rarity: "★☆☆☆☆", desc: "【基礎起點】頭頂著一顆橘子呆坐的水豚。", reqCount: "0 個 (初始解鎖)", img: "images/capybara/LV0.png" },
-                { level: "LV 3", name: "泡湯卡皮巴拉", rarity: "★★★☆☆", desc: "【萌感升級】水豚舒適地泡在木桶溫泉中，冒出愛心蒸氣。", reqCount: "累計送出 20 個", img: "images/capybara/LV3.png" },
-                { level: "LV 6", name: "卡皮巴拉派對", rarity: "★★★★☆", desc: "【熱鬧型態】一群小水豚圍繞疊羅漢，解鎖歡樂疊疊樂動畫。", reqCount: "累計送出 100 個", img: "images/capybara/LV6.png" },
-                { level: "LV 10", name: "療癒水豚王國", rarity: "★★★★★", desc: "【終極型態】皇冠巨型水豚王者登場，滿屏療癒橘子雨與彩虹特效！", reqCount: "累計送出 300 個 (MAX)", img: "images/capybara/LV10.png" }
+                { level: "LV 1", name: "泡湯卡皮巴拉", rarity: "★★★☆☆", desc: "【萌感升級】水豚舒適地泡在木桶溫泉中，冒出愛心蒸氣。", reqCount: "累計送出 ?? 個", img: "images/capybara/LV1.png" },
+                { level: "LV 2", name: "卡皮巴拉派對", rarity: "★★★★☆", desc: "【熱鬧型態】一群小水豚圍繞疊羅漢，解鎖歡樂疊疊樂動畫。", reqCount: "累計送出 ?? 個", img: "images/capybara/LV2.png" },
+                { level: "LV 3", name: "療癒水豚王國", rarity: "★★★★★", desc: "【終極型態】皇冠巨型水豚王者登場，滿屏療癒橘子雨與彩虹特效！", reqCount: "累計送出 ?? 個 (MAX)", img: "images/capybara/LV3.png" }
             ]
         },
         princess: {
             title: "甜美公主風",
             levels: [
                 { level: "LV 0", name: "粉紅皇冠髮飾", rarity: "★☆☆☆☆", desc: "【基礎起點】帶有粉色光芒的小巧蝴蝶結皇冠。", reqCount: "0 個 (初始解鎖)", img: "images/princess/LV0.png" },
-                { level: "LV 3", name: "夢幻蕾絲禮服", rarity: "★★★☆☆", desc: "【浪漫升級】華麗粉色蓬蓬裙，身邊圍繞飄落的花瓣。", reqCount: "累計送出 50 個", img: "images/princess/LV3.png" },
-                { level: "LV 6", name: "粉光水晶馬車", rarity: "★★★★☆", desc: "【夢幻型態】由白馬拉著粉色水晶馬車劃過夜空。", reqCount: "累計送出 200 個", img: "images/princess/LV6.png" },
-                { level: "LV 10", name: "粉櫻浪漫城堡", rarity: "★★★★★", desc: "【終極型態】滿屏粉色浪漫櫻花雨與絕美夢幻城堡全景！", reqCount: "累計送出 600 個 (MAX)", img: "images/princess/LV10.png" }
+                { level: "LV 1", name: "夢幻蕾絲禮服", rarity: "★★★☆☆", desc: "【浪漫升級】華麗粉色蓬蓬裙，身邊圍繞飄落的花瓣。", reqCount: "累計送出 50 個", img: "images/princess/LV3.png" },
+                { level: "LV 2", name: "粉光水晶馬車", rarity: "★★★★☆", desc: "【夢幻型態】由白馬拉著粉色水晶馬車劃過夜空。", reqCount: "累計送出 200 個", img: "images/princess/LV6.png" },
+                { level: "LV 3", name: "粉櫻浪漫城堡", rarity: "★★★★★", desc: "【終極型態】滿屏粉色浪漫櫻花雨與絕美夢幻城堡全景！", reqCount: "累計送出 600 個 (MAX)", img: "images/princess/LV10.png" }
             ]
         },
         hotgirl: {
