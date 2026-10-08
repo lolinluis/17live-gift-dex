@@ -412,11 +412,12 @@
 
     };
 
-    let currentGiftKey = 'cake'; // 預設選取的禮物
+let currentGiftKey = 'cake'; // 預設選取的禮物
 
     // 初始化動態渲染主選單按鈕
     function renderMainMenu() {
         const giftMenu = document.getElementById("giftMenu");
+        if (!giftMenu) return;
         giftMenu.innerHTML = "";
 
         Object.keys(giftsDatabase).forEach(key => {
@@ -434,8 +435,8 @@
 
         // 更新頂部選單 active 狀態
         const menuBtns = document.querySelectorAll('.gift-menu-btn');
+        const keys = Object.keys(giftsDatabase);
         menuBtns.forEach((btn, index) => {
-            const keys = Object.keys(giftsDatabase);
             if (keys[index] === giftKey) {
                 btn.classList.add('active');
             } else {
@@ -453,7 +454,8 @@
     // 動態生成等級按鈕
     function renderLevelButtons() {
         const levelSelector = document.getElementById("levelSelector");
-        levelSelector.innerHTML = ""; // 清空原本按鈕
+        if (!levelSelector) return;
+        levelSelector.innerHTML = ""; 
 
         const levels = giftsDatabase[currentGiftKey].levels;
         levelSelector.style.gridTemplateColumns = `repeat(${Math.min(levels.length, 6)}, 1fr)`;
@@ -470,13 +472,27 @@
     // 切換等級
     function selectLevel(index) {
         const data = giftsDatabase[currentGiftKey].levels[index];
+        if (!data) return;
+
+        const nameEl = document.getElementById("giftName");
+        const rarityEl = document.getElementById("giftRarity");
+        const descEl = document.getElementById("giftDesc");
+        const reqEl = document.getElementById("reqCount");
+        const imgEl = document.getElementById("giftImg");
+
+        if (nameEl) nameEl.innerText = data.name;
+        if (rarityEl) rarityEl.innerText = data.rarity;
+        if (descEl) descEl.innerText = data.desc;
+        if (reqEl) reqEl.innerText = data.reqCount;
         
-        // 更新 UI 數據
-        document.getElementById("giftName").innerText = data.name;
-        document.getElementById("giftRarity").innerText = data.rarity;
-        document.getElementById("giftDesc").innerText = data.desc;
-        document.getElementById("reqCount").innerText = data.reqCount;
-        document.getElementById("giftImg").src = data.img;
+        if (imgEl) {
+            imgEl.src = data.img;
+            // 圖片載入失敗時的預設圖
+            imgEl.onerror = function() {
+                this.onerror = null;
+                this.src = "https://via.placeholder.com/160/151a21/f1c40f?text=" + encodeURIComponent(data.level);
+            };
+        }
 
         // 更新等級按鈕 active 樣式
         const buttons = document.querySelectorAll('.lvl-btn');
@@ -489,9 +505,11 @@
         });
     }
 
-    // 初始化網頁
-    renderMainMenu();
-    switchGift('cake');
+    // 確保 DOM 載入後執行初始化
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMainMenu();
+        switchGift('cake');
+    });
 </script>
 
 </body>
