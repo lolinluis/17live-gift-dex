@@ -218,7 +218,7 @@
     // 完整禮物資料庫
     const giftsDatabase = {
         cake: {
-            title: "十週年蛋糕",
+            title: "十週年蛋糕(17幣)",
             levels: [
                 { level: "LV 0", name: "十週年蛋糕(基礎)", rarity: "★☆☆☆☆", desc: "【基礎起點】盤子上面的一顆小草莓", reqCount: "0 個 (初始解鎖)", img: "images/cake/LV0.png" },
                 { level: "LV 1", name: "十週年蛋糕(一層)", rarity: "★☆☆☆☆", desc: "【基礎起點】單層小型蛋糕。", reqCount: "累計送出 10 個", img: "images/cake/LV1.png" },
@@ -234,7 +234,7 @@
             ]
         },
         phoenix: {
-            title: "鳳凰",
+            title: "鳳凰(15幣)",
             levels: [
                 { level: "LV 0", name: "熾鳳幼羽", rarity: "★☆☆☆☆", desc: "【初生型態】發光的火焰羽毛，閃爍著微弱火光。", reqCount: "0 個 (初始解鎖)", img: "images/phoenix/LV0.png" },
                 { level: "LV 1", name: "烈焰飛雛", rarity: "★★★☆☆", desc: "【成長型態】雛鳳展翅，伴隨火星繚繞特效。", reqCount: "累計送出 50 個", img: "images/phoenix/LV1.png" },
@@ -252,7 +252,7 @@
             ]
         },
         capybara: {
-            title: "卡皮巴拉",
+            title: "卡皮巴拉(20幣)",
             levels: [
                 { level: "LV 0", name: "水豚呆呆", rarity: "★☆☆☆☆", desc: "【基礎起點】頭頂著一顆橘子呆坐的水豚。", reqCount: "0 個 (初始解鎖)", img: "images/capybara/LV0.png" },
                 { level: "LV 1", name: "泡湯卡皮巴拉", rarity: "★★★☆☆", desc: "【萌感升級】水豚舒適地泡在木桶溫泉中，冒出愛心蒸氣。", reqCount: "累計送出 20 個", img: "images/capybara/LV1.png" },
@@ -261,33 +261,59 @@
             ]
         },
         princess: {
-            title: "甜美公主風",
+            title: "甜美公主風(500幣)",
             levels: [
                 { level: "LV 0", name: "粉紅皇冠髮飾", rarity: "★☆☆☆☆", desc: "【基礎起點】帶有粉色光芒的小巧蝴蝶結皇冠。", reqCount: "0 個 (初始解鎖)", img: "images/princess/LV0.png" },
-                { level: "LV 1", name: "夢幻蕾絲禮服", rarity: "★★★☆☆", desc: "【浪漫升級】華麗粉色蓬蓬裙，身邊圍繞飄落的花瓣。", reqCount: "累計送出 50 個", img: "images/princess/LV3.png" },
-                { level: "LV 2", name: "粉光水晶馬車", rarity: "★★★★☆", desc: "【夢幻型態】由白馬拉著粉色水晶馬車劃過夜空。", reqCount: "累計送出 200 個", img: "images/princess/LV6.png" },
-                { level: "LV 3", name: "粉櫻浪漫城堡", rarity: "★★★★★", desc: "【終極型態】滿屏粉色浪漫櫻花雨與絕美夢幻城堡全景！", reqCount: "累計送出 600 個 (MAX)", img: "images/princess/LV10.png" }
+                { level: "LV 1", name: "夢幻蕾絲禮服", rarity: "★★★☆☆", desc: "【浪漫升級】華麗粉色蓬蓬裙，身邊圍繞飄落的花瓣。", reqCount: "累計送出 50 個", img: "images/princess/LV1.png" },
+                { level: "LV 2", name: "粉光水晶馬車", rarity: "★★★★☆", desc: "【夢幻型態】由白馬拉著粉色水晶馬車劃過夜空。", reqCount: "累計送出 200 個", img: "images/princess/LV2.png" },
+                { level: "LV 3", name: "粉櫻浪漫城堡", rarity: "★★★★★", desc: "【終極型態】滿屏粉色浪漫櫻花雨與絕美夢幻城堡全景！", reqCount: "累計送出 600 個 (MAX)", img: "images/princess/LV3.png" }
             ]
         },
         hotgirl: {
-            title: "性感辣妹風",
+            title: "性感辣妹風(500幣)",
             levels: [
                 { level: "LV 0", name: "閃亮迪斯可", rarity: "★☆☆☆☆", desc: "【基礎起點】微光耀眼的迪斯可鏡面球與斑駁光影。", reqCount: "0 個 (初始解鎖)", img: "images/hotgirl/LV0.png" },
-                { level: "LV 1", name: "電音舞池動感", rarity: "★★★☆☆", desc: "【動感升級】解鎖節奏光線與躍動的霓虹舞台。", reqCount: "累計送出 50 個", img: "images/hotgirl/LV5.png" },
-                { level: "LV 2", name: "狂野超跑派對", rarity: "★★★★☆", desc: "【熱辣型態】炫目跑車登場，伴隨引擎轟鳴與閃光燈光束。", reqCount: "累計送出 200 個", img: "images/hotgirl/LV6.png" },
-                { level: "LV 3", name: "電音女皇巨星", rarity: "★★★★★", desc: "【終極型態】震撼巨星演唱會舞台，全屏雷射光束與璀璨焰火狂歡！", reqCount: "累計送出 600 個 (MAX)", img: "images/hotgirl/LV10.png" }
+                { level: "LV 1", name: "電音舞池動感", rarity: "★★★☆☆", desc: "【動感升級】解鎖節奏光線與躍動的霓虹舞台。", reqCount: "累計送出 50 個", img: "images/hotgirl/LV1.png" },
+                { level: "LV 2", name: "狂野超跑派對", rarity: "★★★★☆", desc: "【熱辣型態】炫目跑車登場，伴隨引擎轟鳴與閃光燈光束。", reqCount: "累計送出 200 個", img: "images/hotgirl/LV2.png" },
+                { level: "LV 3", name: "電音女皇巨星", rarity: "★★★★★", desc: "【終極型態】震撼巨星演唱會舞台，全屏雷射光束與璀璨焰火狂歡！", reqCount: "累計送出 600 個 (MAX)", img: "images/hotgirl/LV3.png" }
             ]
         },
         beach: {
-            title: "度假海灘風",
+            title: "度假海灘風(500幣)",
             levels: [
                 { level: "LV 0", name: "清涼椰子汁", rarity: "★☆☆☆☆", desc: "【基礎起點】插著小陽傘的鮮採冰鎮椰子汁。", reqCount: "0 個 (初始解鎖)", img: "images/beach/LV0.png" },
-                { level: "LV 1", name: "陽光海灘躺椅", rarity: "★★★☆☆", desc: "【休閒升級】遮陽傘與沙灘躺椅，伴隨陣陣海浪聲。", reqCount: "累計送出 40 個", img: "images/beach/LV3.png" },
-                { level: "LV 2", name: "熱帶海島衝浪", rarity: "★★★★☆", desc: "【活力型態】海豚跳躍與浪花朵朵，解鎖海島風情特效。", reqCount: "累計送出 180 個", img: "images/beach/LV6.png" },
-                { level: "LV 3", name: "奢華海上遊艇", rarity: "★★★★★", desc: "【終極型態】豪華遊艇馳騁於湛藍海洋，滿屏夕陽餘暉與海鷗翱翔！", reqCount: "累計送出 500 個 (MAX)", img: "images/beach/LV10.png" }
+                { level: "LV 1", name: "陽光海灘躺椅", rarity: "★★★☆☆", desc: "【休閒升級】遮陽傘與沙灘躺椅，伴隨陣陣海浪聲。", reqCount: "累計送出 40 個", img: "images/beach/LV1.png" },
+                { level: "LV 2", name: "熱帶海島衝浪", rarity: "★★★★☆", desc: "【活力型態】海豚跳躍與浪花朵朵，解鎖海島風情特效。", reqCount: "累計送出 180 個", img: "images/beach/LV2.png" },
+                { level: "LV 3", name: "奢華海上遊艇", rarity: "★★★★★", desc: "【終極型態】豪華遊艇馳騁於湛藍海洋，滿屏夕陽餘暉與海鷗翱翔！", reqCount: "累計送出 500 個 (MAX)", img: "images/beach/LV3.png" }
             ]
-        }
+        },
+        
     };
+		LoveYouMost: { #堡證最愛你
+            title: "堡證最愛你(522幣)",
+            levels: [
+                { level: "LV 0", name: "堡證最愛你(LV0)", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/LoveYouMost/LV0.png" },
+                { level: "LV 1", name: "堡證最愛你(LV1)", rarity: "★★☆☆☆", desc: "【升級型態】", reqCount: "累計送出 75 個", img: "images/LoveYouMost/LV1.png" },
+                { level: "LV 2", name: "堡證最愛你(LV2)", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 119 個", img: "images/LoveYouMost/LV2.png" },
+                { level: "LV 3", name: "堡證最愛你(LV3)", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 ?? 個", img: "images/LoveYouMost/LV3.png" }
+            ]
+        },
+		chocolate: { #巧克力
+            title: "巧克力(15幣)",
+            levels: [
+                { level: "LV 0", name: "巧克力LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/chocolate/LV0.png" },
+                { level: "LV 1", name: "巧克力LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/chocolate/LV1.png" },
+                { level: "LV 2", name: "巧克力LV2", rarity: "★★☆☆☆", desc: "【活力型態】", reqCount: "累計送出 ?? 個", img: "images/chocolate/LV2.png" },
+                { level: "LV 3", name: "巧克力LV3(MAX)", rarity: "★★★☆☆", desc: "【終極型態】", reqCount: "累計送出 ?? 個 (MAX)", img: "images/chocolate/LV3.png" }
+            ]
+        },
+		hunk: { #猛男
+            title: "猛男(200幣)",
+            levels: [
+                { level: "LV 0", name: "猛男LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/hunk/LV0.png" },
+                { level: "LV 1", name: "猛男LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/hunk/LV1.png" },
+            ]
+        },
 
     let currentGiftKey = 'cake';
 
