@@ -501,8 +501,8 @@ banquet: { // 慶生大辦桌
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "九尾狐(櫻) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Nine_Tailed_Fox_Sakura/LV0.png" },
-                { level: "LV 1", name: "九尾狐(櫻) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 10 個", img: "images/Nine_Tailed_Fox_Sakura/LV1.png" },
-				{ level: "LV 2", name: "九尾狐(櫻) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Sakura/LV2.png" },
+                { level: "LV 1", name: "九尾狐(櫻) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Nine_Tailed_Fox_Sakura/LV1.png" },
+				{ level: "LV 2", name: "九尾狐(櫻) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Nine_Tailed_Fox_Sakura/LV2.png" },
 				{ level: "LV 3", name: "九尾狐(櫻) LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Sakura/LV3.png" }
             ]
         },
@@ -511,8 +511,8 @@ banquet: { // 慶生大辦桌
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "九尾狐(風) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Nine_Tailed_Fox_Wind/LV0.png" },
-                { level: "LV 1", name: "九尾狐(風) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 10 個", img: "images/Nine_Tailed_Fox_Wind/LV1.png" },
-				{ level: "LV 2", name: "九尾狐(風) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Wind/LV2.png" },
+                { level: "LV 1", name: "九尾狐(風) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Nine_Tailed_Fox_Wind/LV1.png" },
+				{ level: "LV 2", name: "九尾狐(風) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Nine_Tailed_Fox_Wind/LV2.png" },
 				{ level: "LV 3", name: "九尾狐(風) LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Wind/LV3.png" }
             ]
         },
@@ -521,11 +521,131 @@ banquet: { // 慶生大辦桌
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "九尾狐(火) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Nine_Tailed_Fox_Fire/LV0.png" },
-                { level: "LV 1", name: "九尾狐(火) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 10 個", img: "images/Nine_Tailed_Fox_Fire/LV1.png" },
-				{ level: "LV 2", name: "九尾狐(火) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Fire/LV2.png" },
+                { level: "LV 1", name: "九尾狐(火) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Nine_Tailed_Fox_Fire/LV1.png" },
+				{ level: "LV 2", name: "九尾狐(火) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Nine_Tailed_Fox_Fire/LV2.png" },
 				{ level: "LV 3", name: "九尾狐(火) LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Fire/LV3.png" }
             ]
         },
+		Tengshe: { // 騰蛇
+            title: "騰蛇 (500幣)",
+            maxCoins: "約 250,000 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "騰蛇 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Tengshe/LV0.png" },
+                { level: "LV 1", name: "騰蛇 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Tengshe/LV1.png" },
+				{ level: "LV 2", name: "騰蛇 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Tengshe/LV2.png" },
+				{ level: "LV 3", name: "騰蛇 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Tengshe/LV3.png" }
+            ]
+        },
+		Shiba_Inu: { // 柴犬
+            title: "柴犬 (700幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "柴犬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Shiba_Inu/LV0.png" },
+                { level: "LV 1", name: "柴犬 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Shiba_Inu/LV1.png" },
+				{ level: "LV 2", name: "柴犬 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Shiba_Inu/LV2.png" },
+				{ level: "LV 3", name: "柴犬 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Shiba_Inu/LV3.png" }
+            ]
+        },
+		Baize: { // 白澤
+            title: "白澤 (500幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "白澤 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Baize/LV0.png" },
+                { level: "LV 1", name: "白澤 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Baize/LV1.png" },
+				{ level: "LV 2", name: "白澤 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Baize/LV2.png" },
+				{ level: "LV 3", name: "白澤 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Baize/LV3.png" }
+            ]
+        },
+		Mike: { // 麥克
+            title: "麥克 (300幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "麥克 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Mike/LV0.png" },
+                { level: "LV 1", name: "麥克 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 80 個", img: "images/Mike/LV1.png" },
+				{ level: "LV 2", name: "麥克 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Mike/LV2.png" },
+				{ level: "LV 3", name: "麥克 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Mike/LV3.png" }
+            ]
+        },
+		Kara: { // 卡拉
+            title: "卡拉 (300幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "卡拉 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Kara/LV0.png" },
+                { level: "LV 1", name: "卡拉 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 80 個", img: "images/Kara/LV1.png" },
+				{ level: "LV 2", name: "卡拉 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Kara/LV2.png" },
+				{ level: "LV 3", name: "卡拉 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Kara/LV3.png" }
+            ]
+        },
+		Xuanwu: { // 玄武
+            title: "玄武 (500幣)",
+            maxCoins: "約 250,000 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "玄武 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Xuanwu/LV0.png" },
+                { level: "LV 1", name: "玄武 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Xuanwu/LV1.png" },
+				{ level: "LV 2", name: "玄武 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Xuanwu/LV2.png" },
+				{ level: "LV 3", name: "玄武 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Xuanwu/LV3.png" }
+            ]
+        },
+		Love_You_Wedding_Car: { // 愛你禮車
+            title: "愛你禮車 (20,200幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "愛你禮車 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】升級禮破萬不科學？", reqCount: "0 個 (初始解鎖)", img: "images/Love_You_Wedding_Car/LV0.png" },
+                { level: "LV 1", name: "愛你禮車 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】升級禮破萬太不科學？", reqCount: "累計送出 30 個", img: "images/Love_You_Wedding_Car/LV1.png" },
+				{ level: "LV 2", name: "愛你禮車 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】升級禮破萬真的不科學？", reqCount: "累計送出 ?? 個", img: "images/Love_You_Wedding_Car/LV2.png" },
+				{ level: "LV 3", name: "愛你禮車 LV3", rarity: "★★★☆☆", desc: "【休閒升級】那你說有沒有跑馬燈呢？", reqCount: "累計送出 ?? 個", img: "images/Love_You_Wedding_Car/LV3.png" }
+            ]
+        },
+		Azure_Dragon: { // 青龍
+            title: "青龍 (500幣)",
+            maxCoins: "約 250,000 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "青龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Azure_Dragon/LV0.png" },
+                { level: "LV 1", name: "青龍 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Azure_Dragon/LV1.png" },
+				{ level: "LV 2", name: "青龍 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Azure_Dragon/LV2.png" },
+				{ level: "LV 3", name: "青龍 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Azure_Dragon/LV3.png" }
+            ]
+        },
+		White_Tiger: { // 白虎
+            title: "白虎(台灣) (500幣)",
+            maxCoins: "約 250,000 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "白虎 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/White_Tiger/LV0.png" },
+                { level: "LV 1", name: "白虎 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/White_Tiger/LV1.png" },
+				{ level: "LV 2", name: "白虎 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/White_Tiger/LV2.png" },
+				{ level: "LV 3", name: "白虎 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/White_Tiger/LV3.png" }
+            ]
+        },
+		Vermilion_Bird: { // 朱雀
+            title: "朱雀 (500幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "朱雀 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Vermilion_Bird/LV0.png" },
+                { level: "LV 1", name: "朱雀 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Vermilion_Bird/LV1.png" },
+				{ level: "LV 2", name: "朱雀 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/Vermilion_Bird/LV2.png" },
+				{ level: "LV 3", name: "朱雀 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Vermilion_Bird/LV3.png" }
+            ]
+        },
+		UFO: { // UFO
+            title: "UFO (30幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "UFO LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/UFO/LV0.png" },
+                { level: "LV 1", name: "UFO LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/UFO/LV1.png" },
+				{ level: "LV 2", name: "UFO LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/UFO/LV2.png" },
+				{ level: "LV 3", name: "UFO LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/UFO/LV3.png" }
+            ]
+        },
+		Loch_Ness_Monster: { // 尼斯湖水怪
+            title: "尼斯湖水怪 (350幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "尼斯湖水怪 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Loch_Ness_Monster/LV0.png" },
+                { level: "LV 1", name: "尼斯湖水怪 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Loch_Ness_Monster/LV1.png" },
+				{ level: "LV 2", name: "尼斯湖水怪 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Loch_Ness_Monster/LV2.png" },
+				{ level: "LV 3", name: "尼斯湖水怪 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Loch_Ness_Monster/LV3.png" }
+            ]
+        },		
         crown: { // 鑽石皇冠
             title: "鑽石皇冠 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
