@@ -556,25 +556,27 @@
         }
     };
 
-    let currentGiftKey = 'banquet'; // 預設選取的禮物
+	let currentGiftKey = 'banquet'; // 預設選取的禮物
 
     function init() {
         renderMainMenu();
         switchGift('banquet');
     }
 
-    // 動態渲染主選單按鈕
+    // 動態渲染下拉選單選項
     function renderMainMenu() {
-        const giftMenu = document.getElementById("giftMenu");
-        if (!giftMenu) return;
-        giftMenu.innerHTML = "";
+        const giftSelect = document.getElementById("giftSelect");
+        if (!giftSelect) return;
+        giftSelect.innerHTML = "";
 
         Object.keys(giftsDatabase).forEach(key => {
-            const btn = document.createElement("button");
-            btn.className = `gift-menu-btn ${key === currentGiftKey ? 'active' : ''}`;
-            btn.innerText = giftsDatabase[key].title;
-            btn.onclick = () => switchGift(key);
-            giftMenu.appendChild(btn);
+            const option = document.createElement("option");
+            option.value = key;
+            option.innerText = giftsDatabase[key].title;
+            if (key === currentGiftKey) {
+                option.selected = true;
+            }
+            giftSelect.appendChild(option);
         });
     }
 
@@ -582,16 +584,11 @@
     function switchGift(giftKey) {
         currentGiftKey = giftKey;
 
-        // 更新頂部選單 active 狀態
-        const menuBtns = document.querySelectorAll('.gift-menu-btn');
-        const keys = Object.keys(giftsDatabase);
-        menuBtns.forEach((btn, index) => {
-            if (keys[index] === giftKey) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
-        });
+        // 同步下拉選單選取狀態 (若透過程式調用時)
+        const giftSelect = document.getElementById("giftSelect");
+        if (giftSelect && giftSelect.value !== giftKey) {
+            giftSelect.value = giftKey;
+        }
 
         // 動態生成該禮物的等級按鈕
         renderLevelButtons();
@@ -621,22 +618,21 @@
     function selectLevel(index) {
         const data = giftsDatabase[currentGiftKey].levels[index];
         if (!data) return;
-        
+
         // 更新 UI 數據
         document.getElementById("giftName").innerText = data.name;
         document.getElementById("giftRarity").innerText = data.rarity;
         document.getElementById("giftDesc").innerText = data.desc;
         document.getElementById("reqCount").innerText = data.reqCount;
-        
+
         const imgEl = document.getElementById("giftImg");
         if (imgEl) {
-            imgEl.src = data.img;
-            // 圖片缺失時顯示備用佔位圖
             imgEl.onerror = function() {
                 this.onerror = null;
                 const encodedText = encodeURIComponent(data.level);
                 this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="100%" height="100%" fill="%23151a21"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23f1c40f" font-size="22" font-weight="bold">${encodedText}</text></svg>`;
             };
+            imgEl.src = data.img;
         }
 
         // 更新等級按鈕 active 樣式
