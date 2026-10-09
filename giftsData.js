@@ -181,140 +181,140 @@ const giftsDatabase = {
                 { level: "LV 3", name: "煙火升級禮 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Firework/LV3.png" }
             ]
         },
-        fish: { // 魚
+        Fish: { // 魚
             title: "魚 (15幣)",
             maxCoins: "15,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/fish/LV0.png" },
-                { level: "LV 1", name: "魚 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/fish/LV1.png" },
-                { level: "LV 2", name: "魚 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/fish/LV2.png" },
-                { level: "LV 3", name: "魚 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1000 個", img: "images/upgrade_gift/fish/LV3.png" }
+                { level: "LV 0", name: "魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Fish/LV0.png" },
+                { level: "LV 1", name: "魚 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Fish/LV1.png" },
+                { level: "LV 2", name: "魚 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Fish/LV2.png" },
+                { level: "LV 3", name: "魚 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1000 個", img: "images/upgrade_gift/Fish/LV3.png" }
             ]
         },
-        blackpanther: { // 神獸黑豹
+        Blackpanther: { // 神獸黑豹
             title: "神獸黑豹 (10幣)",
             maxCoins: "5,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "神獸黑豹 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/blackpanther/LV0.png" },
-                { level: "LV 1", name: "神獸黑豹 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 20 個", img: "images/upgrade_gift/blackpanther/LV1.png" },
-                { level: "LV 2", name: "神獸黑豹 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/blackpanther/LV2.png" },
-                { level: "LV 3", name: "神獸黑豹 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/blackpanther/LV3.png" }
+                { level: "LV 0", name: "神獸黑豹 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Blackpanther/LV0.png" },
+                { level: "LV 1", name: "神獸黑豹 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 20 個", img: "images/upgrade_gift/Blackpanther/LV1.png" },
+                { level: "LV 2", name: "神獸黑豹 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/Blackpanther/LV2.png" },
+                { level: "LV 3", name: "神獸黑豹 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Blackpanther/LV3.png" }
             ]
         },
-        ghost: { // 阿飄
+        Ghost: { // 阿飄
             title: "阿飄 (10幣)",
             maxCoins: "15,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "阿飄 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/ghost/LV0.png" },
-                { level: "LV 1", name: "阿飄 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/ghost/LV1.png" },
-                { level: "LV 2", name: "阿飄 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/ghost/LV2.png" },
-                { level: "LV 3", name: "阿飄 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1500 個", img: "images/upgrade_gift/ghost/LV3.png" }
+                { level: "LV 0", name: "阿飄 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Ghost/LV0.png" },
+                { level: "LV 1", name: "阿飄 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Ghost/LV1.png" },
+                { level: "LV 2", name: "阿飄 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Ghost/LV2.png" },
+                { level: "LV 3", name: "阿飄 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1500 個", img: "images/upgrade_gift/Ghost/LV3.png" }
             ]
         },
-        jelly: { // 果凍
+        Jelly: { // 果凍
             title: "果凍 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "果凍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/jelly/LV0.png" },
-                { level: "LV 1", name: "果凍 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/jelly/LV1.png" },
-                { level: "LV 2", name: "果凍 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/jelly/LV2.png" },
-                { level: "LV 3", name: "果凍 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/jelly/LV3.png" }
+                { level: "LV 0", name: "果凍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Jelly/LV0.png" },
+                { level: "LV 1", name: "果凍 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Jelly/LV1.png" },
+                { level: "LV 2", name: "果凍 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Jelly/LV2.png" },
+                { level: "LV 3", name: "果凍 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Jelly/LV3.png" }
             ]
         },
-        brat: { // 小鬼
+        Brat: { // 小鬼
             title: "小鬼 (12幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "小鬼 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/brat/LV0.png" },
-                { level: "LV 1", name: "小鬼 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/brat/LV1.png" },
-                { level: "LV 2", name: "小鬼 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 400 個", img: "images/upgrade_gift/brat/LV2.png" },
-                { level: "LV 3", name: "小鬼 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/brat/LV3.png" }
+                { level: "LV 0", name: "小鬼 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Brat/LV0.png" },
+                { level: "LV 1", name: "小鬼 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Brat/LV1.png" },
+                { level: "LV 2", name: "小鬼 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 400 個", img: "images/upgrade_gift/Brat/LV2.png" },
+                { level: "LV 3", name: "小鬼 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Brat/LV3.png" }
             ]
         },
-        meat: { // 肉
+        Meat: { // 肉
             title: "肉 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "肉 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/meat/LV0.png" },
-                { level: "LV 1", name: "肉 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/meat/LV1.png" },
-                { level: "LV 2", name: "肉 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/meat/LV2.png" },
-                { level: "LV 3", name: "肉 LV3", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/meat/LV3.png" }
+                { level: "LV 0", name: "肉 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Meat/LV0.png" },
+                { level: "LV 1", name: "肉 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Meat/LV1.png" },
+                { level: "LV 2", name: "肉 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Meat/LV2.png" },
+                { level: "LV 3", name: "肉 LV3", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Meat/LV3.png" }
             ]
         },
-        icecream: { // 冰淇淋
+        Icecream: { // 冰淇淋
             title: "冰淇淋 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "冰淇淋 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/icecream/LV0.png" },
-                { level: "LV 1", name: "冰淇淋 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/icecream/LV1.png" },
-                { level: "LV 2", name: "冰淇淋 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/icecream/LV2.png" },
-                { level: "LV 3", name: "冰淇淋 LV3", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/icecream/LV3.png" }
+                { level: "LV 0", name: "冰淇淋 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Icecream/LV0.png" },
+                { level: "LV 1", name: "冰淇淋 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Icecream/LV1.png" },
+                { level: "LV 2", name: "冰淇淋 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Icecream/LV2.png" },
+                { level: "LV 3", name: "冰淇淋 LV3", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Icecream/LV3.png" }
             ]
         },
-        whisky: { // 威士忌
+        Whisky: { // 威士忌
             title: "威士忌 (15幣)",
             maxCoins: "22,500 寶寶幣",
             levels: [
-                { level: "LV 0", name: "威士忌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/whisky/LV0.png" },
-                { level: "LV 1", name: "威士忌 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/whisky/LV1.png" },
-                { level: "LV 2", name: "威士忌 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 400 個", img: "images/upgrade_gift/whisky/LV2.png" },
-                { level: "LV 3", name: "威士忌 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 1500 個", img: "images/upgrade_gift/whisky/LV3.png" }
+                { level: "LV 0", name: "威士忌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Whisky/LV0.png" },
+                { level: "LV 1", name: "威士忌 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Whisky/LV1.png" },
+                { level: "LV 2", name: "威士忌 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 400 個", img: "images/upgrade_gift/Whisky/LV2.png" },
+                { level: "LV 3", name: "威士忌 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 1500 個", img: "images/upgrade_gift/Whisky/LV3.png" }
             ]
         },
-        babyshark: { // 北鼻鯊嘟嘟嘟
+        Babyshark: { // 北鼻鯊嘟嘟嘟
             title: "北鼻鯊嘟嘟嘟 (200幣)",
             maxCoins: "40,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "北鼻鯊嘟嘟嘟 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/babyshark/LV0.png" },
-                { level: "LV 1", name: "北鼻鯊嘟嘟嘟 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 20 個", img: "images/upgrade_gift/babyshark/LV1.png" },
-                { level: "LV 2", name: "北鼻鯊嘟嘟嘟 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/babyshark/LV2.png" },
-                { level: "LV 3", name: "北鼻鯊嘟嘟嘟 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/babyshark/LV3.png" }
+                { level: "LV 0", name: "北鼻鯊嘟嘟嘟 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Babyshark/LV0.png" },
+                { level: "LV 1", name: "北鼻鯊嘟嘟嘟 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 20 個", img: "images/upgrade_gift/Babyshark/LV1.png" },
+                { level: "LV 2", name: "北鼻鯊嘟嘟嘟 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Babyshark/LV2.png" },
+                { level: "LV 3", name: "北鼻鯊嘟嘟嘟 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/Babyshark/LV3.png" }
             ]
         },
-        butterfly: { // 蝴蝶
+        Butterfly: { // 蝴蝶
             title: "蝴蝶 (10幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "蝴蝶 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/butterfly/LV0.png" },
-                { level: "LV 1", name: "蝴蝶 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/butterfly/LV1.png" },
-                { level: "LV 2", name: "蝴蝶 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/butterfly/LV2.png" },
-                { level: "LV 3", name: "蝴蝶 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/butterfly/LV3.png" }
+                { level: "LV 0", name: "蝴蝶 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Butterfly/LV0.png" },
+                { level: "LV 1", name: "蝴蝶 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/Butterfly/LV1.png" },
+                { level: "LV 2", name: "蝴蝶 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Butterfly/LV2.png" },
+                { level: "LV 3", name: "蝴蝶 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Butterfly/LV3.png" }
             ]
         },
-        watermelon: { // 西瓜
+        Watermelon: { // 西瓜
             title: "西瓜 (10幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "西瓜 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/watermelon/LV0.png" },
-                { level: "LV 1", name: "西瓜 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/watermelon/LV1.png" },
-                { level: "LV 2", name: "西瓜 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/watermelon/LV2.png" },
-                { level: "LV 3", name: "西瓜 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/watermelon/LV3.png" }
+                { level: "LV 0", name: "西瓜 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Watermelon/LV0.png" },
+                { level: "LV 1", name: "西瓜 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Watermelon/LV1.png" },
+                { level: "LV 2", name: "西瓜 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Watermelon/LV2.png" },
+                { level: "LV 3", name: "西瓜 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Watermelon/LV3.png" }
             ]
         },
-        myhome: { // 我的家
+        Myhome: { // 我的家
             title: "我的家 (30幣)",
             maxCoins: "9,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "我的家 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/myhome/LV0.png" },
-                { level: "LV 1", name: "我的家 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/myhome/LV1.png" },
-                { level: "LV 2", name: "我的家 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/myhome/LV2.png" },
-                { level: "LV 3", name: "我的家 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 300 個", img: "images/upgrade_gift/myhome/LV3.png" }
+                { level: "LV 0", name: "我的家 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Myhome/LV0.png" },
+                { level: "LV 1", name: "我的家 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Myhome/LV1.png" },
+                { level: "LV 2", name: "我的家 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Myhome/LV2.png" },
+                { level: "LV 3", name: "我的家 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 300 個", img: "images/upgrade_gift/Myhome/LV3.png" }
             ]
         },
-        basketball: { // 籃球
+        Basketball: { // 籃球
             title: "籃球 (30幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "籃球 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/basketball/LV0.png" },
-                { level: "LV 1", name: "籃球 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/basketball/LV1.png" }
+                { level: "LV 0", name: "籃球 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Basketball/LV0.png" },
+                { level: "LV 1", name: "籃球 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Basketball/LV1.png" }
             ]
         },
-        charizard: { // 噴火龍
+        Charizard: { // 噴火龍
             title: "噴火龍 (350幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "噴火龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/charizard/LV0.png" },
-                { level: "LV 1", name: "噴火龍 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/charizard/LV1.png" }
+                { level: "LV 0", name: "噴火龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Charizard/LV0.png" },
+                { level: "LV 1", name: "噴火龍 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Charizard/LV1.png" }
             ]
         },	
         Qilin: { // 麒麟
@@ -325,16 +325,16 @@ const giftsDatabase = {
                 { level: "LV 1", name: "麒麟 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Qilin/LV1.png" }
             ]
         },		
-        cockroach: { // 小強 蟑螂
+        Cockroach: { // 小強 蟑螂
             title: "小強 (500幣)",
             maxCoins: "357,500 寶寶幣",
             levels: [
-                { level: "LV 0", name: "小強 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】心中一絲壞壞的想法正在萌芽。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/cockroach/LV0.png" },
-                { level: "LV 1", name: "小強 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】心中一絲壞壞的想法正在成長。", reqCount: "累計送出 15 個", img: "images/upgrade_gift/cockroach/LV1.png" },
-                { level: "LV 2", name: "小強 LV2", rarity: "★★★☆☆", desc: "【休閒升級】心中一絲壞壞的想法正在進化。", reqCount: "累計送出 65 個", img: "images/upgrade_gift/cockroach/LV2.png" },
-                { level: "LV 3", name: "小強 LV3", rarity: "★★★☆☆", desc: "【休閒升級】心中一絲壞壞的想法正在強大。", reqCount: "累計送出 165 個", img: "images/upgrade_gift/cockroach/LV3.png" },
-                { level: "LV 4", name: "小強 LV4", rarity: "★★★★☆", desc: "【休閒升級】心中一絲壞壞的想法快要達成。", reqCount: "累計送出 365 個", img: "images/upgrade_gift/cockroach/LV4.png" },
-                { level: "LV 5", name: "小強 LV5", rarity: "★★★★★", desc: "【豪華滿級】飛撲向螢幕的3D蟑螂，完全滿足您的惡趣味。", reqCount: "累計送出 715 個", img: "images/upgrade_gift/cockroach/LV5.png" }
+                { level: "LV 0", name: "小強 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】心中一絲壞壞的想法正在萌芽。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Cockroach/LV0.png" },
+                { level: "LV 1", name: "小強 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】心中一絲壞壞的想法正在成長。", reqCount: "累計送出 15 個", img: "images/upgrade_gift/Cockroach/LV1.png" },
+                { level: "LV 2", name: "小強 LV2", rarity: "★★★☆☆", desc: "【休閒升級】心中一絲壞壞的想法正在進化。", reqCount: "累計送出 65 個", img: "images/upgrade_gift/Cockroach/LV2.png" },
+                { level: "LV 3", name: "小強 LV3", rarity: "★★★☆☆", desc: "【休閒升級】心中一絲壞壞的想法正在強大。", reqCount: "累計送出 165 個", img: "images/upgrade_gift/Cockroach/LV3.png" },
+                { level: "LV 4", name: "小強 LV4", rarity: "★★★★☆", desc: "【休閒升級】心中一絲壞壞的想法快要達成。", reqCount: "累計送出 365 個", img: "images/upgrade_gift/Cockroach/LV4.png" },
+                { level: "LV 5", name: "小強 LV5", rarity: "★★★★★", desc: "【豪華滿級】飛撲向螢幕的3D蟑螂，完全滿足您的惡趣味。", reqCount: "累計送出 715 個", img: "images/upgrade_gift/Cockroach/LV5.png" }
             ]
         },
 		Panda: { // 最幸福熊貓
@@ -353,38 +353,38 @@ const giftsDatabase = {
                 { level: "LV 1", name: "最幸福小鹿 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Deer/LV1.png" }
             ]
         },
-		piggy: { // 最幸福小豬
+		Piggy: { // 最幸福小豬
             title: "最幸福小豬 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "最幸福小豬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/piggy/LV0.png" },
-                { level: "LV 1", name: "最幸福小豬 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/piggy/LV1.png" }
+                { level: "LV 0", name: "最幸福小豬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Piggy/LV0.png" },
+                { level: "LV 1", name: "最幸福小豬 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Piggy/LV1.png" }
             ]
         },
-		hippo: { // 卡哇伊河馬
+		Hippo: { // 卡哇伊河馬
             title: "卡哇伊河馬 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "卡哇伊河馬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/hippo/LV0.png" },
-                { level: "LV 1", name: "卡哇伊河馬 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/hippo/LV1.png" }
+                { level: "LV 0", name: "卡哇伊河馬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Hippo/LV0.png" },
+                { level: "LV 1", name: "卡哇伊河馬 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Hippo/LV1.png" }
             ]
         },		
-        corgi: { // 萌寵柯基
+        Corgi: { // 萌寵柯基
             title: "萌寵柯基 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "萌寵柯基 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/corgi/LV0.png" },
-                { level: "LV 1", name: "萌寵柯基 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/corgi/LV1.png" },
-                { level: "LV 2", name: "萌寵柯基 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/corgi/LV2.png" },
-                { level: "LV 3", name: "萌寵柯基 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/corgi/LV3.png" }
+                { level: "LV 0", name: "萌寵柯基 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Corgi/LV0.png" },
+                { level: "LV 1", name: "萌寵柯基 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Corgi/LV1.png" },
+                { level: "LV 2", name: "萌寵柯基 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Corgi/LV2.png" },
+                { level: "LV 3", name: "萌寵柯基 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Corgi/LV3.png" }
             ]
         },
-		biwingbird: { // 比翼鳥
+		Biwingbird: { // 比翼鳥
             title: "比翼鳥 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "比翼鳥 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/biwingbird/LV0.png" },
-                { level: "LV 1", name: "比翼鳥 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 9 個", img: "images/upgrade_gift/biwingbird/LV1.png" }
+                { level: "LV 0", name: "比翼鳥 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Biwingbird/LV0.png" },
+                { level: "LV 1", name: "比翼鳥 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 9 個", img: "images/upgrade_gift/Biwingbird/LV1.png" }
             ]
         },
 		Macaron: { // 給你馬卡龍
