@@ -12,7 +12,7 @@ const collaborators = [
 // 禮物資料庫 (完整資料)
 const giftsDatabase = {
 banquet: { // 慶生大辦桌
-            title: "慶生大辦桌(117幣)",
+            title: "慶生大辦桌 (117幣)",
             maxCoins: "50,076 寶寶幣", // 自行輸入欄位
             levels: [
                 { level: "LV 0", name: "慶生大辦桌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】傳統紅圓桌與幾盤經典小菜。", reqCount: "0 個 (初始解鎖)", img: "images/banquet/LV0.png" },
@@ -25,7 +25,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         LoveYouMost: { // 堡證最愛你
-            title: "堡證最愛你(522幣)",
+            title: "堡證最愛你 (522幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "堡證最愛你 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/LoveYouMost/LV0.png" },
@@ -35,7 +35,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         myburger: { // 你是我的堡
-            title: "你是我的堡(52幣)",
+            title: "你是我的堡 (52幣)",
             maxCoins: "51,948 寶寶幣",
             levels: [
                 { level: "LV 0", name: "你是我的堡(LV0)", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/myburger/LV0.png" },
@@ -45,7 +45,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         capybara: { // 卡皮巴拉
-            title: "卡皮巴拉(20幣)",
+            title: "卡皮巴拉 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "水豚呆呆", rarity: "★☆☆☆☆", desc: "【基礎起點】頭頂著一顆橘子呆坐的水豚。", reqCount: "0 個 (初始解鎖)", img: "images/capybara/LV0.png" },
@@ -55,7 +55,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         princess: { // 甜美公主風
-            title: "甜美公主風(500幣)",
+            title: "甜美公主風 (500幣)",
             maxCoins: "150,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "甜美公主風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】帶有粉色光芒的小巧蝴蝶結皇冠。", reqCount: "0 個 (初始解鎖)", img: "images/princess/LV0.png" },
@@ -65,7 +65,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         hotgirl: { // 性感辣妹風
-            title: "性感辣妹風(500幣)",
+            title: "性感辣妹風 (500幣)",
             maxCoins: "150,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "性感辣妹風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】微光耀眼的迪斯可鏡面球與斑駁光影。", reqCount: "0 個 (初始解鎖)", img: "images/hotgirl/LV0.png" },
@@ -75,7 +75,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         beach: { // 度假海灘風
-            title: "度假海灘風(500幣)",
+            title: "度假海灘風 (500幣)",
             maxCoins: "150,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "度假海灘風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】插著小陽傘的鮮採冰鎮椰子汁。", reqCount: "0 個 (初始解鎖)", img: "images/beach/LV0.png" },
@@ -85,7 +85,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         cake: { // 十周年蛋糕
-            title: "十週年蛋糕(17幣)",
+            title: "十週年蛋糕 (17幣)",
             maxCoins: "85,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "十週年蛋糕(基礎)", rarity: "★☆☆☆☆", desc: "【基礎起點】盤子上面的一顆小草莓", reqCount: "0 個 (初始解鎖)", img: "images/cake/LV0.png" },
@@ -102,7 +102,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         mage: { // 魔法師修練
-            title: "魔法師修練(500幣)",
+            title: "魔法師修練 (500幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "魔法師修練 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/mage/LV0.png" },
@@ -110,7 +110,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         chocolate: { // 巧克力
-            title: "巧克力(15幣)",
+            title: "巧克力 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "巧克力 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/chocolate/LV0.png" },
@@ -120,7 +120,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         SeaMonster: { // 神秘海怪
-            title: "神秘海怪(500幣)",
+            title: "神秘海怪 (500幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "神秘海怪 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/SeaMonster/LV0.png" },
@@ -130,7 +130,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         bento: { // 便當
-            title: "便當(20幣)",
+            title: "便當 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "便當 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/bento/LV0.png" },
@@ -140,7 +140,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         medieval: { // 中世紀
-            title: "中世紀(20幣)",
+            title: "中世紀 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "中世紀 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/medieval/LV0.png" },
@@ -150,7 +150,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         hunk: { // 猛男
-            title: "猛男(200幣)",
+            title: "猛男 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "猛男 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/hunk/LV0.png" },
@@ -158,7 +158,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         phoenix: { // 鳳凰
-            title: "鳳凰(15幣)",
+            title: "鳳凰 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "鳳凰 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/phoenix/LV0.png" },
@@ -169,7 +169,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         firework: { // 煙火升級禮
-            title: "煙火升級禮(10幣)",
+            title: "煙火升級禮 (10幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "煙火升級禮 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/firework/LV0.png" },
@@ -179,7 +179,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         fish: { // 魚
-            title: "魚(15幣)",
+            title: "魚 (15幣)",
             maxCoins: "15,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/fish/LV0.png" },
@@ -189,7 +189,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         blackpanther: { // 神秘黑豹
-            title: "神秘黑豹(10幣)",
+            title: "神秘黑豹 (10幣)",
             maxCoins: "5,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "神秘黑豹 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/blackpanther/LV0.png" },
@@ -199,7 +199,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         ghost: { // 阿飄
-            title: "阿飄(10幣)",
+            title: "阿飄 (10幣)",
             maxCoins: "15,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "阿飄 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/ghost/LV0.png" },
@@ -209,7 +209,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         jelly: { // 果凍
-            title: "果凍(15幣)",
+            title: "果凍 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "果凍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/jelly/LV0.png" },
@@ -219,7 +219,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         brat: { // 小鬼
-            title: "小鬼(12幣)",
+            title: "小鬼 (12幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "小鬼 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/brat/LV0.png" },
@@ -229,7 +229,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         meat: { // 肉
-            title: "肉(20幣)",
+            title: "肉 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "肉 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/meat/LV0.png" },
@@ -239,7 +239,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         icecream: { // 冰淇淋
-            title: "冰淇淋(15幣)",
+            title: "冰淇淋 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "冰淇淋 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/icecream/LV0.png" },
@@ -249,7 +249,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         whisky: { // 威士忌
-            title: "威士忌(15幣)",
+            title: "威士忌 (15幣)",
             maxCoins: "22,500 寶寶幣",
             levels: [
                 { level: "LV 0", name: "威士忌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/whisky/LV0.png" },
@@ -259,7 +259,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         babyshark: { // 北鼻鯊嘟嘟嘟
-            title: "北鼻鯊嘟嘟嘟(200幣)",
+            title: "北鼻鯊嘟嘟嘟 (200幣)",
             maxCoins: "40,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "北鼻鯊嘟嘟嘟 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/babyshark/LV0.png" },
@@ -269,7 +269,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         butterfly: { // 蝴蝶
-            title: "蝴蝶(10幣)",
+            title: "蝴蝶 (10幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "蝴蝶 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/butterfly/LV0.png" },
@@ -279,7 +279,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         watermelon: { // 西瓜
-            title: "西瓜(10幣)",
+            title: "西瓜 (10幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "西瓜 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/watermelon/LV0.png" },
@@ -289,7 +289,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         myhome: { // 我的家
-            title: "我的家(30幣)",
+            title: "我的家 (30幣)",
             maxCoins: "9,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "我的家 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/myhome/LV0.png" },
@@ -299,7 +299,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         basketball: { // 籃球
-            title: "籃球(30幣)",
+            title: "籃球 (30幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "籃球 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/basketball/LV0.png" },
@@ -307,7 +307,7 @@ banquet: { // 慶生大辦桌
             ]
         },
         charizard: { // 噴火龍
-            title: "噴火龍(350幣)",
+            title: "噴火龍 (350幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "噴火龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/charizard/LV0.png" },
@@ -315,7 +315,7 @@ banquet: { // 慶生大辦桌
             ]
         },	
         Qilin: { // 麒麟
-            title: "麒麟(500幣)",
+            title: "麒麟 (500幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "麒麟 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Qilin/LV0.png" },
@@ -323,7 +323,7 @@ banquet: { // 慶生大辦桌
             ]
         },		
         cockroach: { // 小強 蟑螂
-            title: "小強(500幣)",
+            title: "小強 (500幣)",
             maxCoins: "357,500 寶寶幣",
             levels: [
                 { level: "LV 0", name: "小強 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】心中一絲壞壞的想法正在萌芽。", reqCount: "0 個 (初始解鎖)", img: "images/cockroach/LV0.png" },
@@ -335,7 +335,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Panda: { // 最幸福熊貓
-            title: "最幸福熊貓(200幣)",
+            title: "最幸福熊貓 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "最幸福熊貓 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Panda/LV0.png" },
@@ -343,7 +343,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Deer: { // 最幸福小鹿
-            title: "最幸福小鹿(200幣)",
+            title: "最幸福小鹿 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "最幸福小鹿 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Deer/LV0.png" },
@@ -351,7 +351,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		piggy: { // 最幸福小豬
-            title: "最幸福小豬(200幣)",
+            title: "最幸福小豬 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "最幸福小豬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/piggy/LV0.png" },
@@ -359,7 +359,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		hippo: { // 卡哇伊河馬
-            title: "卡哇伊河馬(200幣)",
+            title: "卡哇伊河馬 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "卡哇伊河馬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/hippo/LV0.png" },
@@ -367,7 +367,7 @@ banquet: { // 慶生大辦桌
             ]
         },		
         corgi: { // 萌寵柯基
-            title: "萌寵柯基(200幣)",
+            title: "萌寵柯基 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "萌寵柯基 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/corgi/LV0.png" },
@@ -377,7 +377,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		biwingbird: { // 比翼鳥
-            title: "比翼鳥(200幣)",
+            title: "比翼鳥 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "比翼鳥 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/biwingbird/LV0.png" },
@@ -385,7 +385,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Macaron: { // 給你馬卡龍
-            title: "給你馬卡龍(149幣)",
+            title: "給你馬卡龍 (149幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "給你馬卡龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Macaron/LV0.png" },
@@ -393,7 +393,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		MyChocolate: { // 你是我的巧克力
-            title: "你是我的巧克力(149幣)",
+            title: "你是我的巧克力 (149幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "你是我的巧克力 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/MyChocolate/LV0.png" },
@@ -401,7 +401,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Three_Tailed_Fox: { // 三尾狐狸
-            title: "三尾狐狸(149幣)",
+            title: "三尾狐狸 (149幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "三尾狐狸 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Three_Tailed_Fox/LV0.png" },
@@ -409,7 +409,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Duck: { // 17小鴨
-            title: "17小鴨(149幣)",
+            title: "17小鴨 (149幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "17小鴨 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Duck/LV0.png" },
@@ -417,7 +417,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Alpaca: { // 草泥馬
-            title: "草泥馬(149幣)",
+            title: "草泥馬 (149幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "草泥馬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Alpaca/LV0.png" },
@@ -425,7 +425,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Dragon_and_Lion_Dances: { // 舞龍舞獅
-            title: "舞龍舞獅(350幣)",
+            title: "舞龍舞獅 (350幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "舞龍舞獅 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Dragon_and_Lion_Dances/LV0.png" },
@@ -434,7 +434,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Ms_Leti: { // Ms.Leti
-            title: "Ms.Leti(250幣)",
+            title: "Ms.Leti (250幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "Ms.Leti LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Ms_Leti/LV0.png" },
@@ -442,7 +442,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Magical_Fireworks: { // 魔幻煙火
-            title: "魔幻煙火(350幣)",
+            title: "魔幻煙火 (350幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "魔幻煙火 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Magical_Fireworks/LV0.png" },
@@ -450,7 +450,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Love_Wishing_Well: { // 愛情許願池
-            title: "愛情許願池(50,000幣)",
+            title: "愛情許願池 (50,000幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "愛情許願池 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】很高門檻的起點！", reqCount: "0 個 (初始解鎖)", img: "images/Love_Wishing_Well/LV0.png" },
@@ -458,7 +458,7 @@ banquet: { // 慶生大辦桌
             ]
         },
 		Love_Wishing_Well: { // 美人魚
-            title: "美人魚(700幣)",
+            title: "美人魚 (700幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "美人魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】很高門檻的起點！", reqCount: "0 個 (初始解鎖)", img: "images/Love_Wishing_Well/LV0.png" },
@@ -466,7 +466,7 @@ banquet: { // 慶生大辦桌
             ]
         },		
         crown: { // 鑽石皇冠
-            title: "鑽石皇冠(20幣)",
+            title: "鑽石皇冠 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "鑽石皇冠 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】只是一顆原石", reqCount: "0 個 (初始解鎖)", img: "images/crown/LV0.png" },
