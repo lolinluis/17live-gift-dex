@@ -495,7 +495,37 @@ banquet: { // 慶生大辦桌
 				{ level: "LV 2", name: "兔兔惹人愛 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Bunny_Adorable/LV2.png" },
 				{ level: "LV 3", name: "兔兔惹人愛 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Bunny_Adorable/LV3.png" }
             ]
-        },		
+        },
+		Nine_Tailed_Fox_Sakura: { // 九尾狐(櫻)
+            title: "九尾狐(櫻) (500幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "九尾狐(櫻) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Nine_Tailed_Fox_Sakura/LV0.png" },
+                { level: "LV 1", name: "九尾狐(櫻) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 10 個", img: "images/Nine_Tailed_Fox_Sakura/LV1.png" },
+				{ level: "LV 2", name: "九尾狐(櫻) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Sakura/LV2.png" },
+				{ level: "LV 3", name: "九尾狐(櫻) LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Sakura/LV3.png" }
+            ]
+        },
+		Nine_Tailed_Fox_Wind: { // 九尾狐(風)
+            title: "九尾狐(風) (500幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "九尾狐(風) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Nine_Tailed_Fox_Wind/LV0.png" },
+                { level: "LV 1", name: "九尾狐(風) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 10 個", img: "images/Nine_Tailed_Fox_Wind/LV1.png" },
+				{ level: "LV 2", name: "九尾狐(風) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Wind/LV2.png" },
+				{ level: "LV 3", name: "九尾狐(風) LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Wind/LV3.png" }
+            ]
+        },
+		Nine_Tailed_Fox_Fire: { // 九尾狐(火)
+            title: "九尾狐(火) (500幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "九尾狐(火) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Nine_Tailed_Fox_Fire/LV0.png" },
+                { level: "LV 1", name: "九尾狐(火) LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 10 個", img: "images/Nine_Tailed_Fox_Fire/LV1.png" },
+				{ level: "LV 2", name: "九尾狐(火) LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Fire/LV2.png" },
+				{ level: "LV 3", name: "九尾狐(火) LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Nine_Tailed_Fox_Fire/LV3.png" }
+            ]
+        },
         crown: { // 鑽石皇冠
             title: "鑽石皇冠 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
