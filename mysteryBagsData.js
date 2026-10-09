@@ -30,14 +30,16 @@ const mysteryBagsDatabase = {
     },
 	
     Lucky_Mystery: { //開運隨機袋
-        title: "隨機袋：品牌之星",
-        maxCoins: "3000 寶寶幣 / 次",
+        title: "隨機袋：開運隨機袋",
+        maxCoins: "99 寶寶幣 / 次",
 		img: "images/bags/Lucky_Mystery/01.png",
-        activityDesc: "【品牌大使活動】",
+        activityDesc: "非活動相關隨機袋",
         items: [
-            {tag: "普獎",name: "???",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "??? 寶寶幣"},
-            {tag: "二獎",name: "???",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "??? 寶寶幣"},
-            {tag: "頭獎",name: "發財金 (20倍)",rarity: "★★★★★",desc: "【超稀有】恭喜獲得最大獎",reward: "1,999 寶寶幣"}
+            {tag: "頭獎",name: "發財金 (20倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "1,999 寶寶幣"},
+			{tag: "二獎",name: "姻緣線 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運二獎獎勵",reward: "199 寶寶幣"},
+            {tag: "三獎",name: "桃花人緣小 (1倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "99 寶寶幣"},
+            {tag: "四獎",name: "大貢香 (1倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "99 寶寶幣"},
+			{tag: "五獎",name: "隨喜香油 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "10 寶寶幣"}
         ]
     }	
 	
