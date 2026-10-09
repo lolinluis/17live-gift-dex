@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>17LIVE 升級禮與隨機袋圖鑑 - 神魔風格版</title>
+    <title>17LIVE 圖鑑與主播生日列表 - 神魔風格版</title>
     <style>
         * {
             box-sizing: border-box;
@@ -37,7 +37,7 @@
         /* 頂部 Tab 切換區 */
         .nav-tabs {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             margin-bottom: 15px;
         }
 
@@ -47,7 +47,7 @@
             background: #111;
             border: 2px solid #c5a059;
             color: #c5a059;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
             border-radius: 8px;
             cursor: pointer;
@@ -183,7 +183,7 @@
             align-items: center;
         }
 
-        /* 升級禮卡片展示區 (升級禮模式專用) */
+        /* 升級禮卡片展示區 */
         .card-frame {
             position: relative;
             background: #151a21;
@@ -304,12 +304,11 @@
             box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
         }
 
-        /* 隨機袋無圖純文字獎項列表 */
+        /* 隨機袋獎項列表 */
         .bag-items-grid {
-            display: flex;
+            display: none;
             flex-direction: column;
             gap: 8px;
-            display: none;
         }
 
         .bag-item-card {
@@ -320,7 +319,6 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            position: relative;
         }
 
         .bag-item-left {
@@ -372,7 +370,74 @@
             text-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
         }
 
-        /* 免責聲明頁尾 (使用標楷體) */
+        /* [新增] 主播生日列表頁面樣式 */
+        .streamer-birthday-container {
+            display: none;
+            background: #151a21;
+            border: 2px solid #45a29e;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .birthday-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+
+        .birthday-table th {
+            background: rgba(197, 160, 89, 0.2);
+            color: #f39c12;
+            padding: 10px 8px;
+            text-align: left;
+            border-bottom: 2px solid #c5a059;
+            font-weight: bold;
+        }
+
+        .birthday-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid rgba(69, 162, 158, 0.2);
+            vertical-align: middle;
+        }
+
+        .birthday-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .birthday-table tr:hover {
+            background: rgba(69, 162, 158, 0.1);
+        }
+
+        .date-col {
+            width: 70px;
+            color: #f1c40f;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .name-col {
+            width: 130px;
+        }
+
+        .streamer-link {
+            color: #66fcf1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .streamer-link:hover {
+            color: #f39c12;
+            text-decoration: underline;
+        }
+
+        .intro-col {
+            color: #c5a059;
+            font-size: 12px;
+            line-height: 1.3;
+        }
+
+        /* 頁尾免責聲明 */
         .dex-footer {
             margin-top: 20px;
             padding-top: 12px;
@@ -428,10 +493,11 @@
 <body>
 
 <div class="dex-container">
-    <!-- 頂頁 Tab 頁籤 -->
+    <!-- 頂頁 Tab 頁籤 (擴充為 3 個 Tab) -->
     <div class="nav-tabs">
-        <button class="tab-btn active" id="tabGifts" onclick="switchMode('gifts')">升級禮圖鑑</button>
-        <button class="tab-btn" id="tabBags" onclick="switchMode('bags')">隨機袋圖鑑</button>
+        <button class="tab-btn active" id="tabGifts" onclick="switchMode('gifts')">升級禮</button>
+        <button class="tab-btn" id="tabBags" onclick="switchMode('bags')">隨機袋</button>
+        <button class="tab-btn" id="tabStreamers" onclick="switchMode('streamers')">主播生日</button>
     </div>
 
     <!-- 標題區 -->
@@ -440,8 +506,8 @@
         <div class="subtitle">(非官方 - 持續更新中)</div>
     </div>
 
-    <!-- 下拉選單 -->
-    <div class="gift-select-container">
+    <!-- 下拉選單 (升級禮與隨機袋模式使用) -->
+    <div class="gift-select-container" id="selectContainer">
         <select class="gift-select" id="giftSelect" onchange="switchGift(this.value)">
             <!-- 由 JS 動態生成 -->
         </select>
@@ -480,16 +546,30 @@
     </div>
 
     <!-- [隨機袋模式] 無圖純文字獎項平鋪列表 -->
-    <div class="bag-items-grid" id="bagItemsGrid">
-        <!-- JS 動態渲染所有獎項列表 -->
+    <div class="bag-items-grid" id="bagItemsGrid"></div>
+
+    <!-- [新增] [主播生日模式] 三欄位清單列表 -->
+    <div class="streamer-birthday-container" id="streamerBirthdayContainer">
+        <table class="birthday-table">
+            <thead>
+                <tr>
+                    <th style="text-align: center;">日期</th>
+                    <th>主播名稱</th>
+                    <th>簡介</th>
+                </tr>
+            </thead>
+            <tbody id="birthdayTableBody">
+                <!-- 由 JS 動態渲染 -->
+            </tbody>
+        </table>
     </div>
 
     <!-- 頁尾標楷體免責聲明 -->
     <div class="dex-footer">
-	    【免責聲明】<br>
-		本頁面內容僅供玩家交流研討使用，並非營利目的。<br>
+        【免責聲明】<br>
+        本頁面內容僅供玩家交流研討使用，並非營利目的。<br>
         相關圖像與資料版權皆屬 17LIVE 官方所有。<br><br>
-		【哪有賭徒天天輸，只有希璐天天哭。】 by 熊熊<br>
+        【哪有賭徒天天輸，只有希璐天天哭。】 by 熊熊<br>
 
         <div class="collab-title">❖ 貢獻與協作者 ❖</div>
         <div class="collab-list" id="collabList"></div>
@@ -498,6 +578,7 @@
 
 <script src="giftsData.js"></script>
 <script src="mysteryBagsData.js"></script>
+<script src="streamersData.js"></script>
 
 <script>
     let currentMode = 'gifts'; 
@@ -513,32 +594,49 @@
 
         document.getElementById("tabGifts").classList.toggle("active", mode === 'gifts');
         document.getElementById("tabBags").classList.toggle("active", mode === 'bags');
+        document.getElementById("tabStreamers").classList.toggle("active", mode === 'streamers');
 
         const giftDisplayArea = document.getElementById("giftDisplayArea");
         const bagHeroPanel = document.getElementById("bagHeroPanel");
         const bagItemsGrid = document.getElementById("bagItemsGrid");
+        const selectContainer = document.getElementById("selectContainer");
+        const streamerBirthdayContainer = document.getElementById("streamerBirthdayContainer");
 
         if (mode === 'gifts') {
             document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
+            selectContainer.style.display = "block";
             giftDisplayArea.style.display = "block";
             bagHeroPanel.style.display = "none";
             bagItemsGrid.style.display = "none";
+            streamerBirthdayContainer.style.display = "none";
 
             const db = typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
-        } else {
+            renderMainMenu();
+            if (currentGiftKey) switchGift(currentGiftKey);
+
+        } else if (mode === 'bags') {
             document.getElementById("pageTitle").innerText = "17LIVE 隨機袋獎勵圖鑑";
+            selectContainer.style.display = "block";
             giftDisplayArea.style.display = "none";
             bagHeroPanel.style.display = "block";
             bagItemsGrid.style.display = "flex";
+            streamerBirthdayContainer.style.display = "none";
 
             const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
-        }
+            renderMainMenu();
+            if (currentGiftKey) switchGift(currentGiftKey);
 
-        renderMainMenu();
-        if (currentGiftKey) {
-            switchGift(currentGiftKey);
+        } else if (mode === 'streamers') {
+            document.getElementById("pageTitle").innerText = "17 LIVE 直播主生日列表";
+            selectContainer.style.display = "none";
+            giftDisplayArea.style.display = "none";
+            bagHeroPanel.style.display = "none";
+            bagItemsGrid.style.display = "none";
+            streamerBirthdayContainer.style.display = "block";
+
+            renderStreamerBirthdayList();
         }
     }
 
@@ -582,8 +680,7 @@
             document.getElementById("maxCoins").innerText = data.maxCoins || "尚未計算";
             renderLevelButtons();
             selectLevel(0);
-        } else {
-            // 隨機袋模式：設定主圖、價格與活動說明
+        } else if (currentMode === 'bags') {
             document.getElementById("bagPrice").innerText = data.maxCoins || "單次金額未定";
             document.getElementById("bagDesc").innerText = data.activityDesc || "暫無活動說明。";
 
@@ -601,7 +698,30 @@
         }
     }
 
-    // 隨機袋：純文字卡片平鋪列表
+    // 渲染主播生日列表
+    function renderStreamerBirthdayList() {
+        const tbody = document.getElementById("birthdayTableBody");
+        if (!tbody) return;
+        tbody.innerHTML = "";
+
+        const streamers = typeof streamersDatabase !== "undefined" ? streamersDatabase : [];
+
+        streamers.forEach(item => {
+            const tr = document.createElement("tr");
+            tr.innerHTML = `
+                <td class="date-col">${item.date || ''}</td>
+                <td class="name-col">
+                    <a href="${item.url || '#'}" target="_blank" rel="noopener noreferrer" class="streamer-link">
+                        ${item.name || ''}
+                    </a>
+                </td>
+                <td class="intro-col">${item.intro || ''}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+    }
+
+    // 隨機袋列表渲染
     function renderBagItems(items) {
         const bagItemsGrid = document.getElementById("bagItemsGrid");
         if (!bagItemsGrid) return;
@@ -630,7 +750,7 @@
         });
     }
 
-    // 升級禮：渲染等級按鈕
+    // 升級禮等級按鈕
     function renderLevelButtons() {
         const levelSelector = document.getElementById("levelSelector");
         if (!levelSelector) return;
@@ -648,7 +768,7 @@
         });
     }
 
-    // 升級禮：切換等級內容
+    // 切換等級
     function selectLevel(index) {
         const activeDB = getCurrentDatabase();
         const data = activeDB[currentGiftKey]?.levels[index];
