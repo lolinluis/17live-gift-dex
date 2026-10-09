@@ -467,15 +467,15 @@ banquet: { // 慶生大辦桌
                 { level: "LV 0", name: "不可以吃兔兔 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Dont_Eat_Bunny/LV0.png" },
                 { level: "LV 1", name: "不可以吃兔兔 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Dont_Eat_Bunny/LV1.png" },
 				{ level: "LV 2", name: "不可以吃兔兔 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/Dont_Eat_Bunny/LV2.png" },
-				{ level: "LV 2", name: "不可以吃兔兔 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 270 個", img: "images/Dont_Eat_Bunny/LV3.png" }
+				{ level: "LV 3", name: "不可以吃兔兔 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 270 個", img: "images/Dont_Eat_Bunny/LV3.png" }
             ]
         },
-		Love_Wishing_Well: { // 美人魚
+		Mermaid: { // 美人魚
             title: "美人魚 (700幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "美人魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】很高門檻的起點！", reqCount: "0 個 (初始解鎖)", img: "images/Love_Wishing_Well/LV0.png" },
-                { level: "LV 1", name: "美人魚 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】您的財富正在起飛！", reqCount: "累計送出 100 個", img: "images/Love_Wishing_Well/LV1.png" }
+                { level: "LV 0", name: "美人魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】很高門檻的起點！", reqCount: "0 個 (初始解鎖)", img: "images/Mermaid/LV0.png" },
+                { level: "LV 1", name: "美人魚 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】您的財富正在起飛！", reqCount: "累計送出 20 個", img: "images/Mermaid/LV1.png" }
             ]
         },
 		Dreamy_Unicorn: { // 夢幻獨角獸
