@@ -34,7 +34,7 @@
             position: relative;
         }
 
-        /* 頂部 Tab 切換按鈕區 */
+        /* 頂部 Tab 切換區 */
         .nav-tabs {
             display: flex;
             gap: 10px;
@@ -137,20 +137,45 @@
             pointer-events: none;
         }
 
-        /* 活動說明廣播框 */
-        .activity-box {
-            background: rgba(69, 162, 158, 0.1);
-            border: 1px dashed #45a29e;
-            border-radius: 6px;
-            padding: 8px 12px;
-            font-size: 12px;
-            color: #66fcf1;
+        /* 隨機袋頂部資訊卡 (活動說明與單次金額) */
+        .bag-info-panel {
+            background: rgba(31, 40, 51, 0.9);
+            border: 1px solid #c5a059;
+            border-radius: 8px;
+            padding: 12px;
             margin-bottom: 15px;
-            line-height: 1.4;
-            display: none; /* 僅在隨機袋模式啟用 */
+            display: none;
         }
 
-        /* 卡片展示區 */
+        .bag-info-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+        }
+
+        .bag-info-title {
+            color: #e67e22;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .bag-info-price {
+            color: #f39c12;
+            font-size: 14px;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
+        }
+
+        .bag-info-desc {
+            font-size: 12px;
+            color: #66fcf1;
+            line-height: 1.5;
+        }
+
+        /* 1. 單張卡片展示 (升級禮模式專用) */
         .card-frame {
             position: relative;
             background: #151a21;
@@ -207,7 +232,6 @@
             line-height: 1.4;
         }
 
-        /* 屬性資訊欄 */
         .req-container {
             margin: 6px 0;
             background: rgba(31, 40, 51, 0.8);
@@ -246,10 +270,10 @@
             text-shadow: 0 0 6px rgba(243, 156, 18, 0.6);
         }
 
-        /* 等級 / 獎項按鈕列 */
+        /* 升級禮 LV 切換按鈕區 */
         .level-selector {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
             gap: 6px;
             margin-top: 15px;
         }
@@ -271,6 +295,79 @@
             background: #c5a059;
             color: #0b0c10;
             box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
+        }
+
+        /* 2. 隨機袋獎品平鋪列表 (隨機袋模式專用) */
+        .bag-items-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            display: none;
+        }
+
+        .bag-item-card {
+            background: #151a21;
+            border: 1.5px solid #45a29e;
+            border-radius: 8px;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+        }
+
+        .bag-item-tag {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            background: #e74c3c;
+            color: #fff;
+            padding: 2px 6px;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 4px;
+        }
+
+        .bag-item-img {
+            width: 75px;
+            height: 75px;
+            border-radius: 6px;
+            border: 2px solid #f1c40f;
+            object-fit: cover;
+            background-color: #000;
+            flex-shrink: 0;
+        }
+
+        .bag-item-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            padding-right: 50px; /* 避免擋到右上的 Tag */
+        }
+
+        .bag-item-name {
+            font-size: 15px;
+            font-weight: bold;
+            color: #66fcf1;
+        }
+
+        .bag-item-rarity {
+            font-size: 11px;
+            color: #e74c3c;
+        }
+
+        .bag-item-desc {
+            font-size: 11px;
+            color: #c5a059;
+            line-height: 1.3;
+        }
+
+        .bag-item-value {
+            font-size: 12px;
+            color: #f1c40f;
+            font-weight: bold;
+            margin-top: 2px;
         }
 
         /* 免責聲明頁尾 (使用標楷體) */
@@ -348,33 +445,41 @@
         </select>
     </div>
 
-    <!-- 活動說明區塊 (隨機袋模式專用) -->
-    <div class="activity-box" id="activityBox">
-        <span id="activityDesc">活動說明...</span>
+    <!-- 隨機袋頂部說明區塊 -->
+    <div class="bag-info-panel" id="bagInfoPanel">
+        <div class="bag-info-header">
+            <span class="bag-info-title">❖ 活動內容說明</span>
+            <span class="bag-info-price" id="bagPrice">300 寶寶幣 / 次</span>
+        </div>
+        <div class="bag-info-desc" id="bagDesc">活動說明...</div>
     </div>
 
-    <!-- 主展示卡片 -->
-    <div class="card-frame">
-        <div class="card-rarity" id="giftRarity">★☆☆☆☆</div>
-        <img src="" alt="圖示" class="card-image" id="giftImg">
-        <div class="card-name" id="giftName">載入中...</div>
-        <div class="card-desc" id="giftDesc">請稍候...</div>
+    <!-- [模式 A] 升級禮主展示卡片 -->
+    <div id="giftDisplayArea">
+        <div class="card-frame">
+            <div class="card-rarity" id="giftRarity">★☆☆☆☆</div>
+            <img src="" alt="圖示" class="card-image" id="giftImg">
+            <div class="card-name" id="giftName">載入中...</div>
+            <div class="card-desc" id="giftDesc">請稍候...</div>
 
-        <!-- 變動標籤 (升級數量 / 獎項額度) -->
-        <div class="req-container">
-            <span class="req-label" id="reqCountLabel">解鎖所需禮物數量：</span>
-            <span class="req-value" id="reqCount">0 個</span>
+            <div class="req-container">
+                <span class="req-label">解鎖所需禮物數量：</span>
+                <span class="req-value" id="reqCount">0 個</span>
+            </div>
+
+            <div class="req-container total-coins">
+                <span class="req-label">滿級總計需要：</span>
+                <span class="req-value" id="maxCoins">計算中...</span>
+            </div>
         </div>
 
-        <!-- 固定標籤 (滿級所需 / 單次金額) -->
-        <div class="req-container total-coins">
-            <span class="req-label" id="maxCoinsLabel">滿級總計需要：</span>
-            <span class="req-value" id="maxCoins">計算中...</span>
-        </div>
+        <div class="level-selector" id="levelSelector"></div>
     </div>
 
-    <!-- 等級/獎項按鈕列 -->
-    <div class="level-selector" id="levelSelector"></div>
+    <!-- [模式 B] 隨機袋獎品平鋪列表 -->
+    <div class="bag-items-grid" id="bagItemsGrid">
+        <!-- JS 動態渲染所有獎項卡片 -->
+    </div>
 
     <!-- 頁尾標楷體免責聲明 -->
     <div class="dex-footer">
@@ -406,21 +511,23 @@
         document.getElementById("tabGifts").classList.toggle("active", mode === 'gifts');
         document.getElementById("tabBags").classList.toggle("active", mode === 'bags');
 
-        const activityBox = document.getElementById("activityBox");
+        const giftDisplayArea = document.getElementById("giftDisplayArea");
+        const bagInfoPanel = document.getElementById("bagInfoPanel");
+        const bagItemsGrid = document.getElementById("bagItemsGrid");
 
         if (mode === 'gifts') {
             document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
-            document.getElementById("reqCountLabel").innerText = "解鎖所需禮物數量：";
-            document.getElementById("maxCoinsLabel").innerText = "滿級總計需要：";
-            activityBox.style.display = "none";
+            giftDisplayArea.style.display = "block";
+            bagInfoPanel.style.display = "none";
+            bagItemsGrid.style.display = "none";
 
             const db = typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
         } else {
             document.getElementById("pageTitle").innerText = "17LIVE 隨機袋獎勵圖鑑";
-            document.getElementById("reqCountLabel").innerText = "內容獎額 / 價值：";
-            document.getElementById("maxCoinsLabel").innerText = "單次開袋金額：";
-            activityBox.style.display = "block";
+            giftDisplayArea.style.display = "none";
+            bagInfoPanel.style.display = "block";
+            bagItemsGrid.style.display = "flex";
 
             const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
@@ -433,11 +540,9 @@
     }
 
     function getCurrentDatabase() {
-        if (currentMode === 'gifts') {
-            return typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
-        } else {
-            return typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
-        }
+        return currentMode === 'gifts' 
+            ? (typeof giftsDatabase !== "undefined" ? giftsDatabase : {})
+            : (typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {});
     }
 
     function renderMainMenu() {
@@ -467,18 +572,49 @@
             giftSelect.value = giftKey;
         }
 
-        const giftData = activeDB[currentGiftKey];
-        if (giftData) {
-            document.getElementById("maxCoins").innerText = giftData.maxCoins || "尚未計算";
-            if (currentMode === 'bags') {
-                document.getElementById("activityDesc").innerText = giftData.activityDesc || "暫無活動說明。";
-            }
-        }
+        const data = activeDB[currentGiftKey];
+        if (!data) return;
 
-        renderLevelButtons();
-        selectLevel(0);
+        if (currentMode === 'gifts') {
+            document.getElementById("maxCoins").innerText = data.maxCoins || "尚未計算";
+            renderLevelButtons();
+            selectLevel(0);
+        } else {
+            // 渲染隨機袋模式
+            document.getElementById("bagPrice").innerText = data.maxCoins || "單次金額未定";
+            document.getElementById("bagDesc").innerText = data.activityDesc || "暫無活動說明。";
+            renderBagItems(data.items || data.levels || []);
+        }
     }
 
+    // 隨機袋：一次性平鋪渲染所有獎項
+    function renderBagItems(items) {
+        const bagItemsGrid = document.getElementById("bagItemsGrid");
+        if (!bagItemsGrid) return;
+        bagItemsGrid.innerHTML = "";
+
+        items.forEach(item => {
+            const card = document.createElement("div");
+            card.className = "bag-item-card";
+
+            const reqText = item.reward ? `獎額：${item.reward}` : (item.reqCount ? `額度：${item.reqCount}` : "");
+            const chanceText = item.chance ? ` (${item.chance})` : "";
+
+            card.innerHTML = `
+                <div class="bag-item-tag">${item.tag || item.level || '獎項'}</div>
+                <img class="bag-item-img" src="${item.img}" alt="${item.name}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'75\' height=\'75\' viewBox=\'0 0 75 75\'><rect width=\'100%\' height=\'100%\' fill=\'%23151a21\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23f1c40f\' font-size=\'12\'>圖案預覽</text></svg>'">
+                <div class="bag-item-info">
+                    <div class="bag-item-name">${item.name}</div>
+                    <div class="bag-item-rarity">${item.rarity || ''}</div>
+                    <div class="bag-item-desc">${item.desc || ''}</div>
+                    <div class="bag-item-value">${reqText}${chanceText}</div>
+                </div>
+            `;
+            bagItemsGrid.appendChild(card);
+        });
+    }
+
+    // 升級禮：渲染等級按鈕
     function renderLevelButtons() {
         const levelSelector = document.getElementById("levelSelector");
         if (!levelSelector) return;
@@ -490,12 +626,13 @@
         levels.forEach((lvlData, index) => {
             const btn = document.createElement("button");
             btn.className = "lvl-btn";
-            btn.innerText = lvlData.level; // 顯示：保底獎 / 次高獎 / 頭獎 等名稱
+            btn.innerText = lvlData.level;
             btn.onclick = () => selectLevel(index);
             levelSelector.appendChild(btn);
         });
     }
 
+    // 升級禮：切換等級內容
     function selectLevel(index) {
         const activeDB = getCurrentDatabase();
         const data = activeDB[currentGiftKey]?.levels[index];
