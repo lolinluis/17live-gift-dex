@@ -137,45 +137,53 @@
             pointer-events: none;
         }
 
-        /* 隨機袋頂部資訊卡 (活動說明與單次金額) */
-        .bag-info-panel {
-            background: rgba(31, 40, 51, 0.9);
-            border: 1px solid #c5a059;
+        /* 隨機袋頂部主圖面板 */
+        .bag-hero-panel {
+            background: #151a21;
+            border: 2px solid #45a29e;
             border-radius: 8px;
-            padding: 12px;
+            padding: 15px;
+            text-align: center;
             margin-bottom: 15px;
             display: none;
         }
 
-        .bag-info-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid rgba(197, 160, 89, 0.3);
-            padding-bottom: 8px;
-            margin-bottom: 8px;
+        .bag-main-img {
+            width: 100%;
+            max-width: 180px;
+            height: 180px;
+            margin: 0 auto 12px auto;
+            border-radius: 8px;
+            border: 3px solid #f1c40f;
+            box-shadow: 0 0 15px rgba(241, 196, 15, 0.5);
+            object-fit: cover;
+            background-color: #000;
+            display: block;
         }
 
-        .bag-info-title {
-            color: #e67e22;
-            font-size: 14px;
-            font-weight: bold;
-        }
-
-        .bag-info-price {
-            color: #f39c12;
-            font-size: 14px;
-            font-weight: bold;
-            text-shadow: 0 0 5px rgba(243, 156, 18, 0.5);
-        }
-
-        .bag-info-desc {
+        .bag-desc-box {
+            background: rgba(31, 40, 51, 0.8);
+            border: 1px dashed #45a29e;
+            border-radius: 6px;
+            padding: 10px;
             font-size: 12px;
             color: #66fcf1;
             line-height: 1.5;
+            margin-bottom: 8px;
+            text-align: left;
         }
 
-        /* 1. 單張卡片展示 (升級禮模式專用) */
+        .bag-price-container {
+            background: rgba(243, 156, 18, 0.1);
+            border: 1px solid #f39c12;
+            border-radius: 6px;
+            padding: 8px 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* 升級禮卡片展示區 (升級禮模式專用) */
         .card-frame {
             position: relative;
             background: #151a21;
@@ -270,7 +278,6 @@
             text-shadow: 0 0 6px rgba(243, 156, 18, 0.6);
         }
 
-        /* 升級禮 LV 切換按鈕區 */
         .level-selector {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
@@ -297,57 +304,48 @@
             box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
         }
 
-        /* 2. 隨機袋獎品平鋪列表 (隨機袋模式專用) */
+        /* 隨機袋無圖純文字獎項列表 */
         .bag-items-grid {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 8px;
             display: none;
         }
 
         .bag-item-card {
             background: #151a21;
-            border: 1.5px solid #45a29e;
-            border-radius: 8px;
-            padding: 12px;
+            border: 1px solid #45a29e;
+            border-radius: 6px;
+            padding: 10px 12px;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 12px;
             position: relative;
         }
 
-        .bag-item-tag {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            background: #e74c3c;
-            color: #fff;
-            padding: 2px 6px;
-            font-size: 11px;
-            font-weight: bold;
-            border-radius: 4px;
-        }
-
-        .bag-item-img {
-            width: 75px;
-            height: 75px;
-            border-radius: 6px;
-            border: 2px solid #f1c40f;
-            object-fit: cover;
-            background-color: #000;
-            flex-shrink: 0;
-        }
-
-        .bag-item-info {
-            flex: 1;
+        .bag-item-left {
             display: flex;
             flex-direction: column;
-            gap: 4px;
-            padding-right: 50px; /* 避免擋到右上的 Tag */
+            gap: 3px;
+        }
+
+        .bag-item-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .bag-item-tag {
+            background: #e74c3c;
+            color: #fff;
+            padding: 1px 6px;
+            font-size: 10px;
+            font-weight: bold;
+            border-radius: 3px;
         }
 
         .bag-item-name {
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
             color: #66fcf1;
         }
@@ -360,14 +358,18 @@
         .bag-item-desc {
             font-size: 11px;
             color: #c5a059;
-            line-height: 1.3;
+        }
+
+        .bag-item-right {
+            text-align: right;
+            flex-shrink: 0;
         }
 
         .bag-item-value {
-            font-size: 12px;
+            font-size: 13px;
             color: #f1c40f;
             font-weight: bold;
-            margin-top: 2px;
+            text-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
         }
 
         /* 免責聲明頁尾 (使用標楷體) */
@@ -445,16 +447,17 @@
         </select>
     </div>
 
-    <!-- 隨機袋頂部說明區塊 -->
-    <div class="bag-info-panel" id="bagInfoPanel">
-        <div class="bag-info-header">
-            <span class="bag-info-title">❖ 活動內容說明</span>
-            <span class="bag-info-price" id="bagPrice">300 寶寶幣 / 次</span>
+    <!-- [隨機袋模式] 頂部隨機袋主圖與說明面板 -->
+    <div class="bag-hero-panel" id="bagHeroPanel">
+        <img class="bag-main-img" id="bagMainImg" src="" alt="隨機袋圖示">
+        <div class="bag-desc-box" id="bagDesc">活動說明...</div>
+        <div class="bag-price-container">
+            <span class="req-label" style="color:#e67e22;">單次開袋金額：</span>
+            <span class="req-value" id="bagPrice">300 寶寶幣 / 次</span>
         </div>
-        <div class="bag-info-desc" id="bagDesc">活動說明...</div>
     </div>
 
-    <!-- [模式 A] 升級禮主展示卡片 -->
+    <!-- [升級禮模式] 主展示卡片 -->
     <div id="giftDisplayArea">
         <div class="card-frame">
             <div class="card-rarity" id="giftRarity">★☆☆☆☆</div>
@@ -476,9 +479,9 @@
         <div class="level-selector" id="levelSelector"></div>
     </div>
 
-    <!-- [模式 B] 隨機袋獎品平鋪列表 -->
+    <!-- [隨機袋模式] 無圖純文字獎項平鋪列表 -->
     <div class="bag-items-grid" id="bagItemsGrid">
-        <!-- JS 動態渲染所有獎項卡片 -->
+        <!-- JS 動態渲染所有獎項列表 -->
     </div>
 
     <!-- 頁尾標楷體免責聲明 -->
@@ -512,13 +515,13 @@
         document.getElementById("tabBags").classList.toggle("active", mode === 'bags');
 
         const giftDisplayArea = document.getElementById("giftDisplayArea");
-        const bagInfoPanel = document.getElementById("bagInfoPanel");
+        const bagHeroPanel = document.getElementById("bagHeroPanel");
         const bagItemsGrid = document.getElementById("bagItemsGrid");
 
         if (mode === 'gifts') {
             document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
             giftDisplayArea.style.display = "block";
-            bagInfoPanel.style.display = "none";
+            bagHeroPanel.style.display = "none";
             bagItemsGrid.style.display = "none";
 
             const db = typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
@@ -526,7 +529,7 @@
         } else {
             document.getElementById("pageTitle").innerText = "17LIVE 隨機袋獎勵圖鑑";
             giftDisplayArea.style.display = "none";
-            bagInfoPanel.style.display = "block";
+            bagHeroPanel.style.display = "block";
             bagItemsGrid.style.display = "flex";
 
             const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
@@ -580,14 +583,25 @@
             renderLevelButtons();
             selectLevel(0);
         } else {
-            // 渲染隨機袋模式
+            // 隨機袋模式：設定主圖、價格與活動說明
             document.getElementById("bagPrice").innerText = data.maxCoins || "單次金額未定";
             document.getElementById("bagDesc").innerText = data.activityDesc || "暫無活動說明。";
+
+            const bagImgEl = document.getElementById("bagMainImg");
+            if (bagImgEl) {
+                bagImgEl.onerror = function() {
+                    this.onerror = null;
+                    const encodedText = encodeURIComponent(data.title || "隨機袋");
+                    this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><rect width="100%" height="100%" fill="%23151a21"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23f1c40f" font-size="16" font-weight="bold">${encodedText}</text></svg>`;
+                };
+                bagImgEl.src = data.img || "";
+            }
+
             renderBagItems(data.items || data.levels || []);
         }
     }
 
-    // 隨機袋：一次性平鋪渲染所有獎項
+    // 隨機袋：純文字卡片平鋪列表
     function renderBagItems(items) {
         const bagItemsGrid = document.getElementById("bagItemsGrid");
         if (!bagItemsGrid) return;
@@ -597,17 +611,19 @@
             const card = document.createElement("div");
             card.className = "bag-item-card";
 
-            const reqText = item.reward ? `獎額：${item.reward}` : (item.reqCount ? `額度：${item.reqCount}` : "");
-            const chanceText = item.chance ? ` (${item.chance})` : "";
+            const reqText = item.reward || item.reqCount || "無備註";
 
             card.innerHTML = `
-                <div class="bag-item-tag">${item.tag || item.level || '獎項'}</div>
-                <img class="bag-item-img" src="${item.img}" alt="${item.name}" onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'75\' height=\'75\' viewBox=\'0 0 75 75\'><rect width=\'100%\' height=\'100%\' fill=\'%23151a21\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23f1c40f\' font-size=\'12\'>圖案預覽</text></svg>'">
-                <div class="bag-item-info">
-                    <div class="bag-item-name">${item.name}</div>
-                    <div class="bag-item-rarity">${item.rarity || ''}</div>
+                <div class="bag-item-left">
+                    <div class="bag-item-header">
+                        <span class="bag-item-tag">${item.tag || item.level || '獎項'}</span>
+                        <span class="bag-item-name">${item.name}</span>
+                        <span class="bag-item-rarity">${item.rarity || ''}</span>
+                    </div>
                     <div class="bag-item-desc">${item.desc || ''}</div>
-                    <div class="bag-item-value">${reqText}${chanceText}</div>
+                </div>
+                <div class="bag-item-right">
+                    <div class="bag-item-value">${reqText}</div>
                 </div>
             `;
             bagItemsGrid.appendChild(card);
