@@ -5,8 +5,11 @@
 // 協作者資料名單 (可自由增減)
 const collaborators = [
         { name: "LolinLuis", url: "https://github.com/lolinluis" },
+		{ name: "小兔寶寶🐰", url: "https://17.live/zh-Hant/profile/u/3fb7b701-aea3-40eb-ac86-9f31b703c33c" }
 		{ name: "🎀伊娜いな", url: "https://17.live/zh-Hant/profile/u/ae0a569d-23ff-4f7d-b577-e955028ead32" },
-		{ name: "🍋Nicksie🍋", url: "Https://17.live/s/u/8c195fe6-5882-4517-8104-27b670b224f5" }
+		{ name: "🍋Nicksie🍋", url: "https://17.live/s/u/8c195fe6-5882-4517-8104-27b670b224f5" },
+		{ name: "白玉🖤", url: "https://17.live/zh-Hant/profile/u/3d07d8f2-08ce-47c7-8c0f-57dc5b770980" },
+		{ name: "希璐🤍", url: "https://17.live/zh-Hant/profile/u/a4c34c25-9d7d-4b13-bc1c-beba621813c3" }
 ];
 
 // 禮物資料庫 (完整資料)
@@ -114,7 +117,7 @@ banquet: { // 慶生大辦桌
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "巧克力 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/chocolate/LV0.png" },
-                { level: "LV 1", name: "巧克力 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/chocolate/LV1.png" },
+                { level: "LV 1", name: "巧克力 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/chocolate/LV1.png" },
                 { level: "LV 2", name: "巧克力 LV2", rarity: "★★☆☆☆", desc: "【活力型態】", reqCount: "累計送出 ?? 個", img: "images/chocolate/LV2.png" },
                 { level: "LV 3", name: "巧克力 LV3(MAX)", rarity: "★★★☆☆", desc: "【終極型態】", reqCount: "累計送出 ?? 個 (MAX)", img: "images/chocolate/LV3.png" }
             ]
@@ -188,14 +191,14 @@ banquet: { // 慶生大辦桌
                 { level: "LV 3", name: "魚 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1000 個", img: "images/fish/LV3.png" }
             ]
         },
-        blackpanther: { // 神秘黑豹
-            title: "神秘黑豹 (10幣)",
+        blackpanther: { // 神獸黑豹
+            title: "神獸黑豹 (10幣)",
             maxCoins: "5,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "神秘黑豹 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/blackpanther/LV0.png" },
-                { level: "LV 1", name: "神秘黑豹 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/blackpanther/LV1.png" },
-                { level: "LV 2", name: "神秘黑豹 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 200 個", img: "images/blackpanther/LV2.png" },
-                { level: "LV 3", name: "神秘黑豹 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/blackpanther/LV3.png" }
+                { level: "LV 0", name: "神獸黑豹 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/blackpanther/LV0.png" },
+                { level: "LV 1", name: "神獸黑豹 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 20 個", img: "images/blackpanther/LV1.png" },
+                { level: "LV 2", name: "神獸黑豹 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 200 個", img: "images/blackpanther/LV2.png" },
+                { level: "LV 3", name: "神獸黑豹 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/blackpanther/LV3.png" }
             ]
         },
         ghost: { // 阿飄
@@ -203,7 +206,7 @@ banquet: { // 慶生大辦桌
             maxCoins: "15,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "阿飄 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/ghost/LV0.png" },
-                { level: "LV 1", name: "阿飄 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/ghost/LV1.png" },
+                { level: "LV 1", name: "阿飄 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/ghost/LV1.png" },
                 { level: "LV 2", name: "阿飄 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/ghost/LV2.png" },
                 { level: "LV 3", name: "阿飄 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1500 個", img: "images/ghost/LV3.png" }
             ]
@@ -293,7 +296,7 @@ banquet: { // 慶生大辦桌
             maxCoins: "9,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "我的家 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/myhome/LV0.png" },
-                { level: "LV 1", name: "我的家 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/myhome/LV1.png" },
+                { level: "LV 1", name: "我的家 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/myhome/LV1.png" },
                 { level: "LV 2", name: "我的家 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/myhome/LV2.png" },
                 { level: "LV 3", name: "我的家 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 300 個", img: "images/myhome/LV3.png" }
             ]
@@ -457,12 +460,40 @@ banquet: { // 慶生大辦桌
                 { level: "LV 1", name: "愛情許願池 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】您的財富正在起飛！", reqCount: "累計送出 100 個", img: "images/Love_Wishing_Well/LV1.png" }
             ]
         },
+		Dont_Eat_Bunny: { // 不可以吃兔兔
+            title: "不可以吃兔兔 (200幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "不可以吃兔兔 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Dont_Eat_Bunny/LV0.png" },
+                { level: "LV 1", name: "不可以吃兔兔 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Dont_Eat_Bunny/LV1.png" },
+				{ level: "LV 2", name: "不可以吃兔兔 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/Dont_Eat_Bunny/LV2.png" },
+				{ level: "LV 2", name: "不可以吃兔兔 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 270 個", img: "images/Dont_Eat_Bunny/LV3.png" }
+            ]
+        },
 		Love_Wishing_Well: { // 美人魚
             title: "美人魚 (700幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "美人魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】很高門檻的起點！", reqCount: "0 個 (初始解鎖)", img: "images/Love_Wishing_Well/LV0.png" },
                 { level: "LV 1", name: "美人魚 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】您的財富正在起飛！", reqCount: "累計送出 100 個", img: "images/Love_Wishing_Well/LV1.png" }
+            ]
+        },
+		Dreamy_Unicorn: { // 夢幻獨角獸
+            title: "夢幻獨角獸 (700幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "夢幻獨角獸 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Dreamy_Unicorn/LV0.png" },
+                { level: "LV 1", name: "夢幻獨角獸 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/Dreamy_Unicorn/LV1.png" }
+            ]
+        },
+		Bunny_Adorable: { // 兔兔惹人愛
+            title: "兔兔惹人愛 (250幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "兔兔惹人愛 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/Bunny_Adorable/LV0.png" },
+                { level: "LV 1", name: "兔兔惹人愛 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 10 個", img: "images/Bunny_Adorable/LV1.png" },
+				{ level: "LV 2", name: "兔兔惹人愛 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Bunny_Adorable/LV2.png" },
+				{ level: "LV 3", name: "兔兔惹人愛 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/Bunny_Adorable/LV3.png" }
             ]
         },		
         crown: { // 鑽石皇冠
