@@ -126,7 +126,7 @@ const mysteryBagsDatabase = {
     Golden_Treasure: { //17黃金寶藏
         title: "17黃金寶藏(3,888幣/次)",
         maxCoins: "3,888 寶寶幣 / 次",
-		img: "images/bags/Lucky_Tumbler/01.png",
+		img: "images/bags/Golden_Treasure/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "3D愛你更久 (20倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "77,000寶寶幣"},
