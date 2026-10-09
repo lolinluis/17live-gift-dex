@@ -42,6 +42,20 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "閃耀金幣 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "1,100 寶寶幣"}
         ]
     },
+    Versatile_Magician_Small: { //百變魔術師包你小賺
+        title: "百變魔術師包你小賺(1,000幣/次)",
+        maxCoins: "1,000 寶寶幣 / 次",
+		img: "images/bags/Versatile_Magician_Small/01.png",
+        activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
+        items: [
+            {tag: "頭獎",name: "沖天煙火 (100倍)",rarity: "★★★★★",desc: "【超稀有】100倍大獎，觸發跑馬燈全區播報",reward: "100,000 寶寶幣"},
+            {tag: "二獎",name: "金條海洋 (2倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "2,000 寶寶幣"},
+			{tag: "三獎",name: "金幣海 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "1,300 寶寶幣"},
+			{tag: "四獎",name: "金雨 (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "1,200 寶寶幣"},
+			{tag: "普獎",name: "做鬼臉 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "1,100 寶寶幣"},
+            {tag: "普獎",name: "閃耀金幣 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "1,100 寶寶幣"}
+        ]
+    },	
     Summon_Divine_Beast: { //神獸召喚
         title: "神獸召喚(900幣/次)",
         maxCoins: "900 寶寶幣 / 次",
@@ -99,15 +113,42 @@ const mysteryBagsDatabase = {
 		img: "images/bags/MagicLamp/01.png",
         activityDesc: "【神燈降臨活動】開袋有機會獲得高倍率獎勵分數，觸發巨鯨動畫！",
         items: [
-			{tag: "頭獎",name: "白鯨",rarity: "★★★★★",desc: "【超稀有】觸發全螢幕白鯨動畫與全區播報",reward: "6,000 寶寶幣"},
-			{tag: "二獎",name: "魔法鑽戒",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "800 寶寶幣"},
-			{tag: "普獎",name: "月兔",rarity: "★★☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "300 寶寶幣"},
-			{tag: "普獎",name: "夢幻愛心",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "150 寶寶幣"},
-			{tag: "普獎",name: "魔術鸚鵡",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "110 寶寶幣"} 
+			{tag: "頭獎",name: "白鯨 (20倍)",rarity: "★★★★★",desc: "【超稀有】觸發全螢幕白鯨動畫與全區播報",reward: "6,000 寶寶幣"},
+			{tag: "二獎",name: "遊樂園 (10倍)",rarity: "★★★★☆",desc: "【超稀有】觸發全螢幕白鯨動畫與全區播報",reward: "3,000 寶寶幣"},
+			{tag: "三獎",name: "馬車 (7倍)",rarity: "★★★☆☆",desc: "【超稀有】觸發全螢幕白鯨動畫與全區播報",reward: "2,000 寶寶幣"},
+			{tag: "四獎",name: "魔法鑽戒 (2.6倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "800 寶寶幣"},
+			{tag: "普獎",name: "月兔 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "300 寶寶幣"},
+			{tag: "普獎",name: "夢幻愛心 (0.5倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "150 寶寶幣"},
+			{tag: "普獎",name: "魔術鸚鵡 (0.3倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "110 寶寶幣"} 
         ]
     },
+	
+    Golden_Treasure: { //17黃金寶藏
+        title: "17黃金寶藏(3,888幣/次)",
+        maxCoins: "3,888 寶寶幣 / 次",
+		img: "images/bags/Lucky_Tumbler/01.png",
+        activityDesc: "常駐型隨機袋-非活動相關",
+        items: [
+            {tag: "頭獎",name: "3D愛你更久 (20倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "77,000寶寶幣"},
+			{tag: "二獎",name: "你是我的天使 (5倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "20,000 寶寶幣"},
+			{tag: "普獎",name: "送你飛吻 (0.4倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說再接再厲",reward: "1,499 寶寶幣"}
+        ]
+    },
+	
+    Lucky_Tumbler: { //開運不倒翁
+        title: "開運不倒翁(888幣/次)",
+        maxCoins: "888 寶寶幣 / 次",
+		img: "images/bags/Lucky_Tumbler/01.png",
+        activityDesc: "常駐型隨機袋-非活動相關",
+        items: [
+            {tag: "頭獎",name: "不倒翁疊疊樂 (19倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "16,888 寶寶幣"},
+			{tag: "二獎",name: "金色不倒翁 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運二獎獎勵",reward: "2,000 寶寶幣"},
+			{tag: "普獎",name: "??? (??倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "?? 寶寶幣"}
+        ]
+    },
+	
     Lucky_Mystery: { //開運隨機袋
-        title: "開運隨機袋",
+        title: "開運隨機袋(99幣/次)",
         maxCoins: "99 寶寶幣 / 次",
 		img: "images/bags/Lucky_Mystery/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
@@ -116,7 +157,9 @@ const mysteryBagsDatabase = {
 			{tag: "二獎",name: "姻緣線 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運二獎獎勵",reward: "199 寶寶幣"},
             {tag: "三獎",name: "桃花人緣小 (1倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "99 寶寶幣"},
             {tag: "四獎",name: "大貢香 (1倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "99 寶寶幣"},
-			{tag: "五獎",name: "隨喜香油 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "10 寶寶幣"}
+			{tag: "五獎",name: "招財進寶小 (0.9倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "88 寶寶幣"},
+			{tag: "普獎",name: "三柱清香 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】還是63多去拜拜吧",reward: "13 寶寶幣"},
+			{tag: "普獎",name: "隨喜香油 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "10 寶寶幣"}
         ]
     }	
 }
