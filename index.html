@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>17LIVE 升級禮物圖鑑 - 神魔風格版</title>
+    <title>17LIVE 升級禮與隨機袋圖鑑 - 神魔風格版</title>
     <style>
         * {
             box-sizing: border-box;
@@ -34,6 +34,38 @@
             position: relative;
         }
 
+        /* 頂部 Tab 切換按鈕區 */
+        .nav-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .tab-btn {
+            flex: 1;
+            padding: 10px 0;
+            background: #111;
+            border: 2px solid #c5a059;
+            color: #c5a059;
+            font-size: 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .tab-btn:hover {
+            background: rgba(197, 160, 89, 0.2);
+        }
+
+        .tab-btn.active {
+            background: linear-gradient(180deg, #c5a059 0%, #9e7d3b 100%);
+            color: #0b0c10;
+            border-color: #f1c40f;
+            box-shadow: 0 0 12px rgba(241, 196, 15, 0.6);
+        }
+
         /* 標題區塊 */
         .dex-header {
             text-align: center;
@@ -56,14 +88,13 @@
             margin-top: 4px;
         }
 
-        /* 下拉式選單區塊容器 */
+        /* 下拉選單區 */
         .gift-select-container {
             margin-bottom: 15px;
             position: relative;
             width: 100%;
         }
 
-        /* 下拉選單風格 (針對手機與神魔風格優化) */
         .gift-select {
             width: 100%;
             padding: 12px 15px;
@@ -95,7 +126,6 @@
             padding: 10px;
         }
 
-        /* 下拉選單右側金屬箭頭圖標 */
         .gift-select-container::after {
             content: "▼";
             font-size: 12px;
@@ -131,7 +161,6 @@
             z-index: 2;
         }
 
-        /* 方形卡片展示圖案樣式 */
         .card-image {
             width: 100%;
             max-width: 200px;
@@ -165,7 +194,7 @@
             line-height: 1.4;
         }
 
-        /* 升級資訊區塊 */
+        /* 升級與價格標籤 */
         .req-container {
             margin: 6px 0;
             background: rgba(31, 40, 51, 0.8);
@@ -204,10 +233,10 @@
             text-shadow: 0 0 6px rgba(243, 156, 18, 0.6);
         }
 
-        /* 等級選擇按鈕區 */
+        /* 等級 / 獎項按鈕列 */
         .level-selector {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
             gap: 6px;
             margin-top: 15px;
         }
@@ -231,19 +260,17 @@
             box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
         }
 
-        /* 免責聲明頁尾 */
-		.dex-footer {
-			margin-top: 20px;
-			padding-top: 12px;
-			border-top: 1px dashed rgba(197, 160, 89, 0.4);
-			text-align: center;
-			font-size: 12px; /* 標楷體字型較細，稍微放大 1px 會更清晰 */
-			color: #a0a0a0;
-			line-height: 1.6;
-
-		/* 💡 指定標楷體與跨平台楷體字型 */
-			font-family: "標楷體", "BiauKai", "DFKai-SB", "楷體", "STKaiti", "KaiTi", serif;
-		}
+        /* 免責聲明頁尾 (使用標楷體) */
+        .dex-footer {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px dashed rgba(197, 160, 89, 0.4);
+            text-align: center;
+            font-size: 12px;
+            color: #a0a0a0;
+            line-height: 1.6;
+            font-family: "標楷體", "BiauKai", "DFKai-SB", "楷體", "STKaiti", "KaiTi", serif;
+        }
 
         .collab-title {
             font-size: 12px;
@@ -252,6 +279,7 @@
             margin-bottom: 8px;
             font-weight: bold;
             letter-spacing: 1px;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
         }
 
         .collab-list {
@@ -259,6 +287,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 8px;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
         }
 
         .collab-badge {
@@ -287,44 +316,51 @@
 <body>
 
 <div class="dex-container">
+    <!-- 頂頁功能切換 Tabs -->
+    <div class="nav-tabs">
+        <button class="tab-btn active" id="tabGifts" onclick="switchMode('gifts')">升級禮圖鑑</button>
+        <button class="tab-btn" id="tabBags" onclick="switchMode('bags')">隨機袋圖鑑</button>
+    </div>
+
+    <!-- 標題區 -->
     <div class="dex-header">
-        <h1>17LIVE 升級禮進化圖鑑</h1>
+        <h1 id="pageTitle">17LIVE 升級禮進化圖鑑</h1>
         <div class="subtitle">(非官方 - 持續更新中)</div>
     </div>
 
-    <!-- 禮物類別下拉式選單 -->
+    <!-- 下拉選單 -->
     <div class="gift-select-container">
         <select class="gift-select" id="giftSelect" onchange="switchGift(this.value)">
-            <!-- 由 JS 動態生成選項 -->
+            <!-- JS 自動載入選項 -->
         </select>
     </div>
 
-    <!-- 主展示卡片 -->
+    <!-- 主卡片區 -->
     <div class="card-frame">
         <div class="card-rarity" id="giftRarity">★☆☆☆☆</div>
-        <img src="" alt="禮物圖示" class="card-image" id="giftImg">
+        <img src="" alt="圖示" class="card-image" id="giftImg">
         <div class="card-name" id="giftName">載入中...</div>
         <div class="card-desc" id="giftDesc">請稍候...</div>
 
-        <!-- 升級所需禮物數量 -->
+        <!-- 情況說明 1 -->
         <div class="req-container">
-            <span class="req-label">解鎖所需禮物數量：</span>
+            <span class="req-label" id="reqCountLabel">解鎖所需禮物數量：</span>
             <span class="req-value" id="reqCount">0 個</span>
         </div>
 
-        <!-- 滿級總計寶寶幣 -->
+        <!-- 情況說明 2 (價格/幣數) -->
         <div class="req-container total-coins">
-            <span class="req-label">滿級總計需要：</span>
+            <span class="req-label" id="maxCoinsLabel">滿級總計需要：</span>
             <span class="req-value" id="maxCoins">計算中...</span>
         </div>
     </div>
 
-    <!-- 進化等級切換按鈕區 -->
+    <!-- 等級按鈕區 -->
     <div class="level-selector" id="levelSelector"></div>
 
-    <!-- 頁尾免責聲明與協作者名單區塊 -->
+    <!-- 免責聲明頁尾 -->
     <div class="dex-footer">
-        【免責聲明】<br>
+	    【免責聲明】<br>
 		本頁面內容僅供玩家交流研討使用，並非營利目的。<br>
         相關圖像與資料版權皆屬 17LIVE 官方所有。<br><br>
 		【哪有賭徒天天輸，只有希璐天天哭。】 by 熊熊<br>
@@ -334,50 +370,65 @@
     </div>
 </div>
 
-<!-- 先載入資料庫，再執行介面渲染邏輯 -->
+<!-- 依序載入兩個獨立的資料檔 -->
 <script src="giftsData.js"></script>
+<script src="mysteryBagsData.js"></script>
 
 <script>
-    let currentGiftKey = 'banquet'; // 預設選取的禮物
+    let currentMode = 'gifts'; // 預設模式：'gifts' 或 'bags'
+    let currentGiftKey = '';
 
     function init() {
-        // 確保資料庫有成功載入
-        if (typeof giftsDatabase === "undefined") {
-            console.error("找不到 giftsDatabase，請確認 giftsData.js 檔案是否正確引入！");
-            return;
-        }
         renderCollaborators();
+        switchMode('gifts');
+    }
+
+    // 切換 升級禮 / 隨機袋 模式
+    function switchMode(mode) {
+        currentMode = mode;
+
+        document.getElementById("tabGifts").classList.toggle("active", mode === 'gifts');
+        document.getElementById("tabBags").classList.toggle("active", mode === 'bags');
+
+        if (mode === 'gifts') {
+            document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
+            document.getElementById("reqCountLabel").innerText = "解鎖所需禮物數量：";
+            document.getElementById("maxCoinsLabel").innerText = "滿級總計需要：";
+            const db = typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
+            currentGiftKey = Object.keys(db)[0] || '';
+        } else {
+            document.getElementById("pageTitle").innerText = "17LIVE 隨機袋獎勵圖鑑";
+            document.getElementById("reqCountLabel").innerText = "獎項獲得機率/備註：";
+            document.getElementById("maxCoinsLabel").innerText = "隨機袋單次價格：";
+            const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
+            currentGiftKey = Object.keys(db)[0] || '';
+        }
+
         renderMainMenu();
-        switchGift('banquet');
+        if (currentGiftKey) {
+            switchGift(currentGiftKey);
+        }
     }
 
-    // 動態渲染協作者名牌
-    function renderCollaborators() {
-        const collabList = document.getElementById("collabList");
-        if (!collabList || typeof collaborators === "undefined") return;
-        collabList.innerHTML = "";
-
-        collaborators.forEach(collab => {
-            const link = document.createElement("a");
-            link.className = "collab-badge";
-            link.href = collab.url;
-            link.target = "_blank";
-            link.rel = "noopener noreferrer";
-            link.innerText = collab.name;
-            collabList.appendChild(link);
-        });
+    function getCurrentDatabase() {
+        if (currentMode === 'gifts') {
+            return typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
+        } else {
+            return typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
+        }
     }
 
-    // 動態渲染下拉選單選項
     function renderMainMenu() {
         const giftSelect = document.getElementById("giftSelect");
         if (!giftSelect) return;
         giftSelect.innerHTML = "";
 
-        Object.keys(giftsDatabase).forEach(key => {
+        const activeDB = getCurrentDatabase();
+
+        Object.keys(activeDB).forEach(key => {
             const option = document.createElement("option");
             option.value = key;
-            option.innerText = giftsDatabase[key].title;
+            option.innerText = activeDB[key].title;
             if (key === currentGiftKey) {
                 option.selected = true;
             }
@@ -385,16 +436,16 @@
         });
     }
 
-    // 切換禮物主類別
     function switchGift(giftKey) {
         currentGiftKey = giftKey;
+        const activeDB = getCurrentDatabase();
 
         const giftSelect = document.getElementById("giftSelect");
         if (giftSelect && giftSelect.value !== giftKey) {
             giftSelect.value = giftKey;
         }
 
-        const giftData = giftsDatabase[currentGiftKey];
+        const giftData = activeDB[currentGiftKey];
         if (giftData) {
             document.getElementById("maxCoins").innerText = giftData.maxCoins || "尚未計算";
         }
@@ -403,13 +454,13 @@
         selectLevel(0);
     }
 
-    // 動態生成等級按鈕
     function renderLevelButtons() {
         const levelSelector = document.getElementById("levelSelector");
         if (!levelSelector) return;
         levelSelector.innerHTML = ""; 
 
-        const levels = giftsDatabase[currentGiftKey].levels;
+        const activeDB = getCurrentDatabase();
+        const levels = activeDB[currentGiftKey]?.levels || [];
 
         levels.forEach((lvlData, index) => {
             const btn = document.createElement("button");
@@ -420,9 +471,9 @@
         });
     }
 
-    // 切換等級
     function selectLevel(index) {
-        const data = giftsDatabase[currentGiftKey].levels[index];
+        const activeDB = getCurrentDatabase();
+        const data = activeDB[currentGiftKey]?.levels[index];
         if (!data) return;
 
         document.getElementById("giftName").innerText = data.name;
@@ -442,15 +493,26 @@
 
         const buttons = document.querySelectorAll('.lvl-btn');
         buttons.forEach((btn, i) => {
-            if (i === index) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
+            btn.classList.toggle('active', i === index);
         });
     }
 
-    // 安全初始化網頁
+    function renderCollaborators() {
+        const collabList = document.getElementById("collabList");
+        if (!collabList || typeof collaborators === "undefined") return;
+        collabList.innerHTML = "";
+
+        collaborators.forEach(collab => {
+            const link = document.createElement("a");
+            link.className = "collab-badge";
+            link.href = collab.url;
+            link.target = "_blank";
+            link.rel = "noopener noreferrer";
+            link.innerText = collab.name;
+            collabList.appendChild(link);
+        });
+    }
+
     if (document.readyState === "loading") {
         document.addEventListener("DOMContentLoaded", init);
     } else {
