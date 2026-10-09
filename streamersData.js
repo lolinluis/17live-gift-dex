@@ -15,7 +15,7 @@ const streamersDatabase = [
         date: "03/23",
         name: "💗Queenna🧜‍♀️娜娜💗",
         url: "https://17.live/zh-Hant/profile/u/5e3596b9-332c-4f53-bfb0-d146d2ffc71d",
-        intro: "雙魚座 / INFJ / 黑暗系瘋癲兇猛主播 / 現居高雄 "
+        intro: "牡羊座 / 唱歌扮裝 / 高顏值主播 "
     },
 
     {
