@@ -216,6 +216,16 @@
             color: #0b0c10;
             box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
         }
+		/* 免責聲明頁尾 */
+        .dex-footer {
+            margin-top: 20px;
+            padding-top: 12px;
+            border-top: 1px dashed rgba(197, 160, 89, 0.4);
+            text-align: center;
+            font-size: 11px;
+            color: #8892b0;
+            line-height: 1.5;
+        }			
     </style>
 </head>
 <body>
@@ -223,7 +233,7 @@
 <div class="dex-container">
     <div class="dex-header">
         <h1>17LIVE 升級禮進化圖鑑</h1>
-		<h1>(非官方-持續更新中)</h1>
+		<div class="subtitle">(非官方 - 持續更新中)</div>
     </div>
 
     <!-- 禮物類別主選單 (由 JS 自動生成) -->
@@ -245,6 +255,12 @@
 
     <!-- 進化等級切換按鈕區 (由 JS 動態生成) -->
     <div class="level-selector" id="levelSelector"></div>
+	
+	<!-- 頁尾免責聲明區塊 -->
+    <div class="dex-footer">
+        【免責聲明】本頁面內容僅供玩家交流研討使用，並無二次營利目的。<br>
+        相關圖像與資料版權皆屬 17LIVE 官方所有。
+    </div>
 </div>
 
 <script>
