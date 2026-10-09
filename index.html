@@ -90,7 +90,7 @@
 
         /* 下拉選單區 */
         .gift-select-container {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             position: relative;
             width: 100%;
         }
@@ -135,6 +135,19 @@
             top: 50%;
             transform: translateY(-50%);
             pointer-events: none;
+        }
+
+        /* 活動說明廣播框 */
+        .activity-box {
+            background: rgba(69, 162, 158, 0.1);
+            border: 1px dashed #45a29e;
+            border-radius: 6px;
+            padding: 8px 12px;
+            font-size: 12px;
+            color: #66fcf1;
+            margin-bottom: 15px;
+            line-height: 1.4;
+            display: none; /* 僅在隨機袋模式啟用 */
         }
 
         /* 卡片展示區 */
@@ -194,7 +207,7 @@
             line-height: 1.4;
         }
 
-        /* 升級與價格標籤 */
+        /* 屬性資訊欄 */
         .req-container {
             margin: 6px 0;
             background: rgba(31, 40, 51, 0.8);
@@ -236,7 +249,7 @@
         /* 等級 / 獎項按鈕列 */
         .level-selector {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(75px, 1fr));
             gap: 6px;
             margin-top: 15px;
         }
@@ -316,7 +329,7 @@
 <body>
 
 <div class="dex-container">
-    <!-- 頂頁功能切換 Tabs -->
+    <!-- 頂頁 Tab 頁籤 -->
     <div class="nav-tabs">
         <button class="tab-btn active" id="tabGifts" onclick="switchMode('gifts')">升級禮圖鑑</button>
         <button class="tab-btn" id="tabBags" onclick="switchMode('bags')">隨機袋圖鑑</button>
@@ -331,34 +344,39 @@
     <!-- 下拉選單 -->
     <div class="gift-select-container">
         <select class="gift-select" id="giftSelect" onchange="switchGift(this.value)">
-            <!-- JS 自動載入選項 -->
+            <!-- 由 JS 動態生成 -->
         </select>
     </div>
 
-    <!-- 主卡片區 -->
+    <!-- 活動說明區塊 (隨機袋模式專用) -->
+    <div class="activity-box" id="activityBox">
+        <span id="activityDesc">活動說明...</span>
+    </div>
+
+    <!-- 主展示卡片 -->
     <div class="card-frame">
         <div class="card-rarity" id="giftRarity">★☆☆☆☆</div>
         <img src="" alt="圖示" class="card-image" id="giftImg">
         <div class="card-name" id="giftName">載入中...</div>
         <div class="card-desc" id="giftDesc">請稍候...</div>
 
-        <!-- 情況說明 1 -->
+        <!-- 變動標籤 (升級數量 / 獎項額度) -->
         <div class="req-container">
             <span class="req-label" id="reqCountLabel">解鎖所需禮物數量：</span>
             <span class="req-value" id="reqCount">0 個</span>
         </div>
 
-        <!-- 情況說明 2 (價格/幣數) -->
+        <!-- 固定標籤 (滿級所需 / 單次金額) -->
         <div class="req-container total-coins">
             <span class="req-label" id="maxCoinsLabel">滿級總計需要：</span>
             <span class="req-value" id="maxCoins">計算中...</span>
         </div>
     </div>
 
-    <!-- 等級按鈕區 -->
+    <!-- 等級/獎項按鈕列 -->
     <div class="level-selector" id="levelSelector"></div>
 
-    <!-- 免責聲明頁尾 -->
+    <!-- 頁尾標楷體免責聲明 -->
     <div class="dex-footer">
 	    【免責聲明】<br>
 		本頁面內容僅供玩家交流研討使用，並非營利目的。<br>
@@ -370,12 +388,11 @@
     </div>
 </div>
 
-<!-- 依序載入兩個獨立的資料檔 -->
 <script src="giftsData.js"></script>
 <script src="mysteryBagsData.js"></script>
 
 <script>
-    let currentMode = 'gifts'; // 預設模式：'gifts' 或 'bags'
+    let currentMode = 'gifts'; 
     let currentGiftKey = '';
 
     function init() {
@@ -383,23 +400,28 @@
         switchMode('gifts');
     }
 
-    // 切換 升級禮 / 隨機袋 模式
     function switchMode(mode) {
         currentMode = mode;
 
         document.getElementById("tabGifts").classList.toggle("active", mode === 'gifts');
         document.getElementById("tabBags").classList.toggle("active", mode === 'bags');
 
+        const activityBox = document.getElementById("activityBox");
+
         if (mode === 'gifts') {
             document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
             document.getElementById("reqCountLabel").innerText = "解鎖所需禮物數量：";
             document.getElementById("maxCoinsLabel").innerText = "滿級總計需要：";
+            activityBox.style.display = "none";
+
             const db = typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
         } else {
             document.getElementById("pageTitle").innerText = "17LIVE 隨機袋獎勵圖鑑";
-            document.getElementById("reqCountLabel").innerText = "獎項獲得機率/備註：";
-            document.getElementById("maxCoinsLabel").innerText = "隨機袋單次價格：";
+            document.getElementById("reqCountLabel").innerText = "內容獎額 / 價值：";
+            document.getElementById("maxCoinsLabel").innerText = "單次開袋金額：";
+            activityBox.style.display = "block";
+
             const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
         }
@@ -448,6 +470,9 @@
         const giftData = activeDB[currentGiftKey];
         if (giftData) {
             document.getElementById("maxCoins").innerText = giftData.maxCoins || "尚未計算";
+            if (currentMode === 'bags') {
+                document.getElementById("activityDesc").innerText = giftData.activityDesc || "暫無活動說明。";
+            }
         }
 
         renderLevelButtons();
@@ -465,7 +490,7 @@
         levels.forEach((lvlData, index) => {
             const btn = document.createElement("button");
             btn.className = "lvl-btn";
-            btn.innerText = lvlData.level;
+            btn.innerText = lvlData.level; // 顯示：保底獎 / 次高獎 / 頭獎 等名稱
             btn.onclick = () => selectLevel(index);
             levelSelector.appendChild(btn);
         });
