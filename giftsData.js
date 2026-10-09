@@ -5,7 +5,7 @@
 // 協作者資料名單 (可自由增減)
 const collaborators = [
         { name: "LolinLuis", url: "https://github.com/lolinluis" },
-		{ name: "小兔寶寶🐰", url: "https://17.live/zh-Hant/profile/u/3fb7b701-aea3-40eb-ac86-9f31b703c33c" }
+		{ name: "小兔寶寶🐰", url: "https://17.live/zh-Hant/profile/u/3fb7b701-aea3-40eb-ac86-9f31b703c33c" },
 		{ name: "🎀伊娜いな", url: "https://17.live/zh-Hant/profile/u/ae0a569d-23ff-4f7d-b577-e955028ead32" },
 		{ name: "🍋Nicksie🍋", url: "https://17.live/s/u/8c195fe6-5882-4517-8104-27b670b224f5" },
 		{ name: "白玉🖤", url: "https://17.live/zh-Hant/profile/u/3d07d8f2-08ce-47c7-8c0f-57dc5b770980" },
