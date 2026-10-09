@@ -5,6 +5,13 @@
 const streamersDatabase = [
 
 	{
+        date: "01/24",
+        name: "小章魚🐙Taco",
+        url: "https://17.live/zh-Hant/profile/u/8f419271-3568-475c-5ea4-5dddfcf1f4c8",
+        intro: "水瓶座 / 多元禮物懲罰活動 / 外向主播 / 現居?? "
+    },
+	
+	{
         date: "02/22",
         name: "白玉🖤",
         url: "https://17.live/zh-Hant/profile/u/3d07d8f2-08ce-47c7-8c0f-57dc5b770980",
