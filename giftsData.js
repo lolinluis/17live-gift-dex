@@ -14,17 +14,17 @@ const collaborators = [
 
 // 禮物資料庫 (完整資料)
 const giftsDatabase = {
-banquet: { // 慶生大辦桌
+		Banquet: { // 慶生大辦桌
             title: "慶生大辦桌 (117幣)",
             maxCoins: "50,076 寶寶幣", // 自行輸入欄位
             levels: [
-                { level: "LV 0", name: "慶生大辦桌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】傳統紅圓桌與幾盤經典小菜。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/banquet/LV0.png" },
-                { level: "LV 1", name: "慶生大辦桌 LV1", rarity: "★★☆☆☆", desc: "【升級型態】稍等片刻~好菜準備上桌", reqCount: "累計送出 30 個", img: "images/upgrade_gift/banquet/LV1.png" },
-                { level: "LV 2", name: "慶生大辦桌 LV2", rarity: "★★☆☆☆", desc: "【升級型態】有飲料搭配的流水席！", reqCount: "累計送出 150 個", img: "images/upgrade_gift/banquet/LV2.png" },
-                { level: "LV 3", name: "慶生大辦桌 LV3", rarity: "★★★☆☆", desc: "【升級型態】坐滿人的流水席！", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/banquet/LV3.png" },
-                { level: "LV 4", name: "慶生大辦桌 LV4", rarity: "★★★☆☆", desc: "【華麗型態】人多多的大型流水席！", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/banquet/LV4.png" },
-                { level: "LV 5", name: "慶生大辦桌 LV5", rarity: "★★★☆☆", desc: "【華麗型態】擺上壽桃的大型流水席！", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/banquet/LV5.png" },
-                { level: "LV 6", name: "慶生大辦桌 LV6", rarity: "★★★★☆", desc: "【終極型態】金碧輝煌的巨型流水席，滿屏熱鬧煙火與熱烈慶祝動畫！", reqCount: "累計送出 428 個", img: "images/upgrade_gift/banquet/LV6.png" }
+                { level: "LV 0", name: "慶生大辦桌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】傳統紅圓桌與幾盤經典小菜。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Banquet/LV0.png" },
+                { level: "LV 1", name: "慶生大辦桌 LV1", rarity: "★★☆☆☆", desc: "【升級型態】稍等片刻~好菜準備上桌", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Banquet/LV1.png" },
+                { level: "LV 2", name: "慶生大辦桌 LV2", rarity: "★★☆☆☆", desc: "【升級型態】有飲料搭配的流水席！", reqCount: "累計送出 150 個", img: "images/upgrade_gift/Banquet/LV2.png" },
+                { level: "LV 3", name: "慶生大辦桌 LV3", rarity: "★★★☆☆", desc: "【升級型態】坐滿人的流水席！", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Banquet/LV3.png" },
+                { level: "LV 4", name: "慶生大辦桌 LV4", rarity: "★★★☆☆", desc: "【華麗型態】人多多的大型流水席！", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Banquet/LV4.png" },
+                { level: "LV 5", name: "慶生大辦桌 LV5", rarity: "★★★☆☆", desc: "【華麗型態】擺上壽桃的大型流水席！", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Banquet/LV5.png" },
+                { level: "LV 6", name: "慶生大辦桌 LV6", rarity: "★★★★☆", desc: "【終極型態】金碧輝煌的巨型流水席，滿屏熱鬧煙火與熱烈慶祝動畫！", reqCount: "累計送出 428 個", img: "images/upgrade_gift/Banquet/LV6.png" }
             ]
         },
         LoveYouMost: { // 堡證最愛你
@@ -37,89 +37,89 @@ banquet: { // 慶生大辦桌
                 { level: "LV 3", name: "堡證最愛你 LV3", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/LoveYouMost/LV3.png" }
             ]
         },
-        myburger: { // 你是我的堡
+        Myburger: { // 你是我的堡
             title: "你是我的堡 (52幣)",
             maxCoins: "51,948 寶寶幣",
             levels: [
-                { level: "LV 0", name: "你是我的堡(LV0)", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/myburger/LV0.png" },
-                { level: "LV 1", name: "你是我的堡(LV1)", rarity: "★★☆☆☆", desc: "【升級型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/myburger/LV1.png" },
-                { level: "LV 2", name: "你是我的堡(LV2)", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/myburger/LV2.png" },
-                { level: "LV 3", name: "你是我的堡(LV3)", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 999 個", img: "images/upgrade_gift/myburger/LV3.png" }
+                { level: "LV 0", name: "你是我的堡(LV0)", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Myburger/LV0.png" },
+                { level: "LV 1", name: "你是我的堡(LV1)", rarity: "★★☆☆☆", desc: "【升級型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Myburger/LV1.png" },
+                { level: "LV 2", name: "你是我的堡(LV2)", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Myburger/LV2.png" },
+                { level: "LV 3", name: "你是我的堡(LV3)", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 999 個", img: "images/upgrade_gift/Myburger/LV3.png" }
             ]
         },
-        capybara: { // 卡皮巴拉
+        Capybara: { // 卡皮巴拉
             title: "卡皮巴拉 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "水豚呆呆", rarity: "★☆☆☆☆", desc: "【基礎起點】頭頂著一顆橘子呆坐的水豚。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/capybara/LV0.png" },
-                { level: "LV 1", name: "泡湯卡皮巴拉", rarity: "★☆☆☆☆", desc: "【萌感升級】水豚舒適地泡在木桶溫泉中，冒出愛心蒸氣。", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/capybara/LV1.png" },
-                { level: "LV 2", name: "卡皮巴拉派對", rarity: "★★☆☆☆", desc: "【熱鬧型態】一群小水豚圍繞疊羅漢，解鎖歡樂疊疊樂動畫。", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/capybara/LV2.png" },
-                { level: "LV 3", name: "療癒水豚王國", rarity: "★★★☆☆", desc: "【終極型態】皇冠巨型水豚王者登場，滿屏療癒橘子雨與彩虹特效！", reqCount: "累計送出 ?? 個 (MAX)", img: "images/upgrade_gift/capybara/LV3.png" }
+                { level: "LV 0", name: "水豚呆呆", rarity: "★☆☆☆☆", desc: "【基礎起點】頭頂著一顆橘子呆坐的水豚。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Capybara/LV0.png" },
+                { level: "LV 1", name: "泡湯卡皮巴拉", rarity: "★☆☆☆☆", desc: "【萌感升級】水豚舒適地泡在木桶溫泉中，冒出愛心蒸氣。", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Capybara/LV1.png" },
+                { level: "LV 2", name: "卡皮巴拉派對", rarity: "★★☆☆☆", desc: "【熱鬧型態】一群小水豚圍繞疊羅漢，解鎖歡樂疊疊樂動畫。", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Capybara/LV2.png" },
+                { level: "LV 3", name: "療癒水豚王國", rarity: "★★★☆☆", desc: "【終極型態】皇冠巨型水豚王者登場，滿屏療癒橘子雨與彩虹特效！", reqCount: "累計送出 ?? 個 (MAX)", img: "images/upgrade_gift/Capybara/LV3.png" }
             ]
         },
-        princess: { // 甜美公主風
+        Princess: { // 甜美公主風
             title: "甜美公主風 (500幣)",
             maxCoins: "150,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "甜美公主風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】帶有粉色光芒的小巧蝴蝶結皇冠。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/princess/LV0.png" },
-                { level: "LV 1", name: "甜美公主風 LV1", rarity: "★★☆☆☆", desc: "【浪漫升級】華麗粉色蓬蓬裙，身邊圍繞飄落的花瓣。", reqCount: "累計送出 60 個", img: "images/upgrade_gift/princess/LV1.png" },
-                { level: "LV 2", name: "甜美公主風 LV2", rarity: "★★★☆☆", desc: "【夢幻型態】由白馬拉著粉色水晶馬車劃過夜空。", reqCount: "累計送出 140 個", img: "images/upgrade_gift/princess/LV2.png" },
-                { level: "LV 3", name: "甜美公主風 LV3", rarity: "★★★★☆", desc: "【終極型態】滿屏粉色浪漫櫻花雨與絕美夢幻城堡全景！", reqCount: "累計送出 300 個 (MAX)", img: "images/upgrade_gift/princess/LV3.png" }
+                { level: "LV 0", name: "甜美公主風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】帶有粉色光芒的小巧蝴蝶結皇冠。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Princess/LV0.png" },
+                { level: "LV 1", name: "甜美公主風 LV1", rarity: "★★☆☆☆", desc: "【浪漫升級】華麗粉色蓬蓬裙，身邊圍繞飄落的花瓣。", reqCount: "累計送出 60 個", img: "images/upgrade_gift/Princess/LV1.png" },
+                { level: "LV 2", name: "甜美公主風 LV2", rarity: "★★★☆☆", desc: "【夢幻型態】由白馬拉著粉色水晶馬車劃過夜空。", reqCount: "累計送出 140 個", img: "images/upgrade_gift/Princess/LV2.png" },
+                { level: "LV 3", name: "甜美公主風 LV3", rarity: "★★★★☆", desc: "【終極型態】滿屏粉色浪漫櫻花雨與絕美夢幻城堡全景！", reqCount: "累計送出 300 個 (MAX)", img: "images/upgrade_gift/Princess/LV3.png" }
             ]
         },
-        hotgirl: { // 性感辣妹風
+        Hotgirl: { // 性感辣妹風
             title: "性感辣妹風 (500幣)",
             maxCoins: "150,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "性感辣妹風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】微光耀眼的迪斯可鏡面球與斑駁光影。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/hotgirl/LV0.png" },
-                { level: "LV 1", name: "性感辣妹風 LV1", rarity: "★★☆☆☆", desc: "【動感升級】解鎖節奏光線與躍動的霓虹舞台。", reqCount: "累計送出 60 個", img: "images/upgrade_gift/hotgirl/LV1.png" },
-                { level: "LV 2", name: "性感辣妹風 LV2", rarity: "★★★☆☆", desc: "【熱辣型態】炫目跑車登場，伴隨引擎轟鳴與閃光燈光束。", reqCount: "累計送出 140 個", img: "images/upgrade_gift/hotgirl/LV2.png" },
-                { level: "LV 3", name: "性感辣妹風 LV3", rarity: "★★★★☆", desc: "【終極型態】震撼巨星演唱會舞台，全屏雷射光束與璀璨焰火狂歡！", reqCount: "累計送出 300 個 (MAX)", img: "images/upgrade_gift/hotgirl/LV3.png" }
+                { level: "LV 0", name: "性感辣妹風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】微光耀眼的迪斯可鏡面球與斑駁光影。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Hotgirl/LV0.png" },
+                { level: "LV 1", name: "性感辣妹風 LV1", rarity: "★★☆☆☆", desc: "【動感升級】解鎖節奏光線與躍動的霓虹舞台。", reqCount: "累計送出 60 個", img: "images/upgrade_gift/Hotgirl/LV1.png" },
+                { level: "LV 2", name: "性感辣妹風 LV2", rarity: "★★★☆☆", desc: "【熱辣型態】炫目跑車登場，伴隨引擎轟鳴與閃光燈光束。", reqCount: "累計送出 140 個", img: "images/upgrade_gift/Hotgirl/LV2.png" },
+                { level: "LV 3", name: "性感辣妹風 LV3", rarity: "★★★★☆", desc: "【終極型態】震撼巨星演唱會舞台，全屏雷射光束與璀璨焰火狂歡！", reqCount: "累計送出 300 個 (MAX)", img: "images/upgrade_gift/Hotgirl/LV3.png" }
             ]
         },
-        beach: { // 度假海灘風
+        Beach: { // 度假海灘風
             title: "度假海灘風 (500幣)",
             maxCoins: "150,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "度假海灘風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】插著小陽傘的鮮採冰鎮椰子汁。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/beach/LV0.png" },
-                { level: "LV 1", name: "度假海灘風 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】遮陽傘與沙灘躺椅，伴隨陣陣海浪聲。", reqCount: "累計送出 60 個", img: "images/upgrade_gift/beach/LV1.png" },
-                { level: "LV 2", name: "度假海灘風 LV2", rarity: "★★★☆☆", desc: "【活力型態】海豚跳躍與浪花朵朵，解鎖海島風情特效。", reqCount: "累計送出 140 個", img: "images/upgrade_gift/beach/LV2.png" },
-                { level: "LV 3", name: "度假海灘風 LV3", rarity: "★★★★☆", desc: "【終極型態】豪華遊艇馳騁於湛藍海洋，滿屏夕陽餘暉與海鷗翱翔！", reqCount: "累計送出 300 個 (MAX)", img: "images/upgrade_gift/beach/LV3.png" }
+                { level: "LV 0", name: "度假海灘風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】插著小陽傘的鮮採冰鎮椰子汁。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Beach/LV0.png" },
+                { level: "LV 1", name: "度假海灘風 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】遮陽傘與沙灘躺椅，伴隨陣陣海浪聲。", reqCount: "累計送出 60 個", img: "images/upgrade_gift/Beach/LV1.png" },
+                { level: "LV 2", name: "度假海灘風 LV2", rarity: "★★★☆☆", desc: "【活力型態】海豚跳躍與浪花朵朵，解鎖海島風情特效。", reqCount: "累計送出 140 個", img: "images/upgrade_gift/Beach/LV2.png" },
+                { level: "LV 3", name: "度假海灘風 LV3", rarity: "★★★★☆", desc: "【終極型態】豪華遊艇馳騁於湛藍海洋，滿屏夕陽餘暉與海鷗翱翔！", reqCount: "累計送出 300 個 (MAX)", img: "images/upgrade_gift/Beach/LV3.png" }
             ]
         },
-        cake: { // 十周年蛋糕
+        Cake: { // 十周年蛋糕
             title: "十週年蛋糕 (17幣)",
             maxCoins: "85,000 寶寶幣",
             levels: [
-                { level: "LV 0", name: "十週年蛋糕(基礎)", rarity: "★☆☆☆☆", desc: "【基礎起點】盤子上面的一顆小草莓", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/cake/LV0.png" },
-                { level: "LV 1", name: "十週年蛋糕(一層)", rarity: "★☆☆☆☆", desc: "【基礎起點】單層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 10 個", img: "images/upgrade_gift/cake/LV1.png" },
-                { level: "LV 2", name: "十週年蛋糕(二層)", rarity: "★☆☆☆☆", desc: "【基礎起點】二層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 25 個", img: "images/upgrade_gift/cake/LV2.png" },
-                { level: "LV 3", name: "十週年蛋糕(三層)", rarity: "★★☆☆☆", desc: "【基礎起點】三層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 50 個", img: "images/upgrade_gift/cake/LV3.png" },
-                { level: "LV 4", name: "十週年蛋糕(四層)", rarity: "★★☆☆☆", desc: "【基礎起點】四層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 100 個", img: "images/upgrade_gift/cake/LV4.png" },
-                { level: "LV 5", name: "十週年蛋糕(五層)", rarity: "★★☆☆☆", desc: "【初級升級】五層奶油蛋糕", reqCount: "累計送出 250 個", img: "images/upgrade_gift/cake/LV5.png" },
-                { level: "LV 6", name: "十週年蛋糕(六層)", rarity: "★★☆☆☆", desc: "【璀璨特效】六層宴會蛋糕", reqCount: "累計送出 500 個", img: "images/upgrade_gift/cake/LV6.png" },
-                { level: "LV 7", name: "十週年蛋糕(七層)", rarity: "★★★☆☆", desc: "【璀璨特效】七層宴會蛋糕", reqCount: "累計送出 1000 個", img: "images/upgrade_gift/cake/LV7.png" },
-                { level: "LV 8", name: "十週年蛋糕(八層)", rarity: "★★★☆☆", desc: "【璀璨特效】八層宴會蛋糕", reqCount: "累計送出 2000 個", img: "images/upgrade_gift/cake/LV8.png" },
-                { level: "LV 9", name: "十週年蛋糕(九層)", rarity: "★★★☆☆", desc: "【璀璨特效】九層宴會蛋糕", reqCount: "累計送出 4000 個", img: "images/upgrade_gift/cake/LV9.png" },
-                { level: "LV 10", name: "十週年蛋糕(十層)", rarity: "★★★★☆", desc: "【頂級特效】十層閃耀大蛋糕！", reqCount: "累計送出 5000 個 (MAX)", img: "images/upgrade_gift/cake/LV10.png" }
+                { level: "LV 0", name: "十週年蛋糕(基礎)", rarity: "★☆☆☆☆", desc: "【基礎起點】盤子上面的一顆小草莓", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Cake/LV0.png" },
+                { level: "LV 1", name: "十週年蛋糕(一層)", rarity: "★☆☆☆☆", desc: "【基礎起點】單層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 10 個", img: "images/upgrade_gift/Cake/LV1.png" },
+                { level: "LV 2", name: "十週年蛋糕(二層)", rarity: "★☆☆☆☆", desc: "【基礎起點】二層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 25 個", img: "images/upgrade_gift/Cake/LV2.png" },
+                { level: "LV 3", name: "十週年蛋糕(三層)", rarity: "★★☆☆☆", desc: "【基礎起點】三層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Cake/LV3.png" },
+                { level: "LV 4", name: "十週年蛋糕(四層)", rarity: "★★☆☆☆", desc: "【基礎起點】四層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Cake/LV4.png" },
+                { level: "LV 5", name: "十週年蛋糕(五層)", rarity: "★★☆☆☆", desc: "【初級升級】五層奶油蛋糕", reqCount: "累計送出 250 個", img: "images/upgrade_gift/Cake/LV5.png" },
+                { level: "LV 6", name: "十週年蛋糕(六層)", rarity: "★★☆☆☆", desc: "【璀璨特效】六層宴會蛋糕", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Cake/LV6.png" },
+                { level: "LV 7", name: "十週年蛋糕(七層)", rarity: "★★★☆☆", desc: "【璀璨特效】七層宴會蛋糕", reqCount: "累計送出 1000 個", img: "images/upgrade_gift/Cake/LV7.png" },
+                { level: "LV 8", name: "十週年蛋糕(八層)", rarity: "★★★☆☆", desc: "【璀璨特效】八層宴會蛋糕", reqCount: "累計送出 2000 個", img: "images/upgrade_gift/Cake/LV8.png" },
+                { level: "LV 9", name: "十週年蛋糕(九層)", rarity: "★★★☆☆", desc: "【璀璨特效】九層宴會蛋糕", reqCount: "累計送出 4000 個", img: "images/upgrade_gift/Cake/LV9.png" },
+                { level: "LV 10", name: "十週年蛋糕(十層)", rarity: "★★★★☆", desc: "【頂級特效】十層閃耀大蛋糕！", reqCount: "累計送出 5000 個 (MAX)", img: "images/upgrade_gift/Cake/LV10.png" }
             ]
         },
-        mage: { // 魔法師修練
+        Mage: { // 魔法師修練
             title: "魔法師修練 (500幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "魔法師修練 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/mage/LV0.png" },
-                { level: "LV 1", name: "魔法師修練 LV.1", rarity: "★☆☆☆☆", desc: "【成長型態】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/mage/LV1.png" }
+                { level: "LV 0", name: "魔法師修練 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Mage/LV0.png" },
+                { level: "LV 1", name: "魔法師修練 LV.1", rarity: "★☆☆☆☆", desc: "【成長型態】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Mage/LV1.png" }
             ]
         },
-        chocolate: { // 巧克力
+        Chocolate: { // 巧克力
             title: "巧克力 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "巧克力 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/chocolate/LV0.png" },
-                { level: "LV 1", name: "巧克力 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/chocolate/LV1.png" },
-                { level: "LV 2", name: "巧克力 LV2", rarity: "★★☆☆☆", desc: "【活力型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/chocolate/LV2.png" },
-                { level: "LV 3", name: "巧克力 LV3(MAX)", rarity: "★★★☆☆", desc: "【終極型態】", reqCount: "累計送出 ?? 個 (MAX)", img: "images/upgrade_gift/chocolate/LV3.png" }
+                { level: "LV 0", name: "巧克力 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Chocolate/LV0.png" },
+                { level: "LV 1", name: "巧克力 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Chocolate/LV1.png" },
+                { level: "LV 2", name: "巧克力 LV2", rarity: "★★☆☆☆", desc: "【活力型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Chocolate/LV2.png" },
+                { level: "LV 3", name: "巧克力 LV3(MAX)", rarity: "★★★☆☆", desc: "【終極型態】", reqCount: "累計送出 ?? 個 (MAX)", img: "images/upgrade_gift/Chocolate/LV3.png" }
             ]
         },
         SeaMonster: { // 神秘海怪
@@ -132,53 +132,53 @@ banquet: { // 慶生大辦桌
                 { level: "LV 3", name: "神秘海怪 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/SeaMonster/LV3.png" }
             ]
         },
-        bento: { // 便當
+        Bento: { // 便當
             title: "便當 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "便當 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/bento/LV0.png" },
-                { level: "LV 1", name: "便當 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/bento/LV1.png" },
-                { level: "LV 2", name: "便當 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/bento/LV2.png" },
-                { level: "LV 3", name: "便當 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/bento/LV3.png" }
+                { level: "LV 0", name: "便當 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Bento/LV0.png" },
+                { level: "LV 1", name: "便當 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Bento/LV1.png" },
+                { level: "LV 2", name: "便當 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Bento/LV2.png" },
+                { level: "LV 3", name: "便當 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Bento/LV3.png" }
             ]
         },
-        medieval: { // 中世紀
+        Medieval: { // 中世紀
             title: "中世紀 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "中世紀 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/medieval/LV0.png" },
-                { level: "LV 1", name: "中世紀 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/medieval/LV1.png" },
-                { level: "LV 2", name: "中世紀 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/medieval/LV2.png" },
-                { level: "LV 3", name: "中世紀 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/medieval/LV3.png" }
+                { level: "LV 0", name: "中世紀 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Medieval/LV0.png" },
+                { level: "LV 1", name: "中世紀 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Medieval/LV1.png" },
+                { level: "LV 2", name: "中世紀 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Medieval/LV2.png" },
+                { level: "LV 3", name: "中世紀 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Medieval/LV3.png" }
             ]
         },
-        hunk: { // 猛男
+        Hunk: { // 猛男
             title: "猛男 (200幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "猛男 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/hunk/LV0.png" },
-                { level: "LV 1", name: "猛男 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/hunk/LV1.png" }
+                { level: "LV 0", name: "猛男 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Hunk/LV0.png" },
+                { level: "LV 1", name: "猛男 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Hunk/LV1.png" }
             ]
         },
-        phoenix: { // 鳳凰
+        Phoenix: { // 鳳凰
             title: "鳳凰 (15幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "鳳凰 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/phoenix/LV0.png" },
-                { level: "LV 1", name: "鳳凰 LV.1", rarity: "★☆☆☆☆", desc: "【成長型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/phoenix/LV1.png" },
-                { level: "LV 2", name: "鳳凰 LV.2", rarity: "★★☆☆☆", desc: "【成長型態】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/phoenix/LV2.png" },
-                { level: "LV 3", name: "鳳凰 LV.3", rarity: "★★☆☆☆", desc: "【進化型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/phoenix/LV3.png" },
-                { level: "LV 4", name: "鳳凰 LV.4", rarity: "★★★☆☆", desc: "【終極型態】", reqCount: "累計送出 ?? 個 (MAX)", img: "images/upgrade_gift/phoenix/LV4.png" }
+                { level: "LV 0", name: "鳳凰 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Phoenix/LV0.png" },
+                { level: "LV 1", name: "鳳凰 LV.1", rarity: "★☆☆☆☆", desc: "【成長型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Phoenix/LV1.png" },
+                { level: "LV 2", name: "鳳凰 LV.2", rarity: "★★☆☆☆", desc: "【成長型態】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Phoenix/LV2.png" },
+                { level: "LV 3", name: "鳳凰 LV.3", rarity: "★★☆☆☆", desc: "【進化型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Phoenix/LV3.png" },
+                { level: "LV 4", name: "鳳凰 LV.4", rarity: "★★★☆☆", desc: "【終極型態】", reqCount: "累計送出 ?? 個 (MAX)", img: "images/upgrade_gift/Phoenix/LV4.png" }
             ]
         },
-        firework: { // 煙火升級禮
+        Firework: { // 煙火升級禮
             title: "煙火升級禮 (10幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "煙火升級禮 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/firework/LV0.png" },
-                { level: "LV 1", name: "煙火升級禮 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/firework/LV1.png" },
-                { level: "LV 2", name: "煙火升級禮 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/firework/LV2.png" },
-                { level: "LV 3", name: "煙火升級禮 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/firework/LV3.png" }
+                { level: "LV 0", name: "煙火升級禮 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Firework/LV0.png" },
+                { level: "LV 1", name: "煙火升級禮 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Firework/LV1.png" },
+                { level: "LV 2", name: "煙火升級禮 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Firework/LV2.png" },
+                { level: "LV 3", name: "煙火升級禮 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Firework/LV3.png" }
             ]
         },
         fish: { // 魚
@@ -646,21 +646,21 @@ banquet: { // 慶生大辦桌
 				{ level: "LV 3", name: "尼斯湖水怪 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Loch_Ness_Monster/LV3.png" }
             ]
         },		
-        crown: { // 鑽石皇冠
+        Crown: { // 鑽石皇冠
             title: "鑽石皇冠 (20幣)",
             maxCoins: "約 ??? 寶寶幣",
             levels: [
-                { level: "LV 0", name: "鑽石皇冠 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】只是一顆原石", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/crown/LV0.png" },
-                { level: "LV 1", name: "鑽石皇冠 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 20 個", img: "images/upgrade_gift/crown/LV1.png" },
-                { level: "LV 2", name: "鑽石皇冠 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/crown/LV2.png" },
-                { level: "LV 3", name: "鑽石皇冠 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/crown/LV3.png" },
-                { level: "LV 4", name: "鑽石皇冠 LV4", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 250 個", img: "images/upgrade_gift/crown/LV4.png" },
-                { level: "LV 5", name: "鑽石皇冠 LV5", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/crown/LV5.png" },
-                { level: "LV 6", name: "鑽石皇冠 LV6", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 1000 個", img: "images/upgrade_gift/crown/LV6.png" },
-                { level: "LV 7", name: "鑽石皇冠 LV7", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 2000 個", img: "images/upgrade_gift/crown/LV7.png" },
-                { level: "LV 8", name: "鑽石皇冠 LV8", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 3000 個", img: "images/upgrade_gift/crown/LV8.png" },
-                { level: "LV 9", name: "鑽石皇冠 LV9", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/crown/LV9.png" },
-                { level: "LV 10", name: "鑽石皇冠 LV10", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/crown/LV10.png" }
+                { level: "LV 0", name: "鑽石皇冠 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】只是一顆原石", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Crown/LV0.png" },
+                { level: "LV 1", name: "鑽石皇冠 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 20 個", img: "images/upgrade_gift/Crown/LV1.png" },
+                { level: "LV 2", name: "鑽石皇冠 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Crown/LV2.png" },
+                { level: "LV 3", name: "鑽石皇冠 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Crown/LV3.png" },
+                { level: "LV 4", name: "鑽石皇冠 LV4", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 250 個", img: "images/upgrade_gift/Crown/LV4.png" },
+                { level: "LV 5", name: "鑽石皇冠 LV5", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Crown/LV5.png" },
+                { level: "LV 6", name: "鑽石皇冠 LV6", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 1000 個", img: "images/upgrade_gift/Crown/LV6.png" },
+                { level: "LV 7", name: "鑽石皇冠 LV7", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 2000 個", img: "images/upgrade_gift/Crown/LV7.png" },
+                { level: "LV 8", name: "鑽石皇冠 LV8", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 3000 個", img: "images/upgrade_gift/Crown/LV8.png" },
+                { level: "LV 9", name: "鑽石皇冠 LV9", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Crown/LV9.png" },
+                { level: "LV 10", name: "鑽石皇冠 LV10", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Crown/LV10.png" }
             ]
         }
 };
