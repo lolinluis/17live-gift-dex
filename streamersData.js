@@ -60,10 +60,17 @@ const streamersDatabase = [
         intro: "射手座 / 隱居直播圈的土匪 / 專業S扭深蹲主播 / 現居?? "
     },
 	
-		{
+	{
         date: "12/17",
         name: "美琪maggie🎗",
         url: "https://17.live/zh-Hant/profile/u/22df38fe-c225-4053-b749-407cc73a2f9e",
         intro: "射手座 / 專業歌唱主播 / 有出單曲EDM / 現居?? "
+    },
+	
+	{
+        date: "12/23",
+        name: "💎魅寶💎",
+        url: "https://17.live/zh-Hant/profile/u/7d664b0a-77fb-475f-9796-68d8d997beb4",
+        intro: "魔羯座 / 甜甜系聊天主播 / 現居?? "
     }
 ];
