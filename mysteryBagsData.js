@@ -117,6 +117,7 @@ const mysteryBagsDatabase = {
 			{tag: "二獎",name: "遊樂園 (10倍)",rarity: "★★★★☆",desc: "【超稀有】觸發全螢幕白鯨動畫與全區播報",reward: "3,000 寶寶幣"},
 			{tag: "三獎",name: "馬車 (7倍)",rarity: "★★★☆☆",desc: "【超稀有】觸發全螢幕白鯨動畫與全區播報",reward: "2,000 寶寶幣"},
 			{tag: "四獎",name: "魔法鑽戒 (2.6倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "800 寶寶幣"},
+			{tag: "五獎",name: "北風與太陽 (1.4倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "500 寶寶幣"},
 			{tag: "普獎",name: "月兔 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "300 寶寶幣"},
 			{tag: "普獎",name: "夢幻愛心 (0.5倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "150 寶寶幣"},
 			{tag: "普獎",name: "魔術鸚鵡 (0.3倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "110 寶寶幣"} 
@@ -157,7 +158,7 @@ const mysteryBagsDatabase = {
 			{tag: "二獎",name: "姻緣線 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運二獎獎勵",reward: "199 寶寶幣"},
             {tag: "三獎",name: "桃花人緣小 (1倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "99 寶寶幣"},
             {tag: "四獎",name: "大貢香 (1倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "99 寶寶幣"},
-			{tag: "五獎",name: "招財進寶小 (0.9倍)",rarity: "★★☆☆☆",desc: "【普通獎勵】沒虧沒虧",reward: "88 寶寶幣"},
+			{tag: "五獎",name: "招財進寶小 (0.9倍)",rarity: "★★☆☆☆",desc: "【普獎】只有小虧",reward: "88 寶寶幣"},
 			{tag: "普獎",name: "三柱清香 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】還是63多去拜拜吧",reward: "13 寶寶幣"},
 			{tag: "普獎",name: "隨喜香油 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "10 寶寶幣"}
         ]
