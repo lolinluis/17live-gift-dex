@@ -15,7 +15,7 @@ const streamersDatabase = [
         date: "02/22",
         name: "白玉🖤",
         url: "https://17.live/zh-Hant/profile/u/3d07d8f2-08ce-47c7-8c0f-57dc5b770980",
-        intro: "雙魚座 / INFJ / 黑暗系瘋癲兇猛主播 / 現居高雄 "
+        intro: "雙魚座 / INTJ / 黑暗系瘋癲兇猛主播 / 現居高雄 "
     },
 	
 	{
