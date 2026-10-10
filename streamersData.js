@@ -36,7 +36,7 @@ const streamersDatabase = [
         date: "07/26",
         name: "🎀伊娜いな",
         url: "https://17.live/zh-Hant/profile/u/ae0a569d-23ff-4f7d-b577-e955028ead32",
-        intro: "獅子座 / INFJ / 終極密碼小遊戲 / 互動系聊天主播 "
+        intro: "獅子座 / INTJ / 終極密碼小遊戲 / 互動系聊天主播 "
     },
 	
 	{
