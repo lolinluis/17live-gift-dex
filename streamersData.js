@@ -36,21 +36,21 @@ const streamersDatabase = [
         date: "07/26",
         name: "🎀伊娜いな",
         url: "https://17.live/zh-Hant/profile/u/ae0a569d-23ff-4f7d-b577-e955028ead32",
-        intro: "獅子座 / 終極密碼小遊戲 / 沒有偶包 / 互動系聊天主播 "
+        intro: "獅子座 / INFJ / 終極密碼小遊戲 / 互動系聊天主播 "
     },
 	
 	{
         date: "10/09",
         name: "希璐🤍",
         url: "https://17.live/zh-Hant/profile/u/a4c34c25-9d7d-4b13-bc1c-beba621813c3",
-        intro: "天秤座 / ENFP / 天天都在哭的主播（誒？） / 自虐加碼無極限 / 現居高雄 "
+        intro: "天秤座 / ENFP / 天天都在哭?的主播 / 自虐加碼無極限 / 現居高雄 "
     },
 	
 	{
         date: "11/10",
         name: "Te小椰冻奶",
         url: "https://17.live/zh-Hant/profile/u/f49ee12c-8021-4386-8760-36b9c3ae0a6f",
-        intro: "天蠍座 / 菸嗓舞蹈主播 / 近視看字有一點障礙多包涵 / 現居四川成都 "
+        intro: "天蠍座 / 菸嗓舞蹈主播 / 近視看不到字多包涵  / 現居四川成都 "
     },
 	
 	{
