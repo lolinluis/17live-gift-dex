@@ -30,9 +30,9 @@ const mysteryBagsDatabase = {
 			{tag: "四獎",name: "歡樂兔鳥居(金+金)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "300 寶寶幣"},
 			{tag: "四獎",name: "微笑狐鳥居(金+金)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "300 寶寶幣"},
 			{tag: "四獎",name: "矇眼狗鳥居(金+金)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "300 寶寶幣"},
-			{tag: "五獎",name: "歡樂兔星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "140 寶寶幣"},
-			{tag: "五獎",name: "微笑狐星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "140 寶寶幣"},
-			{tag: "五獎",name: "矇眼狗星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "140 寶寶幣"},
+			{tag: "五獎",name: "歡樂兔星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】虧了～",reward: "140 寶寶幣"},
+			{tag: "五獎",name: "微笑狐星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】虧了～",reward: "140 寶寶幣"},
+			{tag: "五獎",name: "矇眼狗星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】虧了～",reward: "140 寶寶幣"},
             {tag: "普獎",name: "矇眼狗花花(銀+銀)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "80 寶寶幣"}
         ]
     },
@@ -159,7 +159,7 @@ const mysteryBagsDatabase = {
         activityDesc: "【10/01-10/12 柴要和你一起賞楓 活動禮包】",
         items: [
             {tag: "頭獎",name: "柴一起跳水 (23倍)",rarity: "★★★★☆",desc: "【超稀有】23倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "二獎",name: "柴一起 (2.3倍)",rarity: "★★★☆☆",desc: "【常見獎勵】您63了~加油",reward: "3,500 寶寶幣"},
+			{tag: "二獎",name: "柴一起 (2.3倍)",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "3,500 寶寶幣"},
 			{tag: "三獎",name: "黑柴賞楓 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,500 寶寶幣"},
             {tag: "普獎",name: "柴一起散步 (0.5倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "750 寶寶幣"}
 			
