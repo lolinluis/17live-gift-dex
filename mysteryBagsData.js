@@ -97,7 +97,7 @@ const mysteryBagsDatabase = {
         activityDesc: "【常駐型隨機袋-非活動相關】",
         items: [
             {tag: "頭獎",name: "海底大舞台 (10倍)",rarity: "★★★★☆",desc: "【超稀有】10倍大獎，觸發跑馬燈全區播報",reward: "8,888 寶寶幣"},
-			{tag: "二獎",name: "鰻愛你 (3.2倍)",rarity: "★★☆☆☆",desc: "【特殊獎勵】恭喜二獎",reward: "888 寶寶幣"},
+			{tag: "二獎",name: "鰻愛你 (3.2倍)",rarity: "★★☆☆☆",desc: "【特殊獎勵】恭喜二獎",reward: "2,888 寶寶幣"},
 			{tag: "三獎",name: "香蕉鰻 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】不虧不虧再接再厲",reward: "888 寶寶幣"},
             {tag: "普獎",name: "愛的交纏 (0.4倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "399 寶寶幣"}
         ]
