@@ -489,7 +489,7 @@
             box-shadow: 0 0 10px rgba(241, 196, 15, 0.7);
         }
 
-        /* 頁尾計數器樣式 (方案二) */
+        /* 頁尾計數器樣式 */
         .counter-container {
             margin-top: 15px;
             padding: 8px 12px;
@@ -602,7 +602,7 @@
         <div class="collab-title">❖ 貢獻與協作者 ❖</div>
         <div class="collab-list" id="collabList"></div>
 
-        <!-- [新增] 方案二：瀏覽人次計數器 -->
+        <!-- 瀏覽人次計數器 -->
         <div>
             <div class="counter-container">
                 <span class="counter-label">❖ 累積瀏覽人次：</span>
@@ -626,23 +626,26 @@
         switchMode('gifts');
     }
 
-    // 方案二：CountAPI 獲取並更新計數器
+    // 替換為穩定的 CounterAPI (counterapi.dev)
     function fetchVisitorCount() {
         const namespace = 'lolinluis-17live-gift-dex';
         const key = 'visits';
 
-        fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+        fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`)
             .then(response => response.json())
             .then(data => {
                 const viewsEl = document.getElementById('pageViews');
-                if (viewsEl && data.value) {
-                    viewsEl.innerText = `${data.value.toLocaleString()} 次`;
+                const count = data.count || data.value;
+                if (viewsEl && count !== undefined) {
+                    viewsEl.innerText = `${count.toLocaleString()} 次`;
+                } else if (viewsEl) {
+                    viewsEl.innerText = '載入完成';
                 }
             })
             .catch(err => {
                 console.error('計數器載入失敗:', err);
                 const viewsEl = document.getElementById('pageViews');
-                if (viewsEl) viewsEl.innerText = '統計中...';
+                if (viewsEl) viewsEl.innerText = '暫無法顯示';
             });
     }
 
