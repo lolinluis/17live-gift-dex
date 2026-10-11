@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>17LIVE 圖鑑與主播生日列表 - 神魔風格版</title>
+
+    <!-- [不蒜子 Busuanzi] 免費瀏覽人次統計腳本 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
     <style>
         * {
             box-sizing: border-box;
@@ -602,11 +606,11 @@
         <div class="collab-title">❖ 貢獻與協作者 ❖</div>
         <div class="collab-list" id="collabList"></div>
 
-        <!-- 瀏覽人次計數器 -->
+        <!-- [不蒜子] 瀏覽人次容器 -->
         <div>
             <div class="counter-container">
                 <span class="counter-label">❖ 累積瀏覽人次：</span>
-                <span class="counter-value" id="pageViews">載入中...</span>
+                <span class="counter-value" id="busuanzi_value_page_pv">...</span> 次
             </div>
         </div>
     </div>
@@ -622,31 +626,7 @@
 
     function init() {
         renderCollaborators();
-        fetchVisitorCount(); // 初始化瀏覽人次計數器
         switchMode('gifts');
-    }
-
-    // 替換為穩定的 CounterAPI (counterapi.dev)
-    function fetchVisitorCount() {
-        const namespace = 'lolinluis-17live-gift-dex';
-        const key = 'visits';
-
-        fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`)
-            .then(response => response.json())
-            .then(data => {
-                const viewsEl = document.getElementById('pageViews');
-                const count = data.count || data.value;
-                if (viewsEl && count !== undefined) {
-                    viewsEl.innerText = `${count.toLocaleString()} 次`;
-                } else if (viewsEl) {
-                    viewsEl.innerText = '載入完成';
-                }
-            })
-            .catch(err => {
-                console.error('計數器載入失敗:', err);
-                const viewsEl = document.getElementById('pageViews');
-                if (viewsEl) viewsEl.innerText = '暫無法顯示';
-            });
     }
 
     function switchMode(mode) {
