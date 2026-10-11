@@ -370,7 +370,7 @@
             text-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
         }
 
-        /* [新增] 主播生日列表頁面樣式 */
+        /* 主播生日列表頁面樣式 */
         .streamer-birthday-container {
             display: none;
             background: #151a21;
@@ -437,7 +437,7 @@
             line-height: 1.3;
         }
 
-        /* 頁尾免責聲明 */
+        /* 頁尾免責聲明與計數器 */
         .dex-footer {
             margin-top: 20px;
             padding-top: 12px;
@@ -488,12 +488,39 @@
             transform: translateY(-2px);
             box-shadow: 0 0 10px rgba(241, 196, 15, 0.7);
         }
+
+        /* 頁尾計數器樣式 (方案二) */
+        .counter-container {
+            margin-top: 15px;
+            padding: 8px 12px;
+            background: rgba(31, 40, 51, 0.6);
+            border: 1px solid #c5a059;
+            border-radius: 6px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+        }
+
+        .counter-label {
+            font-size: 12px;
+            color: #45a29e;
+            font-weight: bold;
+        }
+
+        .counter-value {
+            font-size: 13px;
+            color: #f1c40f;
+            font-weight: bold;
+            text-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
+        }
     </style>
 </head>
 <body>
 
 <div class="dex-container">
-    <!-- 頂頁 Tab 頁籤 (擴充為 3 個 Tab) -->
+    <!-- 頂頁 Tab 頁籤 -->
     <div class="nav-tabs">
         <button class="tab-btn active" id="tabGifts" onclick="switchMode('gifts')">升級禮</button>
         <button class="tab-btn" id="tabBags" onclick="switchMode('bags')">隨機袋</button>
@@ -506,7 +533,7 @@
         <div class="subtitle">(非官方 - 持續更新中)</div>
     </div>
 
-    <!-- 下拉選單 (升級禮與隨機袋模式使用) -->
+    <!-- 下拉選單 -->
     <div class="gift-select-container" id="selectContainer">
         <select class="gift-select" id="giftSelect" onchange="switchGift(this.value)">
             <!-- 由 JS 動態生成 -->
@@ -548,7 +575,7 @@
     <!-- [隨機袋模式] 無圖純文字獎項平鋪列表 -->
     <div class="bag-items-grid" id="bagItemsGrid"></div>
 
-    <!-- [新增] [主播生日模式] 三欄位清單列表 -->
+    <!-- [主播生日模式] 三欄位清單列表 -->
     <div class="streamer-birthday-container" id="streamerBirthdayContainer">
         <table class="birthday-table">
             <thead>
@@ -564,7 +591,7 @@
         </table>
     </div>
 
-    <!-- 頁尾標楷體免責聲明 -->
+    <!-- 頁尾免責聲明與計數器 -->
     <div class="dex-footer">
         【免責聲明】<br>
         本頁面內容僅供玩家交流研討使用，並非營利目的。<br>
@@ -574,6 +601,14 @@
 
         <div class="collab-title">❖ 貢獻與協作者 ❖</div>
         <div class="collab-list" id="collabList"></div>
+
+        <!-- [新增] 方案二：瀏覽人次計數器 -->
+        <div>
+            <div class="counter-container">
+                <span class="counter-label">❖ 累積瀏覽人次：</span>
+                <span class="counter-value" id="pageViews">載入中...</span>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -587,7 +622,28 @@
 
     function init() {
         renderCollaborators();
+        fetchVisitorCount(); // 初始化瀏覽人次計數器
         switchMode('gifts');
+    }
+
+    // 方案二：CountAPI 獲取並更新計數器
+    function fetchVisitorCount() {
+        const namespace = 'lolinluis-17live-gift-dex';
+        const key = 'visits';
+
+        fetch(`https://api.countapi.xyz/hit/${namespace}/${key}`)
+            .then(response => response.json())
+            .then(data => {
+                const viewsEl = document.getElementById('pageViews');
+                if (viewsEl && data.value) {
+                    viewsEl.innerText = `${data.value.toLocaleString()} 次`;
+                }
+            })
+            .catch(err => {
+                console.error('計數器載入失敗:', err);
+                const viewsEl = document.getElementById('pageViews');
+                if (viewsEl) viewsEl.innerText = '統計中...';
+            });
     }
 
     function switchMode(mode) {
