@@ -29,6 +29,7 @@ const mysteryBagsDatabase = {
 			{tag: "三獎",name: "搖擺貓金幣(虹+銀)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "800 寶寶幣"},
 			{tag: "四獎",name: "歡樂兔鳥居(金+金)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "300 寶寶幣"},
 			{tag: "四獎",name: "微笑狐鳥居(金+金)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "300 寶寶幣"},
+            {tag: "四獎",name: "胖企鵝鳥居(金+金)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "300 寶寶幣"},
 			{tag: "四獎",name: "矇眼狗鳥居(金+金)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "300 寶寶幣"},
 			{tag: "五獎",name: "歡樂兔星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】虧了～",reward: "140 寶寶幣"},
 			{tag: "五獎",name: "微笑狐星星(金+銀)",rarity: "★☆☆☆☆",desc: "【特別獎勵】虧了～",reward: "140 寶寶幣"},
@@ -46,6 +47,7 @@ const mysteryBagsDatabase = {
             {tag: "頭獎",name: "大偉哥霸氣超級火箭",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "11,000 寶寶幣"},
 			{tag: "普獎",name: "??火箭",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "??? 寶寶幣"},
             {tag: "普獎",name: "豬萌火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
+            {tag: "普獎",name: "珠寶火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "蟲蟲火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
 			{tag: "普獎",name: "烏龜火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"}
         ]
