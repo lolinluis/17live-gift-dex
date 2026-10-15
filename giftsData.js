@@ -671,5 +671,15 @@ const giftsDatabase = {
                 { level: "LV 9", name: "鑽石皇冠 LV9", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Crown/LV9.png" },
                 { level: "LV 10", name: "鑽石皇冠 LV10", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Crown/LV10.png" }
             ]
-        }
+        },
+        Larva_Cake: { // 熔岩蛋糕
+            title: "熔岩蛋糕 (30幣)",
+            maxCoins: "約 ??? 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "熔岩蛋糕 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Larva_Cake/LV0.png" },
+                { level: "LV 1", name: "熔岩蛋糕 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 499 個", img: "images/upgrade_gift/Larva_Cake/LV1.png" },
+		{ level: "LV 2", name: "熔岩蛋糕 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 999 個", img: "images/upgrade_gift/Larva_Cake/LV2.png" },
+		{ level: "LV 3", name: "熔岩蛋糕 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Larva_Cake/LV3.png" }
+            ]
+        },
 };
