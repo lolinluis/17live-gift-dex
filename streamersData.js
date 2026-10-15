@@ -59,7 +59,14 @@ const streamersDatabase = [
         url: "https://17.live/zh-Hant/profile/u/781245ab-f533-4517-8a1b-f1012ed7bdcb",
         intro: "射手座 / 隱居直播圈的土匪 / 專業S扭深蹲主播 / 現居?? "
     },
-	
+    
+	{
+        date: "12/16",
+        name: "素顏怪獸茶🍵",
+        url: "https://17.live/s/u/109f741c-61b1-4b35-83aa-8ed4ca039b37",
+        intro: "射手座 / ISFP / 古靈精怪歌唱主播 "
+    },
+    
 	{
         date: "12/17",
         name: "美琪maggie🎗",
