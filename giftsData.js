@@ -681,5 +681,5 @@ const giftsDatabase = {
 		{ level: "LV 2", name: "熔岩蛋糕 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 999 個", img: "images/upgrade_gift/Larva_Cake/LV2.png" },
 		{ level: "LV 3", name: "熔岩蛋糕 LV3", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Larva_Cake/LV3.png" }
             ]
-        },
+        }
 };
