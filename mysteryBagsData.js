@@ -11,7 +11,8 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "你是最耀眼的 (20倍)",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "60,000 寶寶幣"},
             {tag: "二獎",name: "???",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "??? 寶寶幣"},
-            {tag: "普獎",name: "初登場",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "3,000 寶寶幣"}
+            {tag: "普獎",name: "初登場",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "3,000 寶寶幣"},
+            {tag: "普獎",name: "躍躍欲試",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "2,000 寶寶幣"}
         ]
     },
 	
@@ -287,5 +288,34 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "三柱清香 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】還是63多去拜拜吧",reward: "13 寶寶幣"},
 			{tag: "普獎",name: "隨喜香油 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "10 寶寶幣"}
         ]
-    }	
+    },
+    	Halloween_Night: { //萬聖節
+        title: "Halloween_Night（10,000幣/次)",
+        maxCoins: "10,000 寶寶幣 / 次",
+		img: "images/bags/Halloween_Night/01.png",
+        activityDesc: "17萬聖節活動隨機袋",
+        items: [
+            {tag: "頭獎",name: "逃離屍速列車",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "520,000 寶寶幣"},
+			{tag: "二獎",name: "17鬼混慶典",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "25,000 寶寶幣"},
+			{tag: "普獎",name: "大規模感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "13,000 寶寶幣"},
+            {tag: "普獎",name: "確認感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "10,200寶寶幣"},
+            {tag: "普獎",name: "疆屍狗狗誕生",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "8,000 寶寶幣"},
+            {tag: "普獎",name: "萬聖送好禮",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "7,000 寶寶幣"},
+            {tag: "普獎",name: "糖果大豐收",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "6,000 寶寶幣"}
+        ]
+    },
+       	Go_To_School: { //來去上學
+        title: "來去上學（2,000幣/次)",
+        maxCoins: "2,000 寶寶幣 / 次",
+		img: "images/bags/Go_To_School/01.png",
+        activityDesc: "藝起來升級 活動隨機袋",
+        items: [
+            {tag: "頭獎",name: "碩士寶寶",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "20,000 寶寶幣"},
+			{tag: "二獎",name: "大學寶寶",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "??? 寶寶幣"},
+			{tag: "普獎",name: "高中寶寶",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "2,500 寶寶幣"},
+            {tag: "普獎",name: "國中寶寶",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "2,200 寶寶幣"},
+            {tag: "普獎",name: "國小寶寶",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "2,100 寶寶幣"},
+            {tag: "普獎",name: "我的功課",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
+        ]
+    },
 }
