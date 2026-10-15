@@ -206,10 +206,11 @@ const mysteryBagsDatabase = {
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "3D愛你更久 (20倍)",rarity: "★★★★★",desc: "【超稀有】恭喜獲得最大獎",reward: "77,000寶寶幣"},
-			{tag: "二獎",name: "你是我的天使 (5倍)",rarity: "★★★★☆",desc: "【小獎】幸運小獎",reward: "20,000 寶寶幣"},
-			{tag: "三獎",name: "豪華珍奶寶寶(大) (2.5倍)",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "10,000 寶寶幣"},
-			{tag: "四獎",name: "為你傾心 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "4,999 寶寶幣"},
-			{tag: "五獎",name: "享受時光 (1倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "3,999 寶寶幣"},
+            {tag: "二獎",name: "私人飛機 (7倍)",rarity: "★★★★☆",desc: "【幸運獎勵】幸運小獎",reward: "28,000 寶寶幣"},
+			{tag: "三獎",name: "你是我的天使 (5倍)",rarity: "★★★★☆",desc: "【小獎】幸運小獎",reward: "20,000 寶寶幣"},
+			{tag: "四獎",name: "豪華珍奶寶寶(大) (2.5倍)",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "10,000 寶寶幣"},
+			{tag: "五獎",name: "為你傾心 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "4,999 寶寶幣"},
+			{tag: "普獎",name: "享受時光 (1倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "3,999 寶寶幣"},
 			{tag: "普獎",name: "17戀愛 (0.5倍)",rarity: "★★☆☆☆",desc: "【普獎】虧了～",reward: "2,000 寶寶幣"},
 			{tag: "普獎",name: "送你飛吻 (0.3倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說再接再厲",reward: "1,499 寶寶幣"}
         ]
@@ -218,7 +219,7 @@ const mysteryBagsDatabase = {
 	Space_Travel_3D: { //3D太空旅行
         title: "3D太空旅行(5,000幣/次)",
         maxCoins: "5,000 寶寶幣 / 次",
-		img: "images/bags/Golden_Treasure/01.png",
+		img: "images/bags/Space_Travel_3D/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "太空之旅 (20倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "100,000寶寶幣"},
@@ -289,6 +290,7 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "隨喜香油 (0.1倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "10 寶寶幣"}
         ]
     },
+    
     	Halloween_Night: { //萬聖節
         title: "Halloween_Night（10,000幣/次)",
         maxCoins: "10,000 寶寶幣 / 次",
@@ -304,6 +306,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "糖果大豐收",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "6,000 寶寶幣"}
         ]
     },
+    
        	Go_To_School: { //來去上學
         title: "來去上學（2,000幣/次)",
         maxCoins: "2,000 寶寶幣 / 次",
@@ -317,5 +320,5 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "國小寶寶",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "2,100 寶寶幣"},
             {tag: "普獎",name: "我的功課",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
         ]
-    },
+    }
 }
