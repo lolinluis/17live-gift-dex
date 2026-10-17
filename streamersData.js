@@ -15,7 +15,7 @@ const streamersDatabase = [
         date: "02/22",
         name: "白玉🖤",
         url: "https://17.live/zh-Hant/profile/u/3d07d8f2-08ce-47c7-8c0f-57dc5b770980",
-        intro: "雙魚座 / INTJ / 神秘M屬性 / 喜歡被叫大摳呆 大咖撐 / 黑暗系瘋癲兇猛主播 / 現居高雄 "
+        intro: "雙魚座 / INTJ / 高雄凶猛奧米加咆哮獸 / 神秘M屬性 / 喜歡被叫大摳呆 大咖撐 / 黑暗系瘋癲兇猛主播 / 現居高雄 "
     },
 	
 	{
@@ -43,7 +43,7 @@ const streamersDatabase = [
         date: "10/09",
         name: "希璐🤍",
         url: "https://17.live/zh-Hant/profile/u/a4c34c25-9d7d-4b13-bc1c-beba621813c3",
-        intro: "天秤座 / ENFP / 天天都在哭?的主播 / 自虐加碼無極限 / 現居高雄 "
+        intro: "天秤座 / ENFP / 高雄瘋癲芋頭西米露 / 天天都在哭?的主播 / 自虐加碼無極限 / 現居高雄 "
     },
 	
 	{
