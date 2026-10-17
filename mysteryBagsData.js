@@ -304,8 +304,9 @@ const mysteryBagsDatabase = {
 		img: "images/bags/Halloween_Night/01.png",
         activityDesc: "17萬聖節活動隨機袋",
         items: [
-            {tag: "頭獎",name: "逃離屍速列車",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "520,000 寶寶幣"},
-			{tag: "二獎",name: "17鬼混慶典",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "22,500 寶寶幣"},
+            {tag: "頭獎",name: "逃離屍速列車",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "2,000,000 寶寶幣"},
+            {tag: "二獎",name: "逃離屍速列車",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得二獎",reward: "520,000 寶寶幣"},
+			{tag: "三獎",name: "17鬼混慶典",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "22,500 寶寶幣"},
 			{tag: "普獎",name: "大規模感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "13,000 寶寶幣"},
             {tag: "普獎",name: "確認感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "10,200寶寶幣"},
             {tag: "普獎",name: "疆屍狗狗誕生",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "8,000 寶寶幣"},
