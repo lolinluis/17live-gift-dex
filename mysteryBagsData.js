@@ -47,7 +47,9 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "大偉哥霸氣超級火箭",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "11,000 寶寶幣"},
 			{tag: "普獎",name: "??火箭",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "??? 寶寶幣"},
+            {tag: "普獎",name: "幽靈火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "豬萌火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
+            {tag: "普獎",name: "唇膏火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "珠寶火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "蟲蟲火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
 			{tag: "普獎",name: "烏龜火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"}
@@ -211,7 +213,8 @@ const mysteryBagsDatabase = {
 			{tag: "四獎",name: "豪華珍奶寶寶(大) (2.5倍)",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "10,000 寶寶幣"},
 			{tag: "五獎",name: "為你傾心 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "4,999 寶寶幣"},
 			{tag: "普獎",name: "享受時光 (1倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "3,999 寶寶幣"},
-			{tag: "普獎",name: "17戀愛 (0.5倍)",rarity: "★★☆☆☆",desc: "【普獎】虧了～",reward: "2,000 寶寶幣"},
+            {tag: "普獎",name: "滿滿愛心 (0.6倍)",rarity: "★☆☆☆☆",desc: "【普獎】虧了～",reward: "2,499 寶寶幣"},
+			{tag: "普獎",name: "17戀愛 (0.5倍)",rarity: "★☆☆☆☆",desc: "【普獎】虧了～",reward: "2,000 寶寶幣"},
 			{tag: "普獎",name: "送你飛吻 (0.3倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說再接再厲",reward: "1,499 寶寶幣"}
         ]
     },
@@ -224,7 +227,10 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "太空之旅 (20倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "100,000寶寶幣"},
 			{tag: "二獎",name: "??? (?倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "??? 寶寶幣"},
-			{tag: "普獎",name: "愛情木馬 (1倍)",rarity: "★☆☆☆☆",desc: "【普獎】沒虧沒虧",reward: "5,000 寶寶幣"}
+            {tag: "二獎",name: "浪漫小屋 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "6,000 寶寶幣"},
+			{tag: "普獎",name: "愛情木馬 (1倍)",rarity: "★☆☆☆☆",desc: "【普獎】沒虧沒虧",reward: "5,000 寶寶幣"},
+            {tag: "普獎",name: "永恆約定",rarity: "★☆☆☆☆",desc: "【普獎】基礎獎勵",reward: "3,200 寶寶幣"},
+            {tag: "普獎",name: "藍色奇蹟",rarity: "★☆☆☆☆",desc: "【普獎】基礎獎勵",reward: "2,500 寶寶幣"}
         ]
     },
 	
@@ -298,7 +304,7 @@ const mysteryBagsDatabase = {
         activityDesc: "17萬聖節活動隨機袋",
         items: [
             {tag: "頭獎",name: "逃離屍速列車",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "520,000 寶寶幣"},
-			{tag: "二獎",name: "17鬼混慶典",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "25,000 寶寶幣"},
+			{tag: "二獎",name: "17鬼混慶典",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "22,500 寶寶幣"},
 			{tag: "普獎",name: "大規模感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "13,000 寶寶幣"},
             {tag: "普獎",name: "確認感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "10,200寶寶幣"},
             {tag: "普獎",name: "疆屍狗狗誕生",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "8,000 寶寶幣"},
@@ -319,6 +325,22 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "國中寶寶",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "2,200 寶寶幣"},
             {tag: "普獎",name: "國小寶寶",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "2,100 寶寶幣"},
             {tag: "普獎",name: "我的功課",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
+        ]
+    },
+    Summer_Pistol: { //夏日手槍
+        title: "夏日手槍（300幣/次)",
+        maxCoins: "300 寶寶幣 / 次",
+		img: "images/bags/Summer_Pistol/01.png",
+        activityDesc: "常駐型隨機袋-非活動相關",
+        items: [
+            {tag: "頭獎",name: "3D魔法鑽戒",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "5,000 寶寶幣"},
+			{tag: "二獎",name: "夏日潛水",rarity: "★★☆☆☆",desc: "【回饋獎勵】幸運回饋禮",reward: "500 寶寶幣"},
+			{tag: "普獎",name: "流星划過",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "499 寶寶幣"},
+            {tag: "普獎",name: "生氣氣",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "377 寶寶幣"},
+            {tag: "普獎",name: "17看夕陽",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
+            {tag: "普獎",name: "害羞小櫻",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
+            {tag: "普獎",name: "喵星人",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
+            {tag: "普獎",name: "你是我的巧克力",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"}
         ]
     }
 }
