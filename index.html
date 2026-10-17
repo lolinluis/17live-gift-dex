@@ -41,7 +41,7 @@
         /* 頂部 Tab 切換區 */
         .nav-tabs {
             display: flex;
-            gap: 8px;
+            gap: 6px;
             margin-bottom: 15px;
         }
 
@@ -51,7 +51,7 @@
             background: #111;
             border: 2px solid #c5a059;
             color: #c5a059;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: bold;
             border-radius: 8px;
             cursor: pointer;
@@ -441,6 +441,72 @@
             line-height: 1.3;
         }
 
+        /* 【新功能】問題 QA 可伸縮手風琴樣式 */
+        .qa-container {
+            display: none;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .qa-item {
+            background: #151a21;
+            border: 1px solid #45a29e;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .qa-item:hover, .qa-item.active {
+            border-color: #f39c12;
+            box-shadow: 0 0 10px rgba(243, 156, 18, 0.3);
+        }
+
+        .qa-header {
+            padding: 12px 15px;
+            background: rgba(31, 40, 51, 0.6);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .qa-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #66fcf1;
+        }
+
+        .qa-item.active .qa-title {
+            color: #f39c12;
+        }
+
+        .qa-arrow {
+            font-size: 12px;
+            color: #45a29e;
+            transition: transform 0.3s ease;
+        }
+
+        .qa-item.active .qa-arrow {
+            transform: rotate(180deg);
+            color: #f39c12;
+        }
+
+        .qa-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background: rgba(11, 12, 16, 0.6);
+        }
+
+        .qa-content-inner {
+            padding: 12px 15px;
+            font-size: 13px;
+            color: #c5a059;
+            line-height: 1.6;
+            border-top: 1px dashed rgba(69, 162, 158, 0.3);
+        }
+
         /* 頁尾免責聲明與計數器 */
         .dex-footer {
             margin-top: 20px;
@@ -529,6 +595,7 @@
         <button class="tab-btn active" id="tabGifts" onclick="switchMode('gifts')">升級禮</button>
         <button class="tab-btn" id="tabBags" onclick="switchMode('bags')">隨機袋</button>
         <button class="tab-btn" id="tabStreamers" onclick="switchMode('streamers')">主播生日</button>
+        <button class="tab-btn" id="tabQA" onclick="switchMode('qa')">問題QA</button>
     </div>
 
     <!-- 標題區 -->
@@ -595,6 +662,9 @@
         </table>
     </div>
 
+    <!-- [問題QA模式] 可伸縮手風琴內容區 -->
+    <div class="qa-container" id="qaContainer"></div>
+
     <!-- 頁尾免責聲明與計數器 -->
     <div class="dex-footer">
         【免責聲明】<br>
@@ -619,6 +689,8 @@
 <script src="giftsData.js"></script>
 <script src="mysteryBagsData.js"></script>
 <script src="streamersData.js"></script>
+<script src="qaData.js"></script>
+<script src="qa.js"></script>
 
 <script>
     let currentMode = 'gifts'; 
@@ -635,12 +707,14 @@
         document.getElementById("tabGifts").classList.toggle("active", mode === 'gifts');
         document.getElementById("tabBags").classList.toggle("active", mode === 'bags');
         document.getElementById("tabStreamers").classList.toggle("active", mode === 'streamers');
+        document.getElementById("tabQA").classList.toggle("active", mode === 'qa');
 
         const giftDisplayArea = document.getElementById("giftDisplayArea");
         const bagHeroPanel = document.getElementById("bagHeroPanel");
         const bagItemsGrid = document.getElementById("bagItemsGrid");
         const selectContainer = document.getElementById("selectContainer");
         const streamerBirthdayContainer = document.getElementById("streamerBirthdayContainer");
+        const qaContainer = document.getElementById("qaContainer");
 
         if (mode === 'gifts') {
             document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
@@ -649,6 +723,7 @@
             bagHeroPanel.style.display = "none";
             bagItemsGrid.style.display = "none";
             streamerBirthdayContainer.style.display = "none";
+            qaContainer.style.display = "none";
 
             const db = typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
@@ -662,6 +737,7 @@
             bagHeroPanel.style.display = "block";
             bagItemsGrid.style.display = "flex";
             streamerBirthdayContainer.style.display = "none";
+            qaContainer.style.display = "none";
 
             const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
             currentGiftKey = Object.keys(db)[0] || '';
@@ -675,8 +751,20 @@
             bagHeroPanel.style.display = "none";
             bagItemsGrid.style.display = "none";
             streamerBirthdayContainer.style.display = "block";
+            qaContainer.style.display = "none";
 
             renderStreamerBirthdayList();
+
+        } else if (mode === 'qa') {
+            document.getElementById("pageTitle").innerText = "17LIVE 常見問題 QA";
+            selectContainer.style.display = "none";
+            giftDisplayArea.style.display = "none";
+            bagHeroPanel.style.display = "none";
+            bagItemsGrid.style.display = "none";
+            streamerBirthdayContainer.style.display = "none";
+            qaContainer.style.display = "flex";
+
+            renderQAList();
         }
     }
 
