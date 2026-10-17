@@ -248,7 +248,7 @@ const mysteryBagsDatabase = {
 
 	Deep_Blue_3D_UFO: { //深藍3D奇幻UFO
         title: "深藍3D奇幻UFO(500幣/次)",
-        maxCoins: "5,000 寶寶幣 / 次",
+        maxCoins: "500 寶寶幣 / 次",
 		img: "images/bags/Deep_Blue_3D_UFO/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
