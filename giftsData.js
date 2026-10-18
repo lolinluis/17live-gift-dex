@@ -438,11 +438,12 @@ const giftsDatabase = {
         },
 		Dragon_and_Lion_Dances: { // 舞龍舞獅
             title: "舞龍舞獅 (350幣)",
-            maxCoins: "約 ??? 寶寶幣",
+            maxCoins: "約 355,250 寶寶幣",
             levels: [
                 { level: "LV 0", name: "舞龍舞獅 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV0.png" },
                 { level: "LV 1", name: "舞龍舞獅 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 35 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV1.png" },
-				{ level: "LV 2", name: "舞龍舞獅 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 115 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV2.png" }
+				{ level: "LV 2", name: "舞龍舞獅 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 115 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV2.png" },
+                                { level: "LV 3", name: "舞龍舞獅 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1015 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV2.png" }
             ]
         },
 		Ms_Leti: { // Ms.Leti
