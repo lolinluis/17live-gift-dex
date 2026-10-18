@@ -90,7 +90,7 @@ const giftsDatabase = {
         },
         Cake: { // 十周年蛋糕
             title: "十週年蛋糕 (17幣)",
-            maxCoins: "85,000 寶寶幣",
+            maxCoins: "102,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "十週年蛋糕(基礎)", rarity: "★☆☆☆☆", desc: "【基礎起點】盤子上面的一顆小草莓", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Cake/LV0.png" },
                 { level: "LV 1", name: "十週年蛋糕(一層)", rarity: "★☆☆☆☆", desc: "【基礎起點】單層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 10 個", img: "images/upgrade_gift/Cake/LV1.png" },
@@ -99,10 +99,10 @@ const giftsDatabase = {
                 { level: "LV 4", name: "十週年蛋糕(四層)", rarity: "★★☆☆☆", desc: "【基礎起點】四層草莓小蛋糕，伴隨微弱星光粒子。", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Cake/LV4.png" },
                 { level: "LV 5", name: "十週年蛋糕(五層)", rarity: "★★☆☆☆", desc: "【初級升級】五層奶油蛋糕", reqCount: "累計送出 250 個", img: "images/upgrade_gift/Cake/LV5.png" },
                 { level: "LV 6", name: "十週年蛋糕(六層)", rarity: "★★☆☆☆", desc: "【璀璨特效】六層宴會蛋糕", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Cake/LV6.png" },
-                { level: "LV 7", name: "十週年蛋糕(七層)", rarity: "★★★☆☆", desc: "【璀璨特效】七層宴會蛋糕", reqCount: "累計送出 1000 個", img: "images/upgrade_gift/Cake/LV7.png" },
-                { level: "LV 8", name: "十週年蛋糕(八層)", rarity: "★★★☆☆", desc: "【璀璨特效】八層宴會蛋糕", reqCount: "累計送出 2000 個", img: "images/upgrade_gift/Cake/LV8.png" },
-                { level: "LV 9", name: "十週年蛋糕(九層)", rarity: "★★★☆☆", desc: "【璀璨特效】九層宴會蛋糕", reqCount: "累計送出 4000 個", img: "images/upgrade_gift/Cake/LV9.png" },
-                { level: "LV 10", name: "十週年蛋糕(十層)", rarity: "★★★★☆", desc: "【頂級特效】十層閃耀大蛋糕！", reqCount: "累計送出 5000 個 (MAX)", img: "images/upgrade_gift/Cake/LV10.png" }
+                { level: "LV 7", name: "十週年蛋糕(七層)", rarity: "★★★☆☆", desc: "【璀璨特效】七層宴會蛋糕", reqCount: "累計送出 1,000 個", img: "images/upgrade_gift/Cake/LV7.png" },
+                { level: "LV 8", name: "十週年蛋糕(八層)", rarity: "★★★☆☆", desc: "【璀璨特效】八層宴會蛋糕", reqCount: "累計送出 2,000 個", img: "images/upgrade_gift/Cake/LV8.png" },
+                { level: "LV 9", name: "十週年蛋糕(九層)", rarity: "★★★☆☆", desc: "【璀璨特效】九層宴會蛋糕", reqCount: "累計送出 4,000 個", img: "images/upgrade_gift/Cake/LV9.png" },
+                { level: "LV 10", name: "十週年蛋糕(十層)", rarity: "★★★★☆", desc: "【頂級特效】十層閃耀大蛋糕！", reqCount: "累計送出 6,000 個 (MAX)", img: "images/upgrade_gift/Cake/LV10.png" }
             ]
         },
         Mage: { // 魔法師修練
@@ -312,10 +312,12 @@ const giftsDatabase = {
         },
         Charizard: { // 噴火龍
             title: "噴火龍 (350幣)",
-            maxCoins: "約 ??? 寶寶幣",
+            maxCoins: "約 355,250 寶寶幣",
             levels: [
                 { level: "LV 0", name: "噴火龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Charizard/LV0.png" },
-                { level: "LV 1", name: "噴火龍 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Charizard/LV1.png" }
+                { level: "LV 1", name: "噴火龍 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 50 個", img: "images/upgrade_gift/Charizard/LV1.png" },
+                { level: "LV 2", name: "噴火龍 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 125 個", img: "images/upgrade_gift/Charizard/LV2.png" },
+                { level: "LV 3", name: "噴火龍 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1,015 個", img: "images/upgrade_gift/Charizard/LV3.png" }
             ]
         },	
         Qilin: { // 麒麟
@@ -443,7 +445,7 @@ const giftsDatabase = {
                 { level: "LV 0", name: "舞龍舞獅 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV0.png" },
                 { level: "LV 1", name: "舞龍舞獅 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 35 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV1.png" },
 				{ level: "LV 2", name: "舞龍舞獅 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 115 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV2.png" },
-                                { level: "LV 3", name: "舞龍舞獅 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1015 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV2.png" }
+                                { level: "LV 3", name: "舞龍舞獅 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1,015 個", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV2.png" }
             ]
         },
 		Ms_Leti: { // Ms.Leti
