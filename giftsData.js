@@ -44,7 +44,7 @@ const giftsDatabase = {
             levels: [
                 { level: "LV 0", name: "你是我的堡(LV0)", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Myburger/LV0.png" },
                 { level: "LV 1", name: "你是我的堡(LV1)", rarity: "★★☆☆☆", desc: "【升級型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Myburger/LV1.png" },
-                { level: "LV 2", name: "你是我的堡(LV2)", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Myburger/LV2.png" },
+                { level: "LV 2", name: "你是我的堡(LV2)", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 250 個", img: "images/upgrade_gift/Myburger/LV2.png" },
                 { level: "LV 3", name: "你是我的堡(LV3)", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 999 個", img: "images/upgrade_gift/Myburger/LV3.png" }
             ]
         },
@@ -495,7 +495,8 @@ const giftsDatabase = {
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "夢幻獨角獸 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dreamy_Unicorn/LV0.png" },
-                { level: "LV 1", name: "夢幻獨角獸 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Dreamy_Unicorn/LV1.png" }
+                { level: "LV 1", name: "夢幻獨角獸 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 30 個", img: "images/upgrade_gift/Dreamy_Unicorn/LV1.png" },
+                { level: "LV 2", name: "夢幻獨角獸 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 130 個", img: "images/upgrade_gift/Dreamy_Unicorn/LV2.png" }
             ]
         },
 		Bunny_Adorable: { // 兔兔惹人愛
