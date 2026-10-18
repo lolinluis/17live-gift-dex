@@ -52,6 +52,13 @@ const streamersDatabase = [
         url: "https://17.live/zh-Hant/profile/u/f49ee12c-8021-4386-8760-36b9c3ae0a6f",
         intro: "天蠍座 / 菸嗓舞蹈主播 / 近視看不到字多包涵  / 現居四川成都 "
     },
+    
+    {
+        date: "11/16",
+        name: "🎪Moorinla慕琳拉🎟",
+        url: "https://17.live/s/u/8c997597-f4b6-4159-abe4-be1676970e55",
+        intro: "天蠍座 / 魚缸 / 面癱 / 音樂電台 / 鄰居系聊天主播"
+    },
 	
 	{
         date: "12/07",
