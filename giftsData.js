@@ -10,6 +10,7 @@ const collaborators = [
 		{ name: "白玉🖤", url: "https://17.live/zh-Hant/profile/u/3d07d8f2-08ce-47c7-8c0f-57dc5b770980" },
 		{ name: "希璐🤍", url: "https://17.live/zh-Hant/profile/u/a4c34c25-9d7d-4b13-bc1c-beba621813c3" },
 		{ name: "🍋Nicksie🍋", url: "https://17.live/s/u/8c195fe6-5882-4517-8104-27b670b224f5" },
+                { name: "💛微風", url: "https://17.live/s/u/bf500a3c-28c4-49dc-8e5f-6487e2045708" },
                 { name: "素顏怪獸茶🍵", url: "https://17.live/s/u/109f741c-61b1-4b35-83aa-8ed4ca039b37" }
 ];
 
