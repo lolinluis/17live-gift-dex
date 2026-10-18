@@ -63,8 +63,11 @@ const mysteryBagsDatabase = {
         activityDesc: "【常駐型隨機袋-非活動相關】",
         items: [
             {tag: "頭獎",name: "牡丹盛宴（小）",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "50,000 寶寶幣"},
-			{tag: "普獎",name: "???",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "??? 寶寶幣"},
-            {tag: "普獎",name: "豆綠牡丹（小）",rarity: "★★☆☆☆",desc: "【常見獎勵】沒虧沒虧",reward: "1,000 寶寶幣"}
+			{tag: "普獎",name: "黑牡丹（小）",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "1,500 寶寶幣"},
+            {tag: "普獎",name: "豆綠牡丹（小）",rarity: "★★☆☆☆",desc: "【常見獎勵】沒虧沒虧",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "姚黃牡丹（小）",rarity: "★★☆☆☆",desc: "【常見獎勵】基礎獎勵",reward: "700 寶寶幣"},
+            {tag: "普獎",name: "魏紫牡丹（小）",rarity: "★☆☆☆☆",desc: "【常見獎勵】基礎獎勵",reward: "500 寶寶幣"},
+            {tag: "普獎",name: "洛陽紅牡丹（小）",rarity: "★☆☆☆☆",desc: "【常見獎勵】基礎獎勵",reward: "450 寶寶幣"}
         ]
     },
 	
