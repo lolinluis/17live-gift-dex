@@ -86,5 +86,13 @@ const streamersDatabase = [
         name: "💎魅寶💎",
         url: "https://17.live/zh-Hant/profile/u/7d664b0a-77fb-475f-9796-68d8d997beb4",
         intro: "魔羯座 / 甜甜系聊天主播 / 現居?? "
+    },
+    
+    {
+        date: "12/28",
+        name: "哈娜Hana🌸",
+        url: "https://17.live/s/u/03dc97e9-5577-4dd7-9e2d-1238248381fd",
+        intro: "魔羯座 / INFP / 夜貓子 / 韓系聊天主播 "
     }
+    
 ];
