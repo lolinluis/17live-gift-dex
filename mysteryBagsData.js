@@ -281,6 +281,7 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "不倒翁疊疊樂 (19倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "16,888 寶寶幣"},
 			{tag: "二獎",name: "金色不倒翁 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運二獎獎勵",reward: "2,000 寶寶幣"},
+            {tag: "三獎",name: "粉色不倒翁 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運獎勵",reward: "1,200 寶寶幣"},
 			{tag: "普獎",name: "白色不倒翁 (0.5倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "400 寶寶幣"}
         ]
     },
