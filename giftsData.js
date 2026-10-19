@@ -141,8 +141,8 @@ const giftsDatabase = {
             levels: [
                 { level: "LV 0", name: "便當 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Bento/LV0.png" },
                 { level: "LV 1", name: "便當 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Bento/LV1.png" },
-                { level: "LV 2", name: "便當 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Bento/LV2.png" },
-                { level: "LV 3", name: "便當 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Bento/LV3.png" }
+                { level: "LV 2", name: "便當 LV2", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Bento/LV2.png" },
+                { level: "LV 3", name: "便當 LV3", rarity: "★★★★☆", desc: "【豪華滿級】", reqCount: "累計送出 1500 個", img: "images/upgrade_gift/Bento/LV3.png" }
             ]
         },
         Medieval: { // 中世紀
@@ -207,12 +207,13 @@ const giftsDatabase = {
         },
         Ghost: { // 阿飄
             title: "阿飄 (10幣)",
-            maxCoins: "15,000 寶寶幣",
+            maxCoins: "30,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "阿飄 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Ghost/LV0.png" },
                 { level: "LV 1", name: "阿飄 LV1", rarity: "★☆☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Ghost/LV1.png" },
                 { level: "LV 2", name: "阿飄 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ??? 個", img: "images/upgrade_gift/Ghost/LV2.png" },
-                { level: "LV 3", name: "阿飄 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1500 個", img: "images/upgrade_gift/Ghost/LV3.png" }
+                { level: "LV 3", name: "阿飄 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 1500 個", img: "images/upgrade_gift/Ghost/LV3.png" },
+                 { level: "LV 4", name: "阿飄 LV4", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 3000 個", img: "images/upgrade_gift/Ghost/LV4.png" }
             ]
         },
         Jelly: { // 果凍
