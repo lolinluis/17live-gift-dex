@@ -15,7 +15,7 @@ const streamersDatabase = [
         date: "02/22",
         name: "白玉🖤",
         url: "https://17.live/zh-Hant/profile/u/3d07d8f2-08ce-47c7-8c0f-57dc5b770980",
-        intro: "雙魚座 / INTJ / 高雄凶猛奧米加咆哮獸 / 神秘M屬性 / 喜歡被叫大摳呆 大咖撐 / 黑暗系瘋癲兇猛主播 / 現居高雄 "
+        intro: "雙魚座 / INTJ / 高雄燒聲奧米加咆哮獸 / 神秘M屬性 / 喜歡被叫大摳呆 大咖撐 / 黑暗系瘋癲兇猛主播 / 現居高雄 "
     },
 	
 	{
@@ -36,7 +36,7 @@ const streamersDatabase = [
         date: "07/26",
         name: "🎀伊娜いな",
         url: "https://17.live/zh-Hant/profile/u/ae0a569d-23ff-4f7d-b577-e955028ead32",
-        intro: "獅子座 / INTJ / 終極密碼小遊戲 / 互動系聊天主播 "
+        intro: "獅子座 / INTJ / 台中燒酒螺魔幻閃身步 / 終極密碼小遊戲 / 互動系聊天主播 "
     },
 	
 	{
