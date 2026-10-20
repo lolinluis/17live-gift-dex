@@ -901,7 +901,7 @@
             card.innerHTML = `
                 <img class="gift-card-thumb" src="${firstLevelImg}" alt="${gift.title}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><rect width=\'100%\' height=\'100%\' fill=\'%23151a21\'/></svg>';">
                 <div class="gift-card-title">${gift.title}</div>
-                <div class="gift-card-price">${priceText}</div>
+                <div class="gift-card-price">${priceText} 幣</div>
             `;
             giftGridContainer.appendChild(card);
         });
@@ -994,13 +994,13 @@
             card.innerHTML = `
                 <!-- 第一行：生日、主播名稱、星座 -->
                 <div class="streamer-row-1">
-                    <span class="streamer-date">🎂 ${dateStr}</span>
+                    <span class="streamer-date">${dateStr}</span>
                     <span class="streamer-name">
                         <a href="${item.url || '#'}" target="_blank" rel="noopener noreferrer" class="streamer-link">
                             ${item.name || '未命名主播'}
                         </a>
                     </span>
-                    ${zodiacStr ? `<span class="streamer-zodiac">✨ ${zodiacStr}</span>` : ''}
+                    ${zodiacStr ? `<span class="streamer-zodiac">${zodiacStr}</span>` : ''}
                 </div>
                 <!-- 第二行：簡介 -->
                 <div class="streamer-row-2">
