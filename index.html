@@ -825,7 +825,9 @@
             streamerBirthdayContainer.style.display = "none";
             qaContainer.style.display = "flex";
 
-            renderQAList();
+            if (typeof renderQAList === "function") {
+                renderQAList();
+            }
         }
     }
 
@@ -902,7 +904,7 @@
 
         Object.keys(db).forEach(key => {
             const bag = db[key];
-            const priceText = bag.maxCoins ? (bag.maxCoins.includes("幣") ? bag.maxCoins : bag.maxCoins + " / 次") : "單次金額未定";
+            const priceText = bag.maxCoins ? bag.maxCoins : "單次金額未定";
             const items = bag.items || bag.levels || [];
 
             const card = document.createElement("div");
@@ -934,7 +936,7 @@
                     <img class="bag-card-thumb" src="${bag.img || ''}" alt="${bag.title}" onerror="this.onerror=null;const text=encodeURIComponent('${bag.title}');this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'><rect width=\'100%\' height=\'100%\' fill=\'%23151a21\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23f1c40f\' font-size=\'10\'>${text}</text></svg>';">
                     <div class="bag-card-info">
                         <div class="bag-card-title">${bag.title}</div>
-                        <div class="bag-card-price">單次：${priceText}</div>
+                        <div class="bag-card-price">${priceText}</div>
                     </div>
                     <div class="bag-card-arrow">▼</div>
                 </div>
