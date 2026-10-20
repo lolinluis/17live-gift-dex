@@ -349,4 +349,4 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "你是我的巧克力",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"}
         ]
     }
-}；
+};
