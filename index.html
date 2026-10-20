@@ -141,7 +141,7 @@
             pointer-events: none;
         }
 
-        /* 【新版】升級禮圖鑑選擇清單 (4欄網格) */
+        /* 【升級禮】圖鑑選擇清單 (4欄網格) */
         .gift-grid-container {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -190,6 +190,15 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             word-break: break-all;
+        }
+
+        /* 禮物下方購買單次費用標籤樣式 */
+        .gift-grid-price {
+            font-size: 10px;
+            color: #f1c40f;
+            font-weight: bold;
+            margin-top: 3px;
+            text-shadow: 0 0 4px rgba(241, 196, 15, 0.4);
         }
 
         /* 返回選單按鈕 */
@@ -684,7 +693,7 @@
         </select>
     </div>
 
-    <!-- 【新版升級禮】圖鑑清單展示區 (4個一排網格) -->
+    <!-- 【升級禮】圖鑑清單展示區 (4個一排網格，帶有購買單次費用標籤) -->
     <div class="gift-grid-container" id="giftGridArea"></div>
 
     <!-- [隨機袋模式] 頂部隨機袋主圖與說明面板 -->
@@ -853,7 +862,7 @@
             : (typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {});
     }
 
-    // 渲染升級禮的 4 欄網格選單
+    // 渲染升級禮的 4 欄網格選單 (讀取 giftsData.js 中的 price 單次費用欄位)
     function renderGiftGrid() {
         const giftGridArea = document.getElementById("giftGridArea");
         if (!giftGridArea) return;
@@ -865,6 +874,21 @@
             const gift = db[key];
             const lvl0Data = gift.levels ? gift.levels[0] : null;
             const imgSrc = lvl0Data ? lvl0Data.img : "";
+            
+            // 優先讀取 giftsData.js 中的 price 欄位，若未填寫則嘗試抓 Level 1 的 reqCount
+            let singlePrice = "";
+            if (gift.price !== undefined && gift.price !== null && gift.price !== "") {
+                singlePrice = String(gift.price);
+            } else if (gift.levels && gift.levels[1] && gift.levels[1].reqCount) {
+                singlePrice = String(gift.levels[1].reqCount);
+            } else {
+                singlePrice = "0";
+            }
+
+            // 確保末尾附帶 "幣" 單位
+            if (!singlePrice.endsWith("幣")) {
+                singlePrice += "幣";
+            }
 
             const item = document.createElement("div");
             item.className = "gift-grid-item";
@@ -873,6 +897,7 @@
             item.innerHTML = `
                 <img class="gift-grid-img" src="${imgSrc}" alt="${gift.title}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'80\' height=\'80\' viewBox=\'0 0 80 80\'><rect width=\'100%\' height=\'100%\' fill=\'%23151a21\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23f1c40f\' font-size=\'10\'>Lv.0</text></svg>';">
                 <div class="gift-grid-title">${gift.title}</div>
+                <div class="gift-grid-price">${singlePrice}</div>
             `;
             giftGridArea.appendChild(item);
         });
