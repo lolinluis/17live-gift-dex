@@ -4,7 +4,7 @@
 
 const mysteryBagsDatabase = {
     Pin_Pai_Star: { //品牌之星
-        title: "品牌之星(3,000幣/次)",
+        title: "品牌之星",
         maxCoins: "3,000 寶寶幣 / 次",
 		img: "images/bags/Pin_Pai_Star/01.png",
         activityDesc: "【品牌大使活動】",
@@ -17,7 +17,7 @@ const mysteryBagsDatabase = {
     },
 	
 	Cute_Animal: { //可愛小動物扭蛋
-        title: "可愛小動物扭蛋(200幣/次)",
+        title: "可愛小動物扭蛋",
         maxCoins: "200 寶寶幣 / 次",
 		img: "images/bags/Cute_Animal/01.png",
         activityDesc: "【常駐型隨機袋-非活動相關】",
@@ -40,7 +40,7 @@ const mysteryBagsDatabase = {
     },
 	
 	MrDavid_Rocket: { //大偉哥百變火箭
-        title: "大偉哥百變火箭(666幣/次)",
+        title: "大偉哥百變火箭",
         maxCoins: "666 寶寶幣 / 次",
 		img: "images/bags/MrDavid_Rocket/01.png",
         activityDesc: "【常駐型隨機袋-非活動相關】",
@@ -57,7 +57,7 @@ const mysteryBagsDatabase = {
     },
 	
 	Flowers_bloomed: { //花又開好了
-        title: "花又開好了(1,000幣/次)",
+        title: "花又開好了",
         maxCoins: "1,000 寶寶幣 / 次",
 		img: "images/bags/Flowers_bloomed/01.png",
         activityDesc: "【常駐型隨機袋-非活動相關】",
@@ -72,7 +72,7 @@ const mysteryBagsDatabase = {
     },
 	
     Versatile_Magician_Big: { //百變魔術師包你大賺
-        title: "百變魔術師包你大賺(10,000幣/次)",
+        title: "百變魔術師包你大賺",
         maxCoins: "10,000 寶寶幣 / 次",
 		img: "images/bags/Versatile_Magician_Big/01.png",
         activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
@@ -87,7 +87,7 @@ const mysteryBagsDatabase = {
     },
 	
     Versatile_Magician_Small: { //百變魔術師包你小賺
-        title: "百變魔術師包你小賺(1,000幣/次)",
+        title: "百變魔術師包你小賺",
         maxCoins: "1,000 寶寶幣 / 次",
 		img: "images/bags/Versatile_Magician_Small/01.png",
         activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
@@ -102,7 +102,7 @@ const mysteryBagsDatabase = {
     },
 	
     Versatile_Magician_Filter: { //百變魔術師濾鏡包你賺
-        title: "百變魔術師濾鏡包你賺(3,000幣/次)",
+        title: "百變魔術師濾鏡包你賺",
         maxCoins: "3,000 寶寶幣 / 次",
 		img: "images/bags/Versatile_Magician_Filter/01.png",
         activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
@@ -116,7 +116,7 @@ const mysteryBagsDatabase = {
     },	
 	
     Summon_Divine_Beast: { //神獸召喚
-        title: "神獸召喚(900幣/次)",
+        title: "神獸召喚",
         maxCoins: "900 寶寶幣 / 次",
 		img: "images/bags/Summon_Divine_Beast/01.png",
         activityDesc: "【09/24-10/09 神獸召喚II 活動禮包】",
@@ -135,7 +135,7 @@ const mysteryBagsDatabase = {
     },
 	
 	Confession: { //告白箴言
-        title: "告白箴言(520幣/次)",
+        title: "告白箴言",
         maxCoins: "520 寶寶幣 / 次",
 		img: "images/bags/Confession/01.png",
         activityDesc: "【常駐型隨機袋-非活動相關】",
@@ -147,7 +147,7 @@ const mysteryBagsDatabase = {
     },
 	
 	Underwater_Adventure: { //海底探險
-        title: "海底探險(888幣/次)",
+        title: "海底探險",
         maxCoins: "888 寶寶幣 / 次",
 		img: "images/bags/Underwater_Adventure/01.png",
         activityDesc: "【常駐型隨機袋-非活動相關】",
@@ -161,7 +161,7 @@ const mysteryBagsDatabase = {
     },
 	
     Maple_Shiba: { //赤柴登場
-        title: "赤柴登場(1,500幣/次)",
+        title: "赤柴登場",
         maxCoins: "1,500 寶寶幣 / 次",
 		img: "images/bags/Maple_Shiba/01.png",
         activityDesc: "【10/01-10/12 柴要和你一起賞楓 活動禮包】",
@@ -175,7 +175,7 @@ const mysteryBagsDatabase = {
     },
 	
     Supply_II: { //物資補給2
-        title: "物資補給2(888幣/次)",
+        title: "物資補給2",
         maxCoins: "888 寶寶幣 / 次",
 		img: "images/bags/Supply_II/01.png",
         activityDesc: "【10/01-10/31 全員補給站 活動禮包】",
@@ -187,7 +187,7 @@ const mysteryBagsDatabase = {
     },	
 	
     MagicLamp: { //魔法神燈
-        title: "魔法神燈(300幣/次)",
+        title: "魔法神燈",
         maxCoins: "300 寶寶幣 / 次",
 		img: "images/bags/MagicLamp/01.png",
         activityDesc: "【神燈降臨活動】開袋有機會獲得高倍率獎勵分數，觸發巨鯨動畫！",
@@ -205,7 +205,7 @@ const mysteryBagsDatabase = {
     },
 	
     Golden_Treasure: { //17黃金寶藏
-        title: "17黃金寶藏(3,888幣/次)",
+        title: "17黃金寶藏",
         maxCoins: "3,888 寶寶幣 / 次",
 		img: "images/bags/Golden_Treasure/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
@@ -223,7 +223,7 @@ const mysteryBagsDatabase = {
     },
 	
 	Space_Travel_3D: { //3D太空旅行
-        title: "3D太空旅行(5,000幣/次)",
+        title: "3D太空旅行",
         maxCoins: "5,000 寶寶幣 / 次",
 		img: "images/bags/Space_Travel_3D/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
@@ -238,7 +238,7 @@ const mysteryBagsDatabase = {
     },
 	
 	Yacht_Tycoon: { //遊艇大亨_寶寶遊艇
-        title: "遊艇大亨_寶寶遊艇(1,000幣/次)",
+        title: "遊艇大亨_寶寶遊艇",
         maxCoins: "1,000 寶寶幣 / 次",
 		img: "images/bags/Yacht_Tycoon/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
@@ -257,7 +257,7 @@ const mysteryBagsDatabase = {
 
 
 	Deep_Blue_3D_UFO: { //深藍3D奇幻UFO
-        title: "深藍3D奇幻UFO(500幣/次)",
+        title: "深藍3D奇幻UFO",
         maxCoins: "500 寶寶幣 / 次",
 		img: "images/bags/Deep_Blue_3D_UFO/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
@@ -274,7 +274,7 @@ const mysteryBagsDatabase = {
     },
 	
     Lucky_Tumbler: { //開運不倒翁
-        title: "開運不倒翁(888幣/次)",
+        title: "開運不倒翁",
         maxCoins: "888 寶寶幣 / 次",
 		img: "images/bags/Lucky_Tumbler/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
@@ -287,7 +287,7 @@ const mysteryBagsDatabase = {
     },
 	
     Lucky_Mystery: { //開運隨機袋
-        title: "開運隨機袋(99幣/次)",
+        title: "開運隨機袋",
         maxCoins: "99 寶寶幣 / 次",
 		img: "images/bags/Lucky_Mystery/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
@@ -303,7 +303,7 @@ const mysteryBagsDatabase = {
     },
     
     	Halloween_Night: { //萬聖節
-        title: "Halloween_Night（10,000幣/次)",
+        title: "Halloween_Night",
         maxCoins: "10,000 寶寶幣 / 次",
 		img: "images/bags/Halloween_Night/01.png",
         activityDesc: "17萬聖節活動隨機袋",
@@ -320,7 +320,7 @@ const mysteryBagsDatabase = {
     },
     
        	Go_To_School: { //來去上學
-        title: "來去上學（2,000幣/次)",
+        title: "來去上學",
         maxCoins: "2,000 寶寶幣 / 次",
 		img: "images/bags/Go_To_School/01.png",
         activityDesc: "藝起來升級 活動隨機袋",
@@ -334,7 +334,7 @@ const mysteryBagsDatabase = {
         ]
     },
     Summer_Pistol: { //夏日手槍
-        title: "夏日手槍（300幣/次)",
+        title: "夏日手槍",
         maxCoins: "300 寶寶幣 / 次",
 		img: "images/bags/Summer_Pistol/01.png",
         activityDesc: "常駐型隨機袋-非活動相關",
