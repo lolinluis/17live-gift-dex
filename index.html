@@ -92,55 +92,6 @@
             margin-top: 4px;
         }
 
-        /* [隨機袋] 下拉選單區 */
-        .gift-select-container {
-            margin-bottom: 12px;
-            position: relative;
-            width: 100%;
-        }
-
-        .gift-select {
-            width: 100%;
-            padding: 12px 15px;
-            background: #111;
-            border: 2px solid #45a29e;
-            color: #66fcf1;
-            font-weight: bold;
-            font-size: 15px;
-            border-radius: 8px;
-            outline: none;
-            cursor: pointer;
-            appearance: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            box-shadow: 0 0 8px rgba(69, 162, 158, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .gift-select:focus {
-            border-color: #f39c12;
-            box-shadow: 0 0 12px rgba(243, 156, 18, 0.6);
-            color: #f39c12;
-        }
-
-        .gift-select option {
-            background: #151a21;
-            color: #ffffff;
-            font-size: 14px;
-            padding: 10px;
-        }
-
-        .gift-select-container::after {
-            content: "▼";
-            font-size: 12px;
-            color: #45a29e;
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            transform: translateY(-50%);
-            pointer-events: none;
-        }
-
         /* 【升級禮】圖鑑選擇清單 (4欄網格) */
         .gift-grid-container {
             display: grid;
@@ -192,7 +143,6 @@
             word-break: break-all;
         }
 
-        /* 禮物下方購買單次費用標籤樣式 */
         .gift-grid-price {
             font-size: 10px;
             color: #f1c40f;
@@ -224,50 +174,109 @@
             transform: scale(1.05);
         }
 
-        /* 隨機袋頂部主圖面板 */
-        .bag-hero-panel {
+        /* 【隨機袋卡片式列表與展開手風琴樣式】 */
+        .mystery-bag-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .bag-card {
             background: #151a21;
             border: 2px solid #45a29e;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            margin-bottom: 15px;
-            display: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s ease;
         }
 
-        .bag-main-img {
-            width: 100%;
-            max-width: 180px;
-            height: 180px;
-            margin: 0 auto 12px auto;
-            border-radius: 8px;
-            border: 3px solid #f1c40f;
+        .bag-card:hover {
+            border-color: #f39c12;
+            box-shadow: 0 0 12px rgba(243, 156, 18, 0.4);
+        }
+
+        .bag-card.active {
+            border-color: #f1c40f;
             box-shadow: 0 0 15px rgba(241, 196, 15, 0.5);
+        }
+
+        .bag-card-header {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            cursor: pointer;
+            user-select: none;
+            background: rgba(31, 40, 51, 0.5);
+            gap: 12px;
+        }
+
+        .bag-card-thumb {
+            width: 60px;
+            height: 60px;
+            border-radius: 8px;
+            border: 2px solid #c5a059;
             object-fit: cover;
             background-color: #000;
-            display: block;
+            flex-shrink: 0;
         }
 
-        .bag-desc-box {
+        .bag-card-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4px;
+        }
+
+        .bag-card-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #66fcf1;
+            line-height: 1.3;
+        }
+
+        .bag-card-price {
+            font-size: 13px;
+            font-weight: bold;
+            color: #f1c40f;
+            text-shadow: 0 0 4px rgba(241, 196, 15, 0.4);
+        }
+
+        .bag-card-arrow {
+            font-size: 14px;
+            color: #45a29e;
+            transition: transform 0.3s ease;
+            margin-left: 5px;
+        }
+
+        .bag-card.active .bag-card-arrow {
+            transform: rotate(180deg);
+            color: #f39c12;
+        }
+
+        /* 折疊展開內容容器 */
+        .bag-card-body {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease-in-out;
+            background: rgba(11, 12, 16, 0.8);
+        }
+
+        .bag-card-body-inner {
+            padding: 12px;
+            border-top: 1px dashed rgba(197, 160, 89, 0.4);
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .bag-card-desc {
             background: rgba(31, 40, 51, 0.8);
             border: 1px dashed #45a29e;
             border-radius: 6px;
-            padding: 10px;
+            padding: 8px 10px;
             font-size: 12px;
             color: #66fcf1;
             line-height: 1.5;
-            margin-bottom: 8px;
-            text-align: left;
-        }
-
-        .bag-price-container {
-            background: rgba(243, 156, 18, 0.1);
-            border: 1px solid #f39c12;
-            border-radius: 6px;
-            padding: 8px 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
         }
 
         /* 升級禮卡片展示區 */
@@ -391,9 +400,9 @@
             box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
         }
 
-        /* 隨機袋獎項列表 */
+        /* 隨機袋內部獎項列表 */
         .bag-items-grid {
-            display: none;
+            display: flex;
             flex-direction: column;
             gap: 8px;
         }
@@ -402,7 +411,7 @@
             background: #151a21;
             border: 1px solid #45a29e;
             border-radius: 6px;
-            padding: 10px 12px;
+            padding: 8px 10px;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -417,20 +426,20 @@
         .bag-item-header {
             display: flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
         }
 
         .bag-item-tag {
             background: #e74c3c;
             color: #fff;
-            padding: 1px 6px;
+            padding: 1px 5px;
             font-size: 10px;
             font-weight: bold;
             border-radius: 3px;
         }
 
         .bag-item-name {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: bold;
             color: #66fcf1;
         }
@@ -451,13 +460,13 @@
         }
 
         .bag-item-value {
-            font-size: 13px;
+            font-size: 12px;
             color: #f1c40f;
             font-weight: bold;
             text-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
         }
 
-        /* 主播生日列表頁面樣式 (兩行卡片式) */
+        /* 主播生日列表頁面樣式 */
         .streamer-birthday-container {
             display: none;
             flex-direction: column;
@@ -481,7 +490,6 @@
             background: rgba(69, 162, 158, 0.1);
         }
 
-        /* 第一行：生日、名字、星座 (字體放大) */
         .streamer-row-top {
             display: flex;
             justify-content: space-between;
@@ -526,7 +534,6 @@
             white-space: nowrap;
         }
 
-        /* 第二行：簡介內容 */
         .streamer-row-bottom {
             font-size: 12px;
             color: #c5a059;
@@ -534,7 +541,7 @@
             word-break: break-all;
         }
 
-        /* 問題 QA 可伸縮手風琴樣式 */
+        /* 問題 QA 手風琴樣式 */
         .qa-container {
             display: none;
             flex-direction: column;
@@ -696,27 +703,13 @@
         <div class="subtitle">(非官方 - 持續更新中)</div>
     </div>
 
-    <!-- [隨機袋模式] 下拉選單 -->
-    <div class="gift-select-container" id="selectContainer" style="display: none;">
-        <select class="gift-select" id="giftSelect" onchange="switchGift(this.value)">
-            <!-- 由 JS 動態生成 -->
-        </select>
-    </div>
-
     <!-- 【升級禮】圖鑑選擇清單 (4欄網格) -->
     <div class="gift-grid-container" id="giftGridArea"></div>
 
-    <!-- [隨機袋模式] 頂部隨機袋主圖與說明面板 -->
-    <div class="bag-hero-panel" id="bagHeroPanel">
-        <img class="bag-main-img" id="bagMainImg" src="" alt="隨機袋圖示">
-        <div class="bag-desc-box" id="bagDesc">活動說明...</div>
-        <div class="bag-price-container">
-            <span class="req-label" style="color:#e67e22;">單次開袋金額：</span>
-            <span class="req-value" id="bagPrice">300 寶寶幣 / 次</span>
-        </div>
-    </div>
+    <!-- 【隨機袋】卡片手風琴列表區 -->
+    <div class="mystery-bag-list" id="mysteryBagList" style="display: none;"></div>
 
-    <!-- [升級禮模式] 主展示卡片 (含有返回選單按鈕) -->
+    <!-- [升級禮模式] 主展示卡片 -->
     <div id="giftDisplayArea" style="display: none;">
         <div class="card-frame">
             <button class="back-btn" id="btnBackToGrid" onclick="backToGiftGrid()">↩ 返回選單</button>
@@ -739,13 +732,8 @@
         <div class="level-selector" id="levelSelector"></div>
     </div>
 
-    <!-- [隨機袋模式] 無圖純文字獎項平鋪列表 -->
-    <div class="bag-items-grid" id="bagItemsGrid"></div>
-
     <!-- [主播生日模式] 兩行卡片式清單列表 -->
-    <div class="streamer-birthday-container" id="streamerBirthdayContainer">
-        <!-- 由 JS 動態渲染 -->
-    </div>
+    <div class="streamer-birthday-container" id="streamerBirthdayContainer"></div>
 
     <!-- [問題QA模式] 可伸縮手風琴內容區 -->
     <div class="qa-container" id="qaContainer"></div>
@@ -761,7 +749,6 @@
         <div class="collab-title">❖ 貢獻與協作者 ❖</div>
         <div class="collab-list" id="collabList"></div>
 
-        <!-- [不蒜子] 瀏覽人次容器 -->
         <div>
             <div class="counter-container">
                 <span class="counter-label">❖ 累積瀏覽人次：</span>
@@ -796,19 +783,15 @@
 
         const giftGridArea = document.getElementById("giftGridArea");
         const giftDisplayArea = document.getElementById("giftDisplayArea");
-        const bagHeroPanel = document.getElementById("bagHeroPanel");
-        const bagItemsGrid = document.getElementById("bagItemsGrid");
-        const selectContainer = document.getElementById("selectContainer");
+        const mysteryBagList = document.getElementById("mysteryBagList");
         const streamerBirthdayContainer = document.getElementById("streamerBirthdayContainer");
         const qaContainer = document.getElementById("qaContainer");
 
         if (mode === 'gifts') {
             document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
-            selectContainer.style.display = "none";
             giftGridArea.style.display = "grid";
             giftDisplayArea.style.display = "none";
-            bagHeroPanel.style.display = "none";
-            bagItemsGrid.style.display = "none";
+            mysteryBagList.style.display = "none";
             streamerBirthdayContainer.style.display = "none";
             qaContainer.style.display = "none";
 
@@ -816,26 +799,19 @@
 
         } else if (mode === 'bags') {
             document.getElementById("pageTitle").innerText = "17LIVE 隨機袋獎勵圖鑑";
-            selectContainer.style.display = "block";
             giftGridArea.style.display = "none";
             giftDisplayArea.style.display = "none";
-            bagHeroPanel.style.display = "block";
-            bagItemsGrid.style.display = "flex";
+            mysteryBagList.style.display = "flex";
             streamerBirthdayContainer.style.display = "none";
             qaContainer.style.display = "none";
 
-            const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
-            currentGiftKey = Object.keys(db)[0] || '';
-            renderMainMenu();
-            if (currentGiftKey) switchGift(currentGiftKey);
+            renderMysteryBagList();
 
         } else if (mode === 'streamers') {
             document.getElementById("pageTitle").innerText = "17 LIVE 主播生日列表";
-            selectContainer.style.display = "none";
             giftGridArea.style.display = "none";
             giftDisplayArea.style.display = "none";
-            bagHeroPanel.style.display = "none";
-            bagItemsGrid.style.display = "none";
+            mysteryBagList.style.display = "none";
             streamerBirthdayContainer.style.display = "flex";
             qaContainer.style.display = "none";
 
@@ -843,11 +819,9 @@
 
         } else if (mode === 'qa') {
             document.getElementById("pageTitle").innerText = "17LIVE 常見問題 QA";
-            selectContainer.style.display = "none";
             giftGridArea.style.display = "none";
             giftDisplayArea.style.display = "none";
-            bagHeroPanel.style.display = "none";
-            bagItemsGrid.style.display = "none";
+            mysteryBagList.style.display = "none";
             streamerBirthdayContainer.style.display = "none";
             qaContainer.style.display = "flex";
 
@@ -861,7 +835,7 @@
             : (typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {});
     }
 
-    // 渲染升級禮的 4 欄網格選單
+    /* 渲染升級禮網格 */
     function renderGiftGrid() {
         const giftGridArea = document.getElementById("giftGridArea");
         if (!giftGridArea) return;
@@ -918,55 +892,82 @@
         document.getElementById("giftGridArea").style.display = "grid";
     }
 
-    function renderMainMenu() {
-        const giftSelect = document.getElementById("giftSelect");
-        if (!giftSelect) return;
-        giftSelect.innerHTML = "";
+    /* 渲染隨機袋列表 (卡片 + 手風琴展開) */
+    function renderMysteryBagList() {
+        const listContainer = document.getElementById("mysteryBagList");
+        if (!listContainer) return;
+        listContainer.innerHTML = "";
 
-        const activeDB = getCurrentDatabase();
+        const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
 
-        Object.keys(activeDB).forEach(key => {
-            const option = document.createElement("option");
-            option.value = key;
-            option.innerText = activeDB[key].title;
-            if (key === currentGiftKey) {
-                option.selected = true;
-            }
-            giftSelect.appendChild(option);
+        Object.keys(db).forEach(key => {
+            const bag = db[key];
+            const priceText = bag.maxCoins ? (bag.maxCoins.includes("幣") ? bag.maxCoins : bag.maxCoins + " / 次") : "單次金額未定";
+            const items = bag.items || bag.levels || [];
+
+            const card = document.createElement("div");
+            card.className = "bag-card";
+
+            // 生成獎項 HTML
+            let itemsHtml = "";
+            items.forEach(item => {
+                const reqText = item.reward || item.reqCount || "無備註";
+                itemsHtml += `
+                    <div class="bag-item-card">
+                        <div class="bag-item-left">
+                            <div class="bag-item-header">
+                                <span class="bag-item-tag">${item.tag || item.level || '獎項'}</span>
+                                <span class="bag-item-name">${item.name}</span>
+                                <span class="bag-item-rarity">${item.rarity || ''}</span>
+                            </div>
+                            <div class="bag-item-desc">${item.desc || ''}</div>
+                        </div>
+                        <div class="bag-item-right">
+                            <div class="bag-item-value">${reqText}</div>
+                        </div>
+                    </div>
+                `;
+            });
+
+            card.innerHTML = `
+                <div class="bag-card-header" onclick="toggleBagCard(this)">
+                    <img class="bag-card-thumb" src="${bag.img || ''}" alt="${bag.title}" onerror="this.onerror=null;const text=encodeURIComponent('${bag.title}');this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'60\' height=\'60\' viewBox=\'0 0 60 60\'><rect width=\'100%\' height=\'100%\' fill=\'%23151a21\'/><text x=\'50%\' y=\'50%\' dominant-baseline=\'middle\' text-anchor=\'middle\' fill=\'%23f1c40f\' font-size=\'10\'>${text}</text></svg>';">
+                    <div class="bag-card-info">
+                        <div class="bag-card-title">${bag.title}</div>
+                        <div class="bag-card-price">單次：${priceText}</div>
+                    </div>
+                    <div class="bag-card-arrow">▼</div>
+                </div>
+                <div class="bag-card-body">
+                    <div class="bag-card-body-inner">
+                        <div class="bag-card-desc">${bag.activityDesc || '暫無活動說明。'}</div>
+                        <div class="bag-items-grid">
+                            ${itemsHtml}
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            listContainer.appendChild(card);
         });
     }
 
-    function switchGift(giftKey) {
-        currentGiftKey = giftKey;
-        const activeDB = getCurrentDatabase();
+    /* 隨機袋卡片手風琴展開/收合控制 */
+    function toggleBagCard(headerEl) {
+        const card = headerEl.parentElement;
+        const body = card.querySelector(".bag-card-body");
+        const isActive = card.classList.contains("active");
 
-        const giftSelect = document.getElementById("giftSelect");
-        if (giftSelect && giftSelect.value !== giftKey) {
-            giftSelect.value = giftKey;
-        }
-
-        const data = activeDB[currentGiftKey];
-        if (!data) return;
-
-        if (currentMode === 'bags') {
-            document.getElementById("bagPrice").innerText = data.maxCoins || "單次金額未定";
-            document.getElementById("bagDesc").innerText = data.activityDesc || "暫無活動說明。";
-
-            const bagImgEl = document.getElementById("bagMainImg");
-            if (bagImgEl) {
-                bagImgEl.onerror = function() {
-                    this.onerror = null;
-                    const encodedText = encodeURIComponent(data.title || "隨機袋");
-                    this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><rect width="100%" height="100%" fill="%23151a21"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23f1c40f" font-size="16" font-weight="bold">${encodedText}</text></svg>`;
-                };
-                bagImgEl.src = data.img || "";
-            }
-
-            renderBagItems(data.items || data.levels || []);
+        if (isActive) {
+            card.classList.remove("active");
+            body.style.maxHeight = null;
+        } else {
+            card.classList.add("active");
+            body.style.maxHeight = body.scrollHeight + "px";
         }
     }
 
-    // 渲染主播生日列表 (對應拆分後的 zodiac 欄位)
+    /* 渲染主播生日列表 */
     function renderStreamerBirthdayList() {
         const container = document.getElementById("streamerBirthdayContainer");
         if (!container) return;
@@ -993,34 +994,6 @@
                 </div>
             `;
             container.appendChild(card);
-        });
-    }
-
-    function renderBagItems(items) {
-        const bagItemsGrid = document.getElementById("bagItemsGrid");
-        if (!bagItemsGrid) return;
-        bagItemsGrid.innerHTML = "";
-
-        items.forEach(item => {
-            const card = document.createElement("div");
-            card.className = "bag-item-card";
-
-            const reqText = item.reward || item.reqCount || "無備註";
-
-            card.innerHTML = `
-                <div class="bag-item-left">
-                    <div class="bag-item-header">
-                        <span class="bag-item-tag">${item.tag || item.level || '獎項'}</span>
-                        <span class="bag-item-name">${item.name}</span>
-                        <span class="bag-item-rarity">${item.rarity || ''}</span>
-                    </div>
-                    <div class="bag-item-desc">${item.desc || ''}</div>
-                </div>
-                <div class="bag-item-right">
-                    <div class="bag-item-value">${reqText}</div>
-                </div>
-            `;
-            bagItemsGrid.appendChild(card);
         });
     }
 
