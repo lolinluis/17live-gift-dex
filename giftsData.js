@@ -18,7 +18,8 @@ const collaborators = [
 // 禮物資料庫 (完整資料)
 const giftsDatabase = {
 		Banquet: { // 慶生大辦桌
-            title: "慶生大辦桌 (117幣)",
+            title: "慶生大辦桌",
+            price: 117,
             maxCoins: "50,076 寶寶幣", // 自行輸入欄位
             levels: [
                 { level: "LV 0", name: "慶生大辦桌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】傳統紅圓桌與幾盤經典小菜。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Banquet/LV0.png" },
@@ -31,7 +32,8 @@ const giftsDatabase = {
             ]
         },
         LoveYouMost: { // 堡證最愛你
-            title: "堡證最愛你 (522幣)",
+            title: "堡證最愛你",
+            price: 522,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "堡證最愛你 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/LoveYouMost/LV0.png" },
@@ -41,7 +43,8 @@ const giftsDatabase = {
             ]
         },
         Myburger: { // 你是我的堡
-            title: "你是我的堡 (52幣)",
+            title: "你是我的堡",
+            price: 52,
             maxCoins: "51,948 寶寶幣",
             levels: [
                 { level: "LV 0", name: "你是我的堡(LV0)", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Myburger/LV0.png" },
@@ -51,7 +54,8 @@ const giftsDatabase = {
             ]
         },
         Capybara: { // 卡皮巴拉
-            title: "卡皮巴拉 (20幣)",
+            title: "卡皮巴拉",
+            price: 20,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "水豚呆呆", rarity: "★☆☆☆☆", desc: "【基礎起點】頭頂著一顆橘子呆坐的水豚。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Capybara/LV0.png" },
@@ -61,7 +65,8 @@ const giftsDatabase = {
             ]
         },
         Princess: { // 甜美公主風
-            title: "甜美公主風 (500幣)",
+            title: "甜美公主風",
+            price: 500,
             maxCoins: "150,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "甜美公主風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】帶有粉色光芒的小巧蝴蝶結皇冠。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Princess/LV0.png" },
@@ -71,7 +76,8 @@ const giftsDatabase = {
             ]
         },
         Hotgirl: { // 性感辣妹風
-            title: "性感辣妹風 (500幣)",
+            title: "性感辣妹風",
+            price: 500,
             maxCoins: "150,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "性感辣妹風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】微光耀眼的迪斯可鏡面球與斑駁光影。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Hotgirl/LV0.png" },
@@ -81,7 +87,8 @@ const giftsDatabase = {
             ]
         },
         Beach: { // 度假海灘風
-            title: "度假海灘風 (500幣)",
+            title: "度假海灘風",
+            price: 500,
             maxCoins: "150,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "度假海灘風 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】插著小陽傘的鮮採冰鎮椰子汁。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Beach/LV0.png" },
@@ -91,7 +98,8 @@ const giftsDatabase = {
             ]
         },
         Cake: { // 十周年蛋糕
-            title: "十週年蛋糕 (17幣)",
+            title: "十週年蛋糕",
+            price: 17,
             maxCoins: "102,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "十週年蛋糕(基礎)", rarity: "★☆☆☆☆", desc: "【基礎起點】盤子上面的一顆小草莓", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Cake/LV0.png" },
@@ -108,7 +116,8 @@ const giftsDatabase = {
             ]
         },
         Mage: { // 魔法師修練
-            title: "魔法師修練 (500幣)",
+            title: "魔法師修練",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "魔法師修練 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Mage/LV0.png" },
@@ -116,7 +125,8 @@ const giftsDatabase = {
             ]
         },
         Chocolate: { // 巧克力
-            title: "巧克力 (15幣)",
+            title: "巧克力",
+            price: 15,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "巧克力 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Chocolate/LV0.png" },
@@ -126,7 +136,8 @@ const giftsDatabase = {
             ]
         },
         SeaMonster: { // 神秘海怪
-            title: "神秘海怪 (500幣)",
+            title: "神秘海怪",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "神秘海怪 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/SeaMonster/LV0.png" },
@@ -136,7 +147,8 @@ const giftsDatabase = {
             ]
         },
         Bento: { // 便當
-            title: "便當 (20幣)",
+            title: "便當",
+            price: 20,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "便當 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Bento/LV0.png" },
@@ -146,7 +158,8 @@ const giftsDatabase = {
             ]
         },
         Medieval: { // 中世紀
-            title: "中世紀 (20幣)",
+            title: "中世紀",
+            price: 20,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "中世紀 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Medieval/LV0.png" },
@@ -156,7 +169,8 @@ const giftsDatabase = {
             ]
         },
         Hunk: { // 猛男
-            title: "猛男 (200幣)",
+            title: "猛男",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "猛男 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Hunk/LV0.png" },
@@ -165,7 +179,8 @@ const giftsDatabase = {
             ]
         },
         Phoenix: { // 鳳凰
-            title: "鳳凰 (15幣)",
+            title: "鳳凰",
+            price: 15,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "鳳凰 LV.0", rarity: "★☆☆☆☆", desc: "【初生型態】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Phoenix/LV0.png" },
@@ -176,7 +191,8 @@ const giftsDatabase = {
             ]
         },
         Firework: { // 煙火升級禮
-            title: "煙火升級禮 (10幣)",
+            title: "煙火升級禮",
+            price: 10,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "煙火升級禮 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Firework/LV0.png" },
@@ -186,7 +202,8 @@ const giftsDatabase = {
             ]
         },
         Fish: { // 魚
-            title: "魚 (15幣)",
+            title: "魚",
+            price: 15,
             maxCoins: "15,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Fish/LV0.png" },
@@ -196,7 +213,8 @@ const giftsDatabase = {
             ]
         },
         Blackpanther: { // 神獸黑豹
-            title: "神獸黑豹 (10幣)",
+            title: "神獸黑豹",
+            price: 10,
             maxCoins: "5,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "神獸黑豹 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Blackpanther/LV0.png" },
@@ -206,7 +224,8 @@ const giftsDatabase = {
             ]
         },
         Ghost: { // 阿飄
-            title: "阿飄 (10幣)",
+            title: "阿飄",
+            price: 10,
             maxCoins: "30,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "阿飄 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Ghost/LV0.png" },
@@ -217,7 +236,8 @@ const giftsDatabase = {
             ]
         },
         Jelly: { // 果凍
-            title: "果凍 (15幣)",
+            title: "果凍",
+            price: 15,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "果凍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Jelly/LV0.png" },
@@ -227,7 +247,8 @@ const giftsDatabase = {
             ]
         },
         Brat: { // 小鬼
-            title: "小鬼 (12幣)",
+            title: "小鬼",
+            price: 12,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "小鬼 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Brat/LV0.png" },
@@ -237,7 +258,8 @@ const giftsDatabase = {
             ]
         },
         Meat: { // 肉
-            title: "肉 (20幣)",
+            title: "肉",
+            price: 20,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "肉 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Meat/LV0.png" },
@@ -247,7 +269,8 @@ const giftsDatabase = {
             ]
         },
         Icecream: { // 冰淇淋
-            title: "冰淇淋 (15幣)",
+            title: "冰淇淋",
+            price: 15,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "冰淇淋 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Icecream/LV0.png" },
@@ -257,7 +280,8 @@ const giftsDatabase = {
             ]
         },
         Whisky: { // 威士忌
-            title: "威士忌 (15幣)",
+            title: "威士忌",
+            price: 15,
             maxCoins: "22,500 寶寶幣",
             levels: [
                 { level: "LV 0", name: "威士忌 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Whisky/LV0.png" },
@@ -267,7 +291,8 @@ const giftsDatabase = {
             ]
         },
         Babyshark: { // 北鼻鯊嘟嘟嘟
-            title: "北鼻鯊嘟嘟嘟 (200幣)",
+            title: "北鼻鯊嘟嘟嘟",
+            price: 200,
             maxCoins: "40,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "北鼻鯊嘟嘟嘟 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Babyshark/LV0.png" },
@@ -277,7 +302,8 @@ const giftsDatabase = {
             ]
         },
         Butterfly: { // 蝴蝶
-            title: "蝴蝶 (10幣)",
+            title: "蝴蝶",
+            price: 10,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "蝴蝶 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Butterfly/LV0.png" },
@@ -287,7 +313,8 @@ const giftsDatabase = {
             ]
         },
         Watermelon: { // 西瓜
-            title: "西瓜 (10幣)",
+            title: "西瓜",
+            price: 10,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "西瓜 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Watermelon/LV0.png" },
@@ -297,7 +324,8 @@ const giftsDatabase = {
             ]
         },
         Myhome: { // 我的家
-            title: "我的家 (30幣)",
+            title: "我的家",
+            price: 30,
             maxCoins: "9,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "我的家 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Myhome/LV0.png" },
@@ -307,7 +335,8 @@ const giftsDatabase = {
             ]
         },
         Basketball: { // 籃球
-            title: "籃球 (30幣)",
+            title: "籃球",
+            price: 30,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "籃球 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Basketball/LV0.png" },
@@ -315,7 +344,8 @@ const giftsDatabase = {
             ]
         },
         Charizard: { // 噴火龍
-            title: "噴火龍 (350幣)",
+            title: "噴火龍",
+            price: 350,
             maxCoins: "約 355,250 寶寶幣",
             levels: [
                 { level: "LV 0", name: "噴火龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Charizard/LV0.png" },
@@ -325,7 +355,8 @@ const giftsDatabase = {
             ]
         },	
         Qilin: { // 麒麟
-            title: "麒麟 (500幣)",
+            title: "麒麟",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "麒麟 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Qilin/LV0.png" },
@@ -333,7 +364,8 @@ const giftsDatabase = {
             ]
         },		
         Cockroach: { // 小強 蟑螂
-            title: "小強 (500幣)",
+            title: "小強",
+            price: 500,
             maxCoins: "357,500 寶寶幣",
             levels: [
                 { level: "LV 0", name: "小強 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】心中一絲壞壞的想法正在萌芽。", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Cockroach/LV0.png" },
@@ -345,7 +377,8 @@ const giftsDatabase = {
             ]
         },
 	Panda: { // 最幸福熊貓
-            title: "最幸福熊貓 (200幣)",
+            title: "最幸福熊貓",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "最幸福熊貓 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Panda/LV0.png" },
@@ -353,7 +386,8 @@ const giftsDatabase = {
             ]
         },
 	Deer: { // 最幸福小鹿
-            title: "最幸福小鹿 (200幣)",
+            title: "最幸福小鹿",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "最幸福小鹿 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Deer/LV0.png" },
@@ -361,7 +395,8 @@ const giftsDatabase = {
             ]
         },
 	Piggy: { // 最幸福小豬
-            title: "最幸福小豬 (200幣)",
+            title: "最幸福小豬",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "最幸福小豬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Piggy/LV0.png" },
@@ -371,7 +406,8 @@ const giftsDatabase = {
             ]
         },
 	Hippo: { // 卡哇伊河馬
-            title: "卡哇伊河馬 (200幣)",
+            title: "卡哇伊河馬",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "卡哇伊河馬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Hippo/LV0.png" },
@@ -379,7 +415,8 @@ const giftsDatabase = {
             ]
         },		
         Corgi: { // 萌寵柯基
-            title: "萌寵柯基 (200幣)",
+            title: "萌寵柯基",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "萌寵柯基 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Corgi/LV0.png" },
@@ -389,7 +426,8 @@ const giftsDatabase = {
             ]
         },
 	Biwingbird: { // 比翼鳥
-            title: "比翼鳥 (200幣)",
+            title: "比翼鳥",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "比翼鳥 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Biwingbird/LV0.png" },
@@ -398,7 +436,8 @@ const giftsDatabase = {
             ]
         },
 	Macaron: { // 給你馬卡龍
-            title: "給你馬卡龍 (149幣)",
+            title: "給你馬卡龍",
+            price: 149,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "給你馬卡龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Macaron/LV0.png" },
@@ -408,7 +447,8 @@ const giftsDatabase = {
             ]
         },
 	MyChocolate: { // 你是我的巧克力
-            title: "你是我的巧克力 (149幣)",
+            title: "你是我的巧克力",
+            price: 149,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "你是我的巧克力 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/MyChocolate/LV0.png" },
@@ -418,7 +458,8 @@ const giftsDatabase = {
             ]
         },
 	Three_Tailed_Fox: { // 三尾狐狸
-            title: "三尾狐狸 (149幣)",
+            title: "三尾狐狸",
+            price: 149,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "三尾狐狸 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Three_Tailed_Fox/LV0.png" },
@@ -428,7 +469,8 @@ const giftsDatabase = {
             ]
         },
 		Duck: { // 17小鴨
-            title: "17小鴨 (149幣)",
+            title: "17小鴨",
+            price: 149,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "17小鴨 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Duck/LV0.png" },
@@ -436,7 +478,8 @@ const giftsDatabase = {
             ]
         },
 		Alpaca: { // 草泥馬
-            title: "草泥馬 (149幣)",
+            title: "草泥馬",
+            price: 149,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "草泥馬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Alpaca/LV0.png" },
@@ -444,7 +487,8 @@ const giftsDatabase = {
             ]
         },
 		Dragon_and_Lion_Dances: { // 舞龍舞獅
-            title: "舞龍舞獅 (350幣)",
+            title: "舞龍舞獅",
+            price: 350,
             maxCoins: "約 355,250 寶寶幣",
             levels: [
                 { level: "LV 0", name: "舞龍舞獅 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dragon_and_Lion_Dances/LV0.png" },
@@ -454,7 +498,8 @@ const giftsDatabase = {
             ]
         },
 		Ms_Leti: { // Ms.Leti
-            title: "Ms.Leti (250幣)",
+            title: "Ms.Leti",
+            price: 250,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "Ms.Leti LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Ms_Leti/LV0.png" },
@@ -462,7 +507,8 @@ const giftsDatabase = {
             ]
         },
 		Magical_Fireworks: { // 魔幻煙火
-            title: "魔幻煙火 (350幣)",
+            title: "魔幻煙火",
+            price: 350,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "魔幻煙火 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Magical_Fireworks/LV0.png" },
@@ -471,7 +517,8 @@ const giftsDatabase = {
             ]
         },
 		Love_Wishing_Well: { // 愛情許願池
-            title: "愛情許願池 (50,000幣)",
+            title: "愛情許願池",
+            price: 50000,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "愛情許願池 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】很高門檻的起點！", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Love_Wishing_Well/LV0.png" },
@@ -479,7 +526,8 @@ const giftsDatabase = {
             ]
         },
 		Dont_Eat_Bunny: { // 不可以吃兔兔
-            title: "不可以吃兔兔 (200幣)",
+            title: "不可以吃兔兔",
+            price: 200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "不可以吃兔兔 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dont_Eat_Bunny/LV0.png" },
@@ -489,7 +537,8 @@ const giftsDatabase = {
             ]
         },
 		Mermaid: { // 美人魚
-            title: "美人魚 (700幣)",
+            title: "美人魚",
+            price: 700,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "美人魚 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】很高門檻的起點！", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Mermaid/LV0.png" },
@@ -497,7 +546,8 @@ const giftsDatabase = {
             ]
         },
 		Dreamy_Unicorn: { // 夢幻獨角獸
-            title: "夢幻獨角獸 (700幣)",
+            title: "夢幻獨角獸",
+            price: 700,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "夢幻獨角獸 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dreamy_Unicorn/LV0.png" },
@@ -506,7 +556,8 @@ const giftsDatabase = {
             ]
         },
 		Bunny_Adorable: { // 兔兔惹人愛
-            title: "兔兔惹人愛 (250幣)",
+            title: "兔兔惹人愛",
+            price: 250,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "兔兔惹人愛 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Bunny_Adorable/LV0.png" },
@@ -516,7 +567,8 @@ const giftsDatabase = {
             ]
         },
 	Nine_Tailed_Fox_Sakura: { // 九尾狐(櫻)
-            title: "九尾狐(櫻) (500幣)",
+            title: "九尾狐(櫻)",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "九尾狐(櫻) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Nine_Tailed_Fox_Sakura/LV0.png" },
@@ -526,7 +578,8 @@ const giftsDatabase = {
             ]
         },
 	Nine_Tailed_Fox_Wind: { // 九尾狐(風)
-            title: "九尾狐(風) (500幣)",
+            title: "九尾狐(風)",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "九尾狐(風) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Nine_Tailed_Fox_Wind/LV0.png" },
@@ -536,7 +589,8 @@ const giftsDatabase = {
             ]
         },
 	Nine_Tailed_Fox_Fire: { // 九尾狐(火)
-            title: "九尾狐(火) (500幣)",
+            title: "九尾狐(火)",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "九尾狐(火) LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Nine_Tailed_Fox_Fire/LV0.png" },
@@ -546,7 +600,8 @@ const giftsDatabase = {
             ]
         },
 	Tengshe: { // 騰蛇
-            title: "騰蛇 (500幣)",
+            title: "騰蛇",
+            price: 500,
             maxCoins: "約 250,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "騰蛇 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Tengshe/LV0.png" },
@@ -556,7 +611,8 @@ const giftsDatabase = {
             ]
         },
 	Shiba_Inu: { // 柴犬
-            title: "柴犬 (700幣)",
+            title: "柴犬",
+            price: 700,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "柴犬 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Shiba_Inu/LV0.png" },
@@ -566,7 +622,8 @@ const giftsDatabase = {
             ]
         },
 	Baize: { // 白澤
-            title: "白澤 (500幣)",
+            title: "白澤",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "白澤 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Baize/LV0.png" },
@@ -576,7 +633,8 @@ const giftsDatabase = {
             ]
         },
 	Mike: { // 麥克
-            title: "麥克 (300幣)",
+            title: "麥克",
+            price: 300,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "麥克 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Mike/LV0.png" },
@@ -586,7 +644,8 @@ const giftsDatabase = {
             ]
         },
 	Kara: { // 卡拉
-            title: "卡拉 (300幣)",
+            title: "卡拉",
+            price: 300,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "卡拉 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Kara/LV0.png" },
@@ -596,7 +655,8 @@ const giftsDatabase = {
             ]
         },
 	Xuanwu: { // 玄武
-            title: "玄武 (500幣)",
+            title: "玄武",
+            price: 500,
             maxCoins: "約 250,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "玄武 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Xuanwu/LV0.png" },
@@ -606,7 +666,8 @@ const giftsDatabase = {
             ]
         },
 	Love_You_Wedding_Car: { // 愛你禮車
-            title: "愛你禮車 (20,200幣)",
+            title: "愛你禮車",
+            price: 20200,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "愛你禮車 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】升級禮破萬不科學？", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Love_You_Wedding_Car/LV0.png" },
@@ -616,7 +677,8 @@ const giftsDatabase = {
             ]
         },
 	Azure_Dragon: { // 青龍
-            title: "青龍 (500幣)",
+            title: "青龍",
+            price: 500,
             maxCoins: "約 250,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "青龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Azure_Dragon/LV0.png" },
@@ -626,7 +688,8 @@ const giftsDatabase = {
             ]
         },
 	White_Tiger: { // 白虎
-            title: "白虎(台灣) (500幣)",
+            title: "白虎(台灣)",
+            price: 500,
             maxCoins: "約 250,000 寶寶幣",
             levels: [
                 { level: "LV 0", name: "白虎 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/White_Tiger/LV0.png" },
@@ -636,7 +699,8 @@ const giftsDatabase = {
             ]
         },
 	Vermilion_Bird: { // 朱雀
-            title: "朱雀 (500幣)",
+            title: "朱雀",
+            price: 500,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "朱雀 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Vermilion_Bird/LV0.png" },
@@ -646,7 +710,8 @@ const giftsDatabase = {
             ]
         },
 	UFO: { // UFO
-            title: "UFO (30幣)",
+            title: "UFO",
+            price: 30,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "UFO LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/UFO/LV0.png" },
@@ -656,7 +721,8 @@ const giftsDatabase = {
             ]
         },
 	Loch_Ness_Monster: { // 尼斯湖水怪
-            title: "尼斯湖水怪 (350幣)",
+            title: "尼斯湖水怪",
+            price: 350,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "尼斯湖水怪 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Loch_Ness_Monster/LV0.png" },
@@ -666,7 +732,8 @@ const giftsDatabase = {
             ]
         },		
         Crown: { // 鑽石皇冠
-            title: "鑽石皇冠 (20幣)",
+            title: "鑽石皇冠",
+            price: 20,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "鑽石皇冠 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】只是一顆原石", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Crown/LV0.png" },
@@ -683,7 +750,8 @@ const giftsDatabase = {
             ]
         },
         Larva_Cake: { // 熔岩蛋糕
-            title: "熔岩蛋糕 (30幣)",
+            title: "熔岩蛋糕",
+            price: 30,
             maxCoins: "約 ??? 寶寶幣",
             levels: [
                 { level: "LV 0", name: "熔岩蛋糕 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Larva_Cake/LV0.png" },
