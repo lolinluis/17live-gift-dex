@@ -457,7 +457,7 @@
             text-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
         }
 
-        /* 主播生日列表頁面樣式 (改為兩行卡片式) */
+        /* 主播生日列表頁面樣式 (兩行卡片式) */
         .streamer-birthday-container {
             display: none;
             flex-direction: column;
@@ -703,7 +703,7 @@
         </select>
     </div>
 
-    <!-- 【升級禮】圖鑑清單展示區 (4個一排網格，帶有購買單次費用標籤) -->
+    <!-- 【升級禮】圖鑑選擇清單 (4欄網格) -->
     <div class="gift-grid-container" id="giftGridArea"></div>
 
     <!-- [隨機袋模式] 頂部隨機袋主圖與說明面板 -->
@@ -861,7 +861,7 @@
             : (typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {});
     }
 
-    // 渲染升級禮的 4 欄網格選單 (讀取 giftsData.js 中的 price 單次費用欄位)
+    // 渲染升級禮的 4 欄網格選單
     function renderGiftGrid() {
         const giftGridArea = document.getElementById("giftGridArea");
         if (!giftGridArea) return;
@@ -874,7 +874,6 @@
             const lvl0Data = gift.levels ? gift.levels[0] : null;
             const imgSrc = lvl0Data ? lvl0Data.img : "";
             
-            // 優先讀取 giftsData.js 中的 price 欄位，若未填寫則嘗試抓 Level 1 的 reqCount
             let singlePrice = "";
             if (gift.price !== undefined && gift.price !== null && gift.price !== "") {
                 singlePrice = String(gift.price);
@@ -884,7 +883,6 @@
                 singlePrice = "0";
             }
 
-            // 確保末尾附帶 "幣" 單位
             if (!singlePrice.endsWith("幣")) {
                 singlePrice += "幣";
             }
@@ -902,7 +900,6 @@
         });
     }
 
-    // 從圖鑑網格點擊進入詳細內容
     function selectGiftFromGrid(giftKey) {
         currentGiftKey = giftKey;
         document.getElementById("giftGridArea").style.display = "none";
@@ -916,7 +913,6 @@
         selectLevel(0);
     }
 
-    // 返回選單清單
     function backToGiftGrid() {
         document.getElementById("giftDisplayArea").style.display = "none";
         document.getElementById("giftGridArea").style.display = "grid";
@@ -970,28 +966,17 @@
         }
     }
 
-    // 渲染主播生日列表 (改為兩行卡片式 + 自動識別星座)
+    // 渲染主播生日列表 (對應拆分後的 zodiac 欄位)
     function renderStreamerBirthdayList() {
         const container = document.getElementById("streamerBirthdayContainer");
         if (!container) return;
         container.innerHTML = "";
 
         const streamers = typeof streamersDatabase !== "undefined" ? streamersDatabase : [];
-        const zodiacRegex = /(水瓶座|雙魚座|牡羊座|金牛座|雙子座|巨蟹座|獅子座|處女座|天秤座|天蠍座|射手座|摩羯座|魔羯座)/;
 
         streamers.forEach(item => {
             const card = document.createElement("div");
             card.className = "streamer-card";
-
-            let introText = item.intro || '';
-            let zodiacName = "未知";
-
-            // 從 intro 簡介文字中解析並分離星座名稱
-            const match = introText.match(zodiacRegex);
-            if (match) {
-                zodiacName = match[0];
-                introText = introText.replace(zodiacRegex, '').replace(/^[\s\/]+|[\s\/]+$/g, '').replace(/\/\s*\//g, '/');
-            }
 
             card.innerHTML = `
                 <div class="streamer-row-top">
@@ -1001,17 +986,16 @@
                             ${item.name || ''}
                         </a>
                     </span>
-                    <span class="streamer-zodiac">${zodiacName}</span>
+                    <span class="streamer-zodiac">${item.zodiac || '未知'}</span>
                 </div>
                 <div class="streamer-row-bottom">
-                    ${introText || '暫無詳細簡介'}
+                    ${item.intro || '暫無詳細簡介'}
                 </div>
             `;
             container.appendChild(card);
         });
     }
 
-    // 隨機袋列表渲染
     function renderBagItems(items) {
         const bagItemsGrid = document.getElementById("bagItemsGrid");
         if (!bagItemsGrid) return;
@@ -1040,7 +1024,6 @@
         });
     }
 
-    // 升級禮等級按鈕
     function renderLevelButtons() {
         const levelSelector = document.getElementById("levelSelector");
         if (!levelSelector) return;
@@ -1058,7 +1041,6 @@
         });
     }
 
-    // 切換等級
     function selectLevel(index) {
         const activeDB = getCurrentDatabase();
         const data = activeDB[currentGiftKey]?.levels[index];
