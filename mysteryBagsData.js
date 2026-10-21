@@ -350,5 +350,48 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "喵星人",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
             {tag: "普獎",name: "你是我的巧克力",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"}
         ]
+    },
+    Bingo_Goods: { //Bingo 開運物
+        title: "Bingo 開運物",
+        maxCoins: "500 寶寶幣 / 次",
+		img: "images/bags/Bingo_Goods/01.png",
+        activityDesc: "【10/13-11/11 17Bingo 活動禮包】",
+        items: [
+            {tag: "頭獎",name: "金龍坐鎮",rarity: "★★★★☆",desc: "【超稀有】頭獎觸發跑馬燈全區播報",reward: "10,000 寶寶幣"},
+			{tag: "二獎",name: "聚寶盆",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "1,000 寶寶幣"},
+			{tag: "三獎",name: "開運蟾蜍",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "750 寶寶幣"},
+            {tag: "普獎",name: "開運元寶",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "600 寶寶幣"},
+            {tag: "普獎",name: "開運水晶",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "520 寶寶幣"},
+            {tag: "普獎",name: "開運達摩",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "400 寶寶幣"},
+            {tag: "普獎",name: "招財貓",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "320 寶寶幣"},
+            {tag: "普獎",name: "幸運御守",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "300 寶寶幣"}
+			
+        ]
+    },
+    Bingo_Lucky: { //Bingo Lucky
+        title: "Bingo Lucky",
+        maxCoins: "1,688寶寶幣 / 次",
+		img: "images/bags/Bingo_Lucky/01.png",
+        activityDesc: "【10/13-11/11 17Bingo 活動禮包】",
+        items: [
+            {tag: "頭獎",name: "炫砲直升機",rarity: "★★★★☆",desc: "【超稀有】頭獎觸發跑馬燈全區播報",reward: "60,000 寶寶幣"},
+			{tag: "二獎",name: "火箭沖天",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "10,000 寶寶幣"},
+			{tag: "普獎",name: "錢撒滿地",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,800 寶寶幣"},
+            {tag: "普獎",name: "家電組",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,200 寶寶幣"},
+            {tag: "普獎",name: "香檳",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,000 寶寶幣"}
+        ]
+    },
+        Stream_On_Air: { //直播 on air
+        title: "直播 on air",
+        maxCoins: "300寶寶幣 / 次",
+		img: "images/bags/Stream_On_Air/01.png",
+        activityDesc: "【10/18-10/28 17潛力新星養成班(10月) 活動禮包】",
+        items: [
+            {tag: "頭獎",name: "魅力巨星",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得頭獎",reward: "3,000 寶寶幣"},
+			{tag: "二獎",name: "吉他新秀",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "500 寶寶幣"},
+			{tag: "普獎",name: "熱門推薦",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "330 寶寶幣"},
+            {tag: "普獎",name: "17來聊天",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "300 寶寶幣"},
+            {tag: "普獎",name: "開播囉",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "150 寶寶幣"}
+        ]
     }
 };
