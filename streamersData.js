@@ -11,6 +11,13 @@ const streamersDatabase = [
         intro: "多元禮物懲罰活動 / 外向主播 / 現居??"
     },
     {
+        date: "02/04",
+        name: "小兔寶寶🐰",
+        zodiac: "雙魚座",
+        url: "https://17.live/s/u/3fb7b701-aea3-40eb-ac86-9f31b703c33c",
+        intro: "17最純真最可愛的兔子 / 巧手手工 / 河北人"
+    },
+    {
         date: "02/22",
         name: "白玉🖤",
         zodiac: "雙魚座",
