@@ -312,10 +312,12 @@ const mysteryBagsDatabase = {
             {tag: "二獎",name: "逃離屍速列車",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得二獎",reward: "520,000 寶寶幣"},
 			{tag: "三獎",name: "17鬼混慶典",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "22,500 寶寶幣"},
 			{tag: "普獎",name: "大規模感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "13,000 寶寶幣"},
+            {tag: "普獎",name: "病變擴散",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "11,000寶寶幣"},
             {tag: "普獎",name: "確認感染",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "10,200寶寶幣"},
             {tag: "普獎",name: "疆屍狗狗誕生",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "8,000 寶寶幣"},
             {tag: "普獎",name: "萬聖送好禮",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "7,000 寶寶幣"},
-            {tag: "普獎",name: "糖果大豐收",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "6,000 寶寶幣"}
+            {tag: "普獎",name: "糖果大豐收",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "6,000 寶寶幣"},
+            {tag: "普獎",name: "萬聖甜蜜蜜",rarity: "★☆☆☆☆",desc: "【普通獎勵】基礎獎勵",reward: "5,200寶寶幣"},
         ]
     },
     
