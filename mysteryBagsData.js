@@ -10,7 +10,7 @@ const mysteryBagsDatabase = {
         activityDesc: "【品牌大使活動】",
         items: [
             {tag: "頭獎",name: "你是最耀眼的 (20倍)",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "60,000 寶寶幣"},
-            {tag: "二獎",name: "???",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "??? 寶寶幣"},
+            {tag: "二獎",name: "閃耀魅力",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "4,000 寶寶幣"},
             {tag: "普獎",name: "初登場",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "3,000 寶寶幣"},
             {tag: "普獎",name: "躍躍欲試",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "2,000 寶寶幣"}
         ]
