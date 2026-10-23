@@ -465,8 +465,10 @@ const giftsDatabase = {
             levels: [
                 { level: "LV 0", name: "三尾狐狸 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Three_Tailed_Fox/LV0.png" },
                 { level: "LV 1", name: "三尾狐狸 LV1", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 15 個", img: "images/upgrade_gift/Three_Tailed_Fox/LV1.png" },
-                { level: "LV 2", name: "三尾狐狸 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 ?? 個", img: "images/upgrade_gift/Three_Tailed_Fox/LV2.png" },
-                { level: "LV 3", name: "三尾狐狸 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 165 個", img: "images/upgrade_gift/Three_Tailed_Fox/LV3.png" }
+                { level: "LV 2", name: "三尾狐狸 LV2", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 65 個", img: "images/upgrade_gift/Three_Tailed_Fox/LV2.png" },
+                { level: "LV 3", name: "三尾狐狸 LV3", rarity: "★★☆☆☆", desc: "【休閒升級】", reqCount: "累計送出 165 個", img: "images/upgrade_gift/Three_Tailed_Fox/LV3.png" },
+                { level: "LV 4", name: "三尾狐狸 LV4", rarity: "★★★☆☆", desc: "【休閒升級】", reqCount: "累計送出 365 個", img: "images/upgrade_gift/Three_Tailed_Fox/LV4.png" },
+                { level: "LV 5", name: "三尾狐狸 LV5", rarity: "★★★★☆", desc: "【休閒升級】", reqCount: "累計送出 765 個", img: "images/upgrade_gift/Three_Tailed_Fox/LV5.png" }
             ]
         },
 		Duck: { // 17小鴨
