@@ -7,703 +7,7 @@
 
     <!-- [不蒜子 Busuanzi] 免費瀏覽人次統計腳本 -->
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-        }
-
-        body {
-            background-color: #0b0c10;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 15px;
-        }
-
-        /* 外層神魔框體 */
-        .dex-container {
-            width: 100%;
-            max-width: 520px;
-            background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%);
-            border: 3px solid #c5a059;
-            border-radius: 12px;
-            box-shadow: 0 0 20px rgba(197, 160, 89, 0.4);
-            padding: 15px;
-            position: relative;
-        }
-
-        /* 頂部 Tab 切換區 */
-        .nav-tabs {
-            display: flex;
-            gap: 6px;
-            margin-bottom: 15px;
-        }
-
-        .tab-btn {
-            flex: 1;
-            padding: 10px 0;
-            background: #111;
-            border: 2px solid #c5a059;
-            color: #c5a059;
-            font-size: 13px;
-            font-weight: bold;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .tab-btn:hover {
-            background: rgba(197, 160, 89, 0.2);
-        }
-
-        .tab-btn.active {
-            background: linear-gradient(180deg, #c5a059 0%, #9e7d3b 100%);
-            color: #0b0c10;
-            border-color: #f1c40f;
-            box-shadow: 0 0 12px rgba(241, 196, 15, 0.6);
-        }
-
-        /* 標題區塊與返回按鈕容器 */
-        .dex-header-container {
-            position: relative;
-            margin-bottom: 15px;
-        }
-
-        .dex-header {
-            text-align: center;
-            border-bottom: 2px solid #c5a059;
-            padding-bottom: 10px;
-        }
-
-        .dex-header h1 {
-            font-size: 20px;
-            color: #f39c12;
-            text-shadow: 0 0 8px rgba(243, 156, 18, 0.6);
-            letter-spacing: 1.5px;
-            line-height: 1.3;
-        }
-
-        .dex-header .subtitle {
-            font-size: 13px;
-            color: #a0a0a0;
-            margin-top: 4px;
-        }
-
-        /* 右上角返回選單按鈕 */
-        .btn-back-menu {
-            position: absolute;
-            right: 0;
-            top: 0;
-            background: linear-gradient(180deg, #333 0%, #111 100%);
-            border: 1px solid #c5a059;
-            color: #66fcf1;
-            padding: 5px 10px;
-            font-size: 12px;
-            font-weight: bold;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.2s;
-            display: none;
-            box-shadow: 0 0 5px rgba(102, 252, 241, 0.3);
-        }
-
-        .btn-back-menu:hover {
-            background: #c5a059;
-            color: #0b0c10;
-            box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
-        }
-
-        /* 升級禮 - 一行四格縮圖列表 (Grid) */
-        .gift-grid-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .gift-card-item {
-            background: #151a21;
-            border: 1px solid #45a29e;
-            border-radius: 8px;
-            padding: 8px 4px;
-            text-align: center;
-            cursor: pointer;
-            transition: all 0.25s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .gift-card-item:hover {
-            border-color: #f39c12;
-            transform: translateY(-3px);
-            box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
-            background: rgba(69, 162, 158, 0.15);
-        }
-
-        .gift-card-thumb {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            border-radius: 6px;
-            border: 1px solid #c5a059;
-            background-color: #000;
-            margin-bottom: 6px;
-        }
-
-        .gift-card-title {
-            font-size: 12px;
-            font-weight: bold;
-            color: #66fcf1;
-            line-height: 1.2;
-            margin-bottom: 4px;
-            word-break: break-all;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .gift-card-price {
-            font-size: 11px;
-            color: #f1c40f;
-            font-weight: bold;
-            text-shadow: 0 0 4px rgba(241, 196, 15, 0.3);
-        }
-
-        /* 隨機袋卡片列表 (橫向長方形，一行一個) */
-        .bag-list-container {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            margin-bottom: 15px;
-        }
-
-        .bag-card-horizontal {
-            background: #151a21;
-            border: 1px solid #45a29e;
-            border-radius: 8px;
-            padding: 10px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            cursor: pointer;
-            transition: all 0.25s ease;
-        }
-
-        .bag-card-horizontal:hover {
-            border-color: #f39c12;
-            transform: translateY(-2px);
-            box-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
-            background: rgba(69, 162, 158, 0.15);
-        }
-
-        .bag-card-thumb {
-            width: 80px;
-            height: 80px;
-            object-fit: cover;
-            border-radius: 6px;
-            border: 1px solid #c5a059;
-            background-color: #000;
-            flex-shrink: 0;
-        }
-
-        .bag-card-info {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 4px;
-            flex: 1;
-            overflow: hidden;
-        }
-
-        .bag-card-title {
-            font-size: 15px;
-            font-weight: bold;
-            color: #66fcf1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
-        .bag-card-price {
-            font-size: 12px;
-            color: #f1c40f;
-            font-weight: bold;
-        }
-
-        .bag-card-desc {
-            font-size: 12px;
-            color: #c5a059;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-            line-height: 1.3;
-        }
-
-        /* 隨機袋頂部主圖面板 */
-        .bag-hero-panel {
-            background: #151a21;
-            border: 2px solid #45a29e;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            margin-bottom: 15px;
-            display: none;
-        }
-
-        .bag-main-img {
-            width: 100%;
-            max-width: 180px;
-            height: 180px;
-            margin: 0 auto 12px auto;
-            border-radius: 8px;
-            border: 3px solid #f1c40f;
-            box-shadow: 0 0 15px rgba(241, 196, 15, 0.5);
-            object-fit: cover;
-            background-color: #000;
-            display: block;
-        }
-
-        .bag-desc-box {
-            background: rgba(31, 40, 51, 0.8);
-            border: 1px dashed #45a29e;
-            border-radius: 6px;
-            padding: 10px;
-            font-size: 12px;
-            color: #66fcf1;
-            line-height: 1.5;
-            margin-bottom: 8px;
-            text-align: left;
-        }
-
-        .bag-price-container {
-            background: rgba(243, 156, 18, 0.1);
-            border: 1px solid #f39c12;
-            border-radius: 6px;
-            padding: 8px 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        /* 升級禮卡片展示區 */
-        .card-frame {
-            position: relative;
-            background: #151a21;
-            border: 2px solid #45a29e;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-            overflow: hidden;
-        }
-
-        .card-rarity {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            background: #e74c3c;
-            color: #fff;
-            padding: 2px 8px;
-            font-size: 12px;
-            font-weight: bold;
-            border-radius: 4px;
-            z-index: 2;
-        }
-
-        .card-image {
-            width: 100%;
-            max-width: 200px;
-            height: 200px;
-            margin: 10px auto;
-            border-radius: 8px;
-            border: 3px solid #f1c40f;
-            box-shadow: 0 0 15px rgba(241, 196, 15, 0.5);
-            object-fit: cover;
-            transition: transform 0.3s ease;
-            background-color: #000;
-            display: block;
-        }
-
-        .card-image:hover {
-            transform: scale(1.03);
-        }
-
-        .card-name {
-            font-size: 19px;
-            font-weight: bold;
-            color: #66fcf1;
-            margin-top: 8px;
-        }
-
-        .card-desc {
-            font-size: 13px;
-            color: #c5a059;
-            margin: 8px 0;
-            min-height: 38px;
-            line-height: 1.4;
-        }
-
-        .req-container {
-            margin: 6px 0;
-            background: rgba(31, 40, 51, 0.8);
-            border: 1px solid #c5a059;
-            border-radius: 6px;
-            padding: 8px 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .req-container.total-coins {
-            border-color: #f39c12;
-            background: rgba(243, 156, 18, 0.1);
-        }
-
-        .req-label {
-            font-size: 13px;
-            color: #45a29e;
-            font-weight: bold;
-        }
-
-        .total-coins .req-label {
-            color: #e67e22;
-        }
-
-        .req-value {
-            font-size: 14px;
-            color: #f1c40f;
-            font-weight: bold;
-            text-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
-        }
-
-        .total-coins .req-value {
-            color: #f39c12;
-            text-shadow: 0 0 6px rgba(243, 156, 18, 0.6);
-        }
-
-        .level-selector {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(65px, 1fr));
-            gap: 6px;
-            margin-top: 15px;
-        }
-
-        .lvl-btn {
-            padding: 8px 0;
-            background: #1f2833;
-            border: 1px solid #c5a059;
-            color: #c5a059;
-            font-weight: bold;
-            font-size: 12px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.2s;
-            text-align: center;
-        }
-
-        .lvl-btn:hover, .lvl-btn.active {
-            background: #c5a059;
-            color: #0b0c10;
-            box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
-        }
-
-        /* 隨機袋獎項列表 */
-        .bag-items-grid {
-            display: none;
-            flex-direction: column;
-            gap: 8px;
-        }
-
-        .bag-item-card {
-            background: #151a21;
-            border: 1px solid #45a29e;
-            border-radius: 6px;
-            padding: 10px 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .bag-item-left {
-            display: flex;
-            flex-direction: column;
-            gap: 3px;
-        }
-
-        .bag-item-header {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .bag-item-tag {
-            background: #e74c3c;
-            color: #fff;
-            padding: 1px 6px;
-            font-size: 10px;
-            font-weight: bold;
-            border-radius: 3px;
-        }
-
-        .bag-item-name {
-            font-size: 14px;
-            font-weight: bold;
-            color: #66fcf1;
-        }
-
-        .bag-item-rarity {
-            font-size: 11px;
-            color: #e74c3c;
-        }
-
-        .bag-item-desc {
-            font-size: 11px;
-            color: #c5a059;
-        }
-
-        .bag-item-right {
-            text-align: right;
-            flex-shrink: 0;
-        }
-
-        .bag-item-value {
-            font-size: 13px;
-            color: #f1c40f;
-            font-weight: bold;
-            text-shadow: 0 0 5px rgba(241, 196, 15, 0.4);
-        }
-
-        /* 主播生日列表頁面樣式 (兩行卡片式) */
-        .streamer-birthday-container {
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .streamer-card {
-            background: #151a21;
-            border: 1px solid #45a29e;
-            border-radius: 8px;
-            padding: 10px 14px;
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            transition: all 0.25s ease;
-        }
-
-        .streamer-card:hover {
-            border-color: #f39c12;
-            box-shadow: 0 0 10px rgba(243, 156, 18, 0.3);
-            background: rgba(31, 40, 51, 0.9);
-        }
-
-        /* 第一行：生日、主播名稱、星座 */
-        .streamer-row-1 {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .streamer-date {
-            font-size: 14px;
-            font-weight: bold;
-            color: #f1c40f;
-            text-shadow: 0 0 4px rgba(241, 196, 15, 0.4);
-            white-space: nowrap;
-        }
-
-        .streamer-name {
-            font-size: 15px;
-            font-weight: bold;
-            flex: 1;
-        }
-
-        .streamer-link {
-            color: #66fcf1;
-            text-decoration: none;
-            transition: color 0.2s;
-        }
-
-        .streamer-link:hover {
-            color: #f39c12;
-            text-decoration: underline;
-        }
-
-        .streamer-zodiac {
-            font-size: 11px;
-            font-weight: bold;
-            color: #9b59b6;
-            background: rgba(155, 89, 182, 0.15);
-            border: 1px solid #9b59b6;
-            padding: 2px 8px;
-            border-radius: 12px;
-            white-space: nowrap;
-        }
-
-        /* 第二行：簡介 */
-        .streamer-row-2 {
-            font-size: 12px;
-            color: #c5a059;
-            line-height: 1.4;
-            padding-top: 4px;
-            border-top: 1px dashed rgba(69, 162, 158, 0.3);
-        }
-
-        /* 問題 QA 可伸縮手風琴樣式 */
-        .qa-container {
-            display: none;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .qa-item {
-            background: #151a21;
-            border: 1px solid #45a29e;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
-
-        .qa-item:hover, .qa-item.active {
-            border-color: #f39c12;
-            box-shadow: 0 0 10px rgba(243, 156, 18, 0.3);
-        }
-
-        .qa-header {
-            padding: 12px 15px;
-            background: rgba(31, 40, 51, 0.6);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .qa-title {
-            font-size: 14px;
-            font-weight: bold;
-            color: #66fcf1;
-        }
-
-        .qa-item.active .qa-title {
-            color: #f39c12;
-        }
-
-        .qa-arrow {
-            font-size: 12px;
-            color: #45a29e;
-            transition: transform 0.3s ease;
-        }
-
-        .qa-item.active .qa-arrow {
-            transform: rotate(180deg);
-            color: #f39c12;
-        }
-
-        .qa-content {
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-            background: rgba(11, 12, 16, 0.6);
-        }
-
-        .qa-content-inner {
-            padding: 12px 15px;
-            font-size: 13px;
-            color: #c5a059;
-            line-height: 1.6;
-            border-top: 1px dashed rgba(69, 162, 158, 0.3);
-        }
-
-        /* 頁尾免責聲明與計數器 */
-        .dex-footer {
-            margin-top: 20px;
-            padding-top: 12px;
-            border-top: 1px dashed rgba(197, 160, 89, 0.4);
-            text-align: center;
-            font-size: 12px;
-            color: #a0a0a0;
-            line-height: 1.6;
-            font-family: "標楷體", "BiauKai", "DFKai-SB", "楷體", "STKaiti", "KaiTi", serif;
-        }
-
-        .collab-title {
-            font-size: 12px;
-            color: #c5a059;
-            margin-top: 15px;
-            margin-bottom: 8px;
-            font-weight: bold;
-            letter-spacing: 1px;
-            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-        }
-
-        .collab-list {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 8px;
-            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-        }
-
-        .collab-badge {
-            display: inline-block;
-            padding: 6px 12px;
-            background: #151a21;
-            border: 1px solid #45a29e;
-            color: #66fcf1;
-            font-size: 12px;
-            font-weight: bold;
-            border-radius: 6px;
-            text-decoration: none;
-            transition: all 0.25s ease;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .collab-badge:hover {
-            background: #c5a059;
-            border-color: #f1c40f;
-            color: #0b0c10;
-            transform: translateY(-2px);
-            box-shadow: 0 0 10px rgba(241, 196, 15, 0.7);
-        }
-
-        /* 頁尾計數器樣式 */
-        .counter-container {
-            margin-top: 15px;
-            padding: 8px 12px;
-            background: rgba(31, 40, 51, 0.6);
-            border: 1px solid #c5a059;
-            border-radius: 6px;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-        }
-
-        .counter-label {
-            font-size: 12px;
-            color: #45a29e;
-            font-weight: bold;
-        }
-
-        .counter-value {
-            font-size: 13px;
-            color: #f1c40f;
-            font-weight: bold;
-            text-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> <!-- 建議可將 style 獨立至 style.css -->
 </head>
 <body>
 
@@ -727,14 +31,10 @@
     </div>
 
     <!-- [升級禮] 1列4格 縮圖列表區 -->
-    <div class="gift-grid-container" id="giftGridContainer">
-        <!-- JS 動態生成縮圖卡片 -->
-    </div>
+    <div class="gift-grid-container" id="giftGridContainer"></div>
 
     <!-- [隨機袋] 橫向長方形卡片列表 -->
-    <div class="bag-list-container" id="bagListContainer">
-        <!-- 由 JS 動態生成 -->
-    </div>
+    <div class="bag-list-container" id="bagListContainer"></div>
 
     <!-- [隨機袋模式] 頂部隨機袋主圖與說明面板 -->
     <div class="bag-hero-panel" id="bagHeroPanel">
@@ -772,9 +72,7 @@
     <div class="bag-items-grid" id="bagItemsGrid"></div>
 
     <!-- [主播生日模式] 兩行卡片清單列表 -->
-    <div class="streamer-birthday-container" id="streamerBirthdayContainer">
-        <!-- 由 JS 動態渲染兩行式卡片 -->
-    </div>
+    <div class="streamer-birthday-container" id="streamerBirthdayContainer"></div>
 
     <!-- [問題QA模式] 可伸縮手風琴內容區 -->
     <div class="qa-container" id="qaContainer"></div>
@@ -790,7 +88,6 @@
         <div class="collab-title">❖ 貢獻與協作者 ❖</div>
         <div class="collab-list" id="collabList"></div>
 
-        <!-- [不蒜子] 瀏覽人次容器 -->
         <div>
             <div class="counter-container">
                 <span class="counter-label">❖ 累積瀏覽人次：</span>
@@ -800,12 +97,19 @@
     </div>
 </div>
 
+<!-- 資料檔 -->
 <script src="giftsData.js"></script>
 <script src="mysteryBagsData.js"></script>
 <script src="streamersData.js"></script>
 <script src="qaData.js"></script>
+
+<!-- UI 視圖模組 (獨立出來的功能渲染腳本) -->
+<script src="giftsView.js"></script>
+<script src="bagsView.js"></script>
+<script src="streamersView.js"></script>
 <script src="qa.js"></script>
 
+<!-- 主控邏輯 Script -->
 <script>
     let currentMode = 'gifts'; 
     let currentGiftKey = '';
@@ -823,169 +127,59 @@
         document.getElementById("tabStreamers").classList.toggle("active", mode === 'streamers');
         document.getElementById("tabQA").classList.toggle("active", mode === 'qa');
 
-        const giftGridContainer = document.getElementById("giftGridContainer");
-        const giftDisplayArea = document.getElementById("giftDisplayArea");
-        const bagListContainer = document.getElementById("bagListContainer");
-        const bagHeroPanel = document.getElementById("bagHeroPanel");
-        const bagItemsGrid = document.getElementById("bagItemsGrid");
-        const streamerBirthdayContainer = document.getElementById("streamerBirthdayContainer");
-        const qaContainer = document.getElementById("qaContainer");
-        const btnBackMenu = document.getElementById("btnBackMenu");
+        const elements = {
+            giftGridContainer: document.getElementById("giftGridContainer"),
+            giftDisplayArea: document.getElementById("giftDisplayArea"),
+            bagListContainer: document.getElementById("bagListContainer"),
+            bagHeroPanel: document.getElementById("bagHeroPanel"),
+            bagItemsGrid: document.getElementById("bagItemsGrid"),
+            streamerBirthdayContainer: document.getElementById("streamerBirthdayContainer"),
+            qaContainer: document.getElementById("qaContainer"),
+            btnBackMenu: document.getElementById("btnBackMenu")
+        };
+
+        // 預設全部隱藏
+        Object.values(elements).forEach(el => { if (el) el.style.display = "none"; });
 
         if (mode === 'gifts') {
             document.getElementById("pageTitle").innerText = "17LIVE 升級禮進化圖鑑";
-            
-            giftGridContainer.style.display = "grid";
-            giftDisplayArea.style.display = "none";
-            btnBackMenu.style.display = "none";
-
-            bagListContainer.style.display = "none";
-            bagHeroPanel.style.display = "none";
-            bagItemsGrid.style.display = "none";
-            streamerBirthdayContainer.style.display = "none";
-            qaContainer.style.display = "none";
-
-            renderGiftGrid();
+            elements.giftGridContainer.style.display = "grid";
+            GiftsView.renderGrid("giftGridContainer", openGiftDetail);
 
         } else if (mode === 'bags') {
             document.getElementById("pageTitle").innerText = "17LIVE 隨機袋獎勵圖鑑";
-            giftGridContainer.style.display = "none";
-            giftDisplayArea.style.display = "none";
-            btnBackMenu.style.display = "none";
-
-            bagListContainer.style.display = "flex";
-            bagHeroPanel.style.display = "none";
-            bagItemsGrid.style.display = "none";
-            streamerBirthdayContainer.style.display = "none";
-            qaContainer.style.display = "none";
-
-            renderBagList();
+            elements.bagListContainer.style.display = "flex";
+            BagsView.renderList("bagListContainer", openBagDetail);
 
         } else if (mode === 'streamers') {
             document.getElementById("pageTitle").innerText = "17 LIVE 主播生日列表";
-            giftGridContainer.style.display = "none";
-            giftDisplayArea.style.display = "none";
-            btnBackMenu.style.display = "none";
-
-            bagListContainer.style.display = "none";
-            bagHeroPanel.style.display = "none";
-            bagItemsGrid.style.display = "none";
-            streamerBirthdayContainer.style.display = "flex";
-            qaContainer.style.display = "none";
-
-            renderStreamerBirthdayList();
+            elements.streamerBirthdayContainer.style.display = "flex";
+            StreamersView.renderList("streamerBirthdayContainer");
 
         } else if (mode === 'qa') {
             document.getElementById("pageTitle").innerText = "17LIVE 常見問題 QA";
-            giftGridContainer.style.display = "none";
-            giftDisplayArea.style.display = "none";
-            btnBackMenu.style.display = "none";
-
-            bagListContainer.style.display = "none";
-            bagHeroPanel.style.display = "none";
-            bagItemsGrid.style.display = "none";
-            streamerBirthdayContainer.style.display = "none";
-            qaContainer.style.display = "flex";
-
-            renderQAList();
+            elements.qaContainer.style.display = "flex";
+            if (typeof renderQAList === "function") renderQAList();
         }
     }
 
-    function getCurrentDatabase() {
-        return currentMode === 'gifts' 
-            ? (typeof giftsDatabase !== "undefined" ? giftsDatabase : {})
-            : (typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {});
-    }
-
-    /* 渲染 1行4格 升級禮縮圖列表 */
-    function renderGiftGrid() {
-        const giftGridContainer = document.getElementById("giftGridContainer");
-        if (!giftGridContainer) return;
-        giftGridContainer.innerHTML = "";
-
-        const db = typeof giftsDatabase !== "undefined" ? giftsDatabase : {};
-
-        Object.keys(db).forEach(key => {
-            const gift = db[key];
-            const firstLevelImg = gift.levels && gift.levels.length > 0 ? gift.levels[0].img : '';
-            const priceText = gift.price || gift.maxCoins || "標價未知";
-
-            const card = document.createElement("div");
-            card.className = "gift-card-item";
-            card.onclick = () => openGiftDetail(key);
-
-            card.innerHTML = `
-                <img class="gift-card-thumb" src="${firstLevelImg}" alt="${gift.title}" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' width=\'100\' height=\'100\'><rect width=\'100%\' height=\'100%\' fill=\'%23151a21\'/></svg>';">
-                <div class="gift-card-title">${gift.title}</div>
-                <div class="gift-card-price">${priceText} 幣</div>
-            `;
-            giftGridContainer.appendChild(card);
-        });
-    }
-
-    /* 渲染隨機袋橫向卡片列表 */
-    function renderBagList() {
-        const bagListContainer = document.getElementById("bagListContainer");
-        if (!bagListContainer) return;
-        bagListContainer.innerHTML = "";
-
-        const db = typeof mysteryBagsDatabase !== "undefined" ? mysteryBagsDatabase : {};
-
-        Object.keys(db).forEach(key => {
-            const bag = db[key];
-            const priceText = bag.maxCoins || bag.price || "單次金額未定";
-            const descText = bag.activityDesc || "暫無活動說明。";
-            const titleText = bag.title || "未命名隨機袋";
-
-            const card = document.createElement("div");
-            card.className = "bag-card-horizontal";
-            card.onclick = () => openBagDetail(key);
-
-            const imgEl = document.createElement("img");
-            imgEl.className = "bag-card-thumb";
-            imgEl.alt = titleText;
-            imgEl.src = bag.img || '';
-            imgEl.onerror = function() {
-                this.onerror = null;
-                this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80"><rect width="100%" height="100%" fill="%23151a21"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23f1c40f" font-size="12" font-weight="bold">無圖片</text></svg>`;
-            };
-
-            const infoDiv = document.createElement("div");
-            infoDiv.className = "bag-card-info";
-            infoDiv.innerHTML = `
-                <div class="bag-card-title">${titleText}</div>
-                <div class="bag-card-price">${priceText}</div>
-                <div class="bag-card-desc">${descText}</div>
-            `;
-
-            card.appendChild(imgEl);
-            card.appendChild(infoDiv);
-            bagListContainer.appendChild(card);
-        });
-    }
-
-    /* 點選升級禮縮圖後進入詳細頁面 */
     function openGiftDetail(giftKey) {
         currentGiftKey = giftKey;
         document.getElementById("giftGridContainer").style.display = "none";
         document.getElementById("giftDisplayArea").style.display = "block";
         document.getElementById("btnBackMenu").style.display = "block";
-
-        switchGift(giftKey);
+        GiftsView.renderDetail(giftKey);
     }
 
-    /* 點選隨機袋卡片後進入詳細頁面 */
     function openBagDetail(bagKey) {
         currentGiftKey = bagKey;
         document.getElementById("bagListContainer").style.display = "none";
         document.getElementById("bagHeroPanel").style.display = "block";
         document.getElementById("bagItemsGrid").style.display = "flex";
         document.getElementById("btnBackMenu").style.display = "block";
-
-        switchGift(bagKey);
+        BagsView.renderDetail(bagKey);
     }
 
-    /* 通用返回按鈕處理 */
     function backToMenu() {
         if (currentMode === 'gifts') {
             document.getElementById("giftDisplayArea").style.display = "none";
@@ -997,140 +191,6 @@
             document.getElementById("btnBackMenu").style.display = "none";
             document.getElementById("bagListContainer").style.display = "flex";
         }
-    }
-
-    function switchGift(giftKey) {
-        currentGiftKey = giftKey;
-        const activeDB = getCurrentDatabase();
-
-        const data = activeDB[currentGiftKey];
-        if (!data) return;
-
-        if (currentMode === 'gifts') {
-            document.getElementById("maxCoins").innerText = data.maxCoins || "尚未計算";
-            renderLevelButtons();
-            selectLevel(0);
-        } else if (currentMode === 'bags') {
-            document.getElementById("bagPrice").innerText = data.maxCoins || "單次金額未定";
-            document.getElementById("bagDesc").innerText = data.activityDesc || "暫無活動說明。";
-
-            const bagImgEl = document.getElementById("bagMainImg");
-            if (bagImgEl) {
-                bagImgEl.onerror = function() {
-                    this.onerror = null;
-                    this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180"><rect width="100%" height="100%" fill="%23151a21"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23f1c40f" font-size="16" font-weight="bold">隨機袋圖示</text></svg>`;
-                };
-                bagImgEl.src = data.img || "";
-            }
-
-            renderBagItems(data.items || data.levels || []);
-        }
-    }
-
-    /* 渲染主播生日列表 */
-    function renderStreamerBirthdayList() {
-        const container = document.getElementById("streamerBirthdayContainer");
-        if (!container) return;
-        container.innerHTML = "";
-
-        const streamers = typeof streamersDatabase !== "undefined" ? streamersDatabase : [];
-
-        streamers.forEach(item => {
-            const dateStr = item.date || '未定';
-            const zodiacStr = item.zodiac || '';
-
-            const card = document.createElement("div");
-            card.className = "streamer-card";
-
-            card.innerHTML = `
-                <div class="streamer-row-1">
-                    <span class="streamer-date">${dateStr}</span>
-                    <span class="streamer-name">
-                        <a href="${item.url || '#'}" target="_blank" rel="noopener noreferrer" class="streamer-link">
-                            ${item.name || '未命名主播'}
-                        </a>
-                    </span>
-                    ${zodiacStr ? `<span class="streamer-zodiac">${zodiacStr}</span>` : ''}
-                </div>
-                <div class="streamer-row-2">
-                    ${item.intro || '暫無個人簡介...'}
-                </div>
-            `;
-            container.appendChild(card);
-        });
-    }
-
-    // 隨機袋列表渲染
-    function renderBagItems(items) {
-        const bagItemsGrid = document.getElementById("bagItemsGrid");
-        if (!bagItemsGrid) return;
-        bagItemsGrid.innerHTML = "";
-
-        items.forEach(item => {
-            const card = document.createElement("div");
-            card.className = "bag-item-card";
-
-            const reqText = item.reward || item.reqCount || "無備註";
-
-            card.innerHTML = `
-                <div class="bag-item-left">
-                    <div class="bag-item-header">
-                        <span class="bag-item-tag">${item.tag || item.level || '獎項'}</span>
-                        <span class="bag-item-name">${item.name}</span>
-                        <span class="bag-item-rarity">${item.rarity || ''}</span>
-                    </div>
-                    <div class="bag-item-desc">${item.desc || ''}</div>
-                </div>
-                <div class="bag-item-right">
-                    <div class="bag-item-value">${reqText}</div>
-                </div>
-            `;
-            bagItemsGrid.appendChild(card);
-        });
-    }
-
-    // 升級禮等級按鈕
-    function renderLevelButtons() {
-        const levelSelector = document.getElementById("levelSelector");
-        if (!levelSelector) return;
-        levelSelector.innerHTML = ""; 
-
-        const activeDB = getCurrentDatabase();
-        const levels = activeDB[currentGiftKey]?.levels || [];
-
-        levels.forEach((lvlData, index) => {
-            const btn = document.createElement("button");
-            btn.className = "lvl-btn";
-            btn.innerText = lvlData.level;
-            btn.onclick = () => selectLevel(index);
-            levelSelector.appendChild(btn);
-        });
-    }
-
-    // 切換等級
-    function selectLevel(index) {
-        const activeDB = getCurrentDatabase();
-        const data = activeDB[currentGiftKey]?.levels[index];
-        if (!data) return;
-
-        document.getElementById("giftName").innerText = data.name;
-        document.getElementById("giftRarity").innerText = data.rarity;
-        document.getElementById("giftDesc").innerText = data.desc;
-        document.getElementById("reqCount").innerText = data.reqCount;
-
-        const imgEl = document.getElementById("giftImg");
-        if (imgEl) {
-            imgEl.onerror = function() {
-                this.onerror = null;
-                this.src = `data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200"><rect width="100%" height="100%" fill="%23151a21"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="%23f1c40f" font-size="22" font-weight="bold">圖示</text></svg>`;
-            };
-            imgEl.src = data.img;
-        }
-
-        const buttons = document.querySelectorAll('.lvl-btn');
-        buttons.forEach((btn, i) => {
-            btn.classList.toggle('active', i === index);
-        });
     }
 
     function renderCollaborators() {
