@@ -7,7 +7,9 @@
 
     <!-- [不蒜子 Busuanzi] 免費瀏覽人次統計腳本 -->
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-    <link rel="stylesheet" href="style.css"> <!-- 建議可將 style 獨立至 style.css -->
+
+    <!-- 獨立 CSS 樣式表 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -88,6 +90,7 @@
         <div class="collab-title">❖ 貢獻與協作者 ❖</div>
         <div class="collab-list" id="collabList"></div>
 
+        <!-- [不蒜子] 瀏覽人次容器 -->
         <div>
             <div class="counter-container">
                 <span class="counter-label">❖ 累積瀏覽人次：</span>
@@ -103,7 +106,7 @@
 <script src="streamersData.js"></script>
 <script src="qaData.js"></script>
 
-<!-- UI 視圖模組 (獨立出來的功能渲染腳本) -->
+<!-- UI 視圖模組 -->
 <script src="giftsView.js"></script>
 <script src="bagsView.js"></script>
 <script src="streamersView.js"></script>
@@ -138,7 +141,6 @@
             btnBackMenu: document.getElementById("btnBackMenu")
         };
 
-        // 預設全部隱藏
         Object.values(elements).forEach(el => { if (el) el.style.display = "none"; });
 
         if (mode === 'gifts') {
