@@ -548,7 +548,7 @@ body {
     border-top: 1px dashed rgba(69, 162, 158, 0.3);
 }
 
-/* 問題 QA 可伸縮手風琴樣式 */
+/* 問題 QA 可伸縮手風琴樣式（CSS Grid 最佳化升級版） */
 .qa-container {
     display: none;
     flex-direction: column;
@@ -560,7 +560,7 @@ body {
     border: 1px solid #45a29e;
     border-radius: 8px;
     overflow: hidden;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .qa-item:hover, .qa-item.active {
@@ -576,12 +576,18 @@ body {
     align-items: center;
     cursor: pointer;
     user-select: none;
+    transition: background-color 0.2s ease;
+}
+
+.qa-header:hover {
+    background: rgba(31, 40, 51, 0.9);
 }
 
 .qa-title {
     font-size: 14px;
     font-weight: bold;
     color: #66fcf1;
+    transition: color 0.3s ease;
 }
 
 .qa-item.active .qa-title {
@@ -589,9 +595,10 @@ body {
 }
 
 .qa-arrow {
+    display: inline-block;
     font-size: 12px;
     color: #45a29e;
-    transition: transform 0.3s ease;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), color 0.3s ease;
 }
 
 .qa-item.active .qa-arrow {
@@ -599,18 +606,32 @@ body {
     color: #f39c12;
 }
 
+/* 核心：CSS Grid 動畫實現 */
 .qa-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    display: grid;
+    grid-template-rows: 0fr; /* 預設高度為 0 */
+    transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(11, 12, 16, 0.6);
 }
 
+.qa-item.active .qa-content {
+    grid-template-rows: 1fr; /* 展開至內容動態高度 */
+}
+
+/* 內容子元素 inner padding 與淡入淡出 */
 .qa-content-inner {
-    padding: 12px 15px;
+    overflow: hidden;
+    padding: 0 15px;
     font-size: 13px;
     color: #c5a059;
     line-height: 1.6;
+    opacity: 0;
+    transition: opacity 0.25s ease, padding 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.qa-item.active .qa-content-inner {
+    opacity: 1;
+    padding: 12px 15px;
     border-top: 1px dashed rgba(69, 162, 158, 0.3);
 }
 
