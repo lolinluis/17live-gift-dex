@@ -59,7 +59,7 @@ body {
     box-shadow: 0 0 12px rgba(241, 196, 15, 0.6);
 }
 
-/* 標題區塊與返回按鈕容器 */
+/* 標題區塊與容器 */
 .dex-header-container {
     position: relative;
     margin-bottom: 15px;
@@ -85,59 +85,39 @@ body {
     margin-top: 4px;
 }
 
-/* 通用返回列表按鈕（保留相容性） */
-.btn-back-menu {
-    background: linear-gradient(180deg, #333 0%, #111 100%);
-    border: 1px solid #c5a059;
+/* 右側固定懸浮返回列表按鈕 */
+.btn-floating-back {
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    z-index: 999;
+    display: none; /* 預設隱藏，進入子頁面時展開 */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 72px;
+    padding: 6px 0;
+    background: linear-gradient(180deg, #1f2833 0%, #0b0c10 100%);
+    border: 2px solid #c5a059;
     color: #66fcf1;
-    padding: 5px 10px;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: bold;
-    border-radius: 6px;
+    line-height: 1.25;
+    border-radius: 22px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7), 0 0 10px rgba(197, 160, 89, 0.5);
     cursor: pointer;
-    transition: all 0.2s;
-    box-shadow: 0 0 5px rgba(102, 252, 241, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
-.btn-back-menu:hover {
+.btn-floating-back:hover {
     background: #c5a059;
     color: #0b0c10;
-    box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
+    box-shadow: 0 0 18px rgba(241, 196, 15, 0.9);
 }
 
-/* 圖片容器定位基準（供右下角按鈕定位） */
-.gift-img-wrapper,
-.bag-img-wrapper {
-    position: relative;
-    display: inline-block;
-    max-width: 100%;
-}
-
-/* 放置於圖片右下角的返回列表按鈕特化樣式 */
-.btn-back-on-image {
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    z-index: 10;
-    padding: 6px 12px;
-    font-size: 0.85rem;
-    background: rgba(11, 12, 16, 0.85); /* 深色半透明背景，視覺對比清晰 */
-    border: 1px solid #c5a059;
-    color: #66fcf1;
-    border-radius: 6px;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-    transition: all 0.2s ease;
-}
-
-.btn-back-on-image:hover {
-    background: #c5a059;
-    color: #0b0c10;
-    box-shadow: 0 0 12px rgba(197, 160, 89, 0.9);
-}
-
-.btn-back-on-image:active {
-    transform: scale(0.95);
+.btn-floating-back:active {
+    transform: scale(0.92);
 }
 
 /* 升級禮 - 一行四格縮圖列表 (Grid) */
@@ -579,7 +559,7 @@ body {
     border-top: 1px dashed rgba(69, 162, 158, 0.3);
 }
 
-/* 問題 QA 可伸縮手風琴樣式（CSS Grid 最佳化升級版） */
+/* 問題 QA 可伸縮手風琴樣式 */
 .qa-container {
     display: none;
     flex-direction: column;
@@ -637,19 +617,17 @@ body {
     color: #f39c12;
 }
 
-/* 核心：CSS Grid 動畫實現 */
 .qa-content {
     display: grid;
-    grid-template-rows: 0fr; /* 預設高度為 0 */
+    grid-template-rows: 0fr;
     transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     background: rgba(11, 12, 16, 0.6);
 }
 
 .qa-item.active .qa-content {
-    grid-template-rows: 1fr; /* 展開至內容動態高度 */
+    grid-template-rows: 1fr;
 }
 
-/* 內容子元素 inner padding 與淡入淡出 */
 .qa-content-inner {
     overflow: hidden;
     padding: 0 15px;
