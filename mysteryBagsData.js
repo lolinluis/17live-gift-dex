@@ -50,6 +50,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "幽靈火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "甜點火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "豬萌火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
+            {tag: "普獎",name: "派對火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "唇膏火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "珠寶火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "蟲蟲火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
@@ -189,10 +190,12 @@ const mysteryBagsDatabase = {
         activityDesc: "【10/01-10/31 全員補給站 活動禮包】",
         items: [
             {tag: "頭獎",name: "醫藥箱",rarity: "★★★★★",desc: "【超稀有】11倍大獎，觸發跑馬燈全區播報",reward: "10,000 寶寶幣"},
-			{tag: "二獎",name: "信號彈",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "1,200 寶寶幣"},
+			{tag: "二獎",name: "信號彈",rarity: "★★★☆☆",desc: "【幸運獎勵】幸運小獎",reward: "1,200 寶寶幣"},
+            {tag: "二獎",name: "防毒面具",rarity: "★★★☆☆",desc: "【幸運獎勵】幸運小獎",reward: "1,200 寶寶幣"},
             {tag: "普獎",name: "破爛信號彈",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "650 寶寶幣"},
             {tag: "普獎",name: "破爛手電筒",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "650 寶寶幣"},
-            {tag: "普獎",name: "破爛打火機",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "600 寶寶幣"}
+            {tag: "普獎",name: "破爛打火機",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "600 寶寶幣"},
+            {tag: "普獎",name: "破爛衣物",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "600 寶寶幣"}
         ]
     },	
 	
@@ -240,8 +243,8 @@ const mysteryBagsDatabase = {
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "太空之旅 (20倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "100,000寶寶幣"},
-			{tag: "二獎",name: "??? (?倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "??? 寶寶幣"},
-            {tag: "二獎",name: "浪漫小屋 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "6,000 寶寶幣"},
+			{tag: "二獎",name: "寶寶我愛你 (1.4倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "7,000 寶寶幣"},
+            {tag: "三獎",name: "浪漫小屋 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "6,000 寶寶幣"},
 			{tag: "普獎",name: "愛情木馬 (1倍)",rarity: "★☆☆☆☆",desc: "【普獎】沒虧沒虧",reward: "5,000 寶寶幣"},
             {tag: "普獎",name: "永恆約定",rarity: "★☆☆☆☆",desc: "【普獎】基礎獎勵",reward: "3,200 寶寶幣"},
             {tag: "普獎",name: "藍色奇蹟",rarity: "★☆☆☆☆",desc: "【普獎】基礎獎勵",reward: "2,500 寶寶幣"}
