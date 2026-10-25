@@ -22,14 +22,13 @@
         <button class="tab-btn" id="tabQA" onclick="switchMode('qa')">問題QA</button>
     </div>
 
-    <!-- 標題與返回按鈕區 -->
+    <!-- 標題區 (已移除原本右上角的返回按鈕) -->
     <div class="dex-header-container">
         <div class="dex-header">
             <h1 id="pageTitle">17LIVE 升級禮進化圖鑑</h1>
             <div class="subtitle">(非官方 - 持續更新中)</div>
             <div class="subtitle">˚ʚ♡ɞ˚恭喜 🎀伊娜いな 白玉🖤 30等畢業囉！˚ʚ♡ɞ˚</div>
         </div>
-        <button class="btn-back-menu" id="btnBackMenu" onclick="backToMenu()">◀ 返回列表</button>
     </div>
 
     <!-- [升級禮] 1列4格 縮圖列表區 -->
@@ -40,7 +39,11 @@
 
     <!-- [隨機袋模式] 頂部隨機袋主圖與說明面板 -->
     <div class="bag-hero-panel" id="bagHeroPanel">
-        <img class="bag-main-img" id="bagMainImg" src="" alt="隨機袋圖示">
+        <div class="bag-img-wrapper">
+            <img class="bag-main-img" id="bagMainImg" src="" alt="隨機袋圖示">
+            <!-- [移動點1] 隨機袋圖片區右下角的返回按鈕 -->
+            <button class="btn-back-menu btn-back-on-image" id="btnBackMenuBag" onclick="backToMenu()">◀ 返回列表</button>
+        </div>
         <div class="bag-desc-box" id="bagDesc">活動說明...</div>
         <div class="bag-price-container">
             <span class="req-label" style="color:#e67e22;">單次開袋金額：</span>
@@ -52,7 +55,11 @@
     <div id="giftDisplayArea" style="display: none;">
         <div class="card-frame">
             <div class="card-rarity" id="giftRarity">★☆☆☆☆</div>
-            <img src="" alt="圖示" class="card-image" id="giftImg">
+            <div class="gift-img-wrapper">
+                <img src="" alt="圖示" class="card-image" id="giftImg">
+                <!-- [移動點2] 升級禮圖片區右下角的返回按鈕 -->
+                <button class="btn-back-menu btn-back-on-image" id="btnBackMenuGift" onclick="backToMenu()">◀ 返回列表</button>
+            </div>
             <div class="card-name" id="giftName">載入中...</div>
             <div class="card-desc" id="giftDesc">請稍候...</div>
 
@@ -138,8 +145,7 @@
             bagHeroPanel: document.getElementById("bagHeroPanel"),
             bagItemsGrid: document.getElementById("bagItemsGrid"),
             streamerBirthdayContainer: document.getElementById("streamerBirthdayContainer"),
-            qaContainer: document.getElementById("qaContainer"),
-            btnBackMenu: document.getElementById("btnBackMenu")
+            qaContainer: document.getElementById("qaContainer")
         };
 
         Object.values(elements).forEach(el => { if (el) el.style.display = "none"; });
@@ -170,7 +176,6 @@
         currentGiftKey = giftKey;
         document.getElementById("giftGridContainer").style.display = "none";
         document.getElementById("giftDisplayArea").style.display = "block";
-        document.getElementById("btnBackMenu").style.display = "block";
         
         window.scrollTo(0, 0); // 點選升級禮子頁面瞬間置頂
 
@@ -182,7 +187,6 @@
         document.getElementById("bagListContainer").style.display = "none";
         document.getElementById("bagHeroPanel").style.display = "block";
         document.getElementById("bagItemsGrid").style.display = "flex";
-        document.getElementById("btnBackMenu").style.display = "block";
 
         window.scrollTo(0, 0); // 點選隨機袋子頁面瞬間置頂
 
@@ -194,12 +198,10 @@
 
         if (currentMode === 'gifts') {
             document.getElementById("giftDisplayArea").style.display = "none";
-            document.getElementById("btnBackMenu").style.display = "none";
             document.getElementById("giftGridContainer").style.display = "grid";
         } else if (currentMode === 'bags') {
             document.getElementById("bagHeroPanel").style.display = "none";
             document.getElementById("bagItemsGrid").style.display = "none";
-            document.getElementById("btnBackMenu").style.display = "none";
             document.getElementById("bagListContainer").style.display = "flex";
         }
     }
