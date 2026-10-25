@@ -85,11 +85,8 @@ body {
     margin-top: 4px;
 }
 
-/* 右上角返回選單按鈕 */
+/* 通用返回列表按鈕（保留相容性） */
 .btn-back-menu {
-    position: absolute;
-    right: 0;
-    top: 0;
     background: linear-gradient(180deg, #333 0%, #111 100%);
     border: 1px solid #c5a059;
     color: #66fcf1;
@@ -99,7 +96,6 @@ body {
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.2s;
-    display: none;
     box-shadow: 0 0 5px rgba(102, 252, 241, 0.3);
 }
 
@@ -107,6 +103,41 @@ body {
     background: #c5a059;
     color: #0b0c10;
     box-shadow: 0 0 10px rgba(197, 160, 89, 0.8);
+}
+
+/* 圖片容器定位基準（供右下角按鈕定位） */
+.gift-img-wrapper,
+.bag-img-wrapper {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* 放置於圖片右下角的返回列表按鈕特化樣式 */
+.btn-back-on-image {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    z-index: 10;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    background: rgba(11, 12, 16, 0.85); /* 深色半透明背景，視覺對比清晰 */
+    border: 1px solid #c5a059;
+    color: #66fcf1;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.2s ease;
+}
+
+.btn-back-on-image:hover {
+    background: #c5a059;
+    color: #0b0c10;
+    box-shadow: 0 0 12px rgba(197, 160, 89, 0.9);
+}
+
+.btn-back-on-image:active {
+    transform: scale(0.95);
 }
 
 /* 升級禮 - 一行四格縮圖列表 (Grid) */
