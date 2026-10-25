@@ -259,12 +259,15 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "遊艇派對動滋動",rarity: "★★★★★",desc: "【超稀有】恭喜獲得最大獎",reward: "30,000 寶寶幣"},
 			{tag: "二獎",name: "海是愛著你",rarity: "★★★★☆",desc: "【小獎】幸運獎項",reward: "6,000 寶寶幣"},
+            {tag: "三獎",name: "航海寶寶",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "航海寶寶 寶寶幣"},
 			{tag: "三獎",name: "梅花欸",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "2,000 寶寶幣"},
+			{tag: "普獎",name: "水下夥伴們",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "1,300 寶寶幣"},
             {tag: "普獎",name: "雙人滑水道",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "1,100 寶寶幣"},
 			{tag: "普獎",name: "夜未眠寶寶",rarity: "★★☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
-			{tag: "普獎",name: "3C家電",rarity: "★★☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
-			{tag: "普獎",name: "未完成的遊戲玩家",rarity: "★★☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
-			{tag: "普獎",name: "請支援抖內",rarity: "★★☆☆☆",desc: "【普獎】基本分數",reward: "??? 寶寶幣"},
+			{tag: "普獎",name: "3C家電",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
+			{tag: "普獎",name: "未完成的遊戲玩家",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "香檳敲杯",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "600 寶寶幣"},
+			{tag: "普獎",name: "請支援抖內",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "??? 寶寶幣"},
 			{tag: "普獎",name: "選物寶寶",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "200 寶寶幣"}
         ]
     },
