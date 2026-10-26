@@ -53,13 +53,6 @@ const streamersDatabase = [
         intro: "ENFP / 高雄瘋癲芋頭西米露 / 天天都在哭?的主播 / 自虐加碼無極限 / 現居高雄"
     },
     {
-        date: "11/10",
-        name: "Te小椰冻奶",
-        zodiac: "天蠍座",
-        url: "https://17.live/zh-Hant/profile/u/f49ee12c-8021-4386-8760-36b9c3ae0a6f",
-        intro: "菸嗓舞蹈主播 / 近視看不到字多包涵 / 現居四川成都"
-    },
-    {
         date: "11/16",
         name: "🎪Moorinla慕琳拉🎟",
         zodiac: "天蠍座",
