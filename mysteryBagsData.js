@@ -73,69 +73,6 @@ const mysteryBagsDatabase = {
         ]
     },
 	
-    Versatile_Magician_Big: { //百變魔術師包你大賺
-        title: "百變魔術師包你大賺",
-        maxCoins: "10,000 寶寶幣 / 次",
-		img: "images/bags/Versatile_Magician_Big/01.png",
-        activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
-        items: [
-            {tag: "頭獎",name: "燦爛煙火 (100倍)",rarity: "★★★★★",desc: "【超稀有】100倍大獎，觸發跑馬燈全區播報",reward: "1,000,000 寶寶幣"},
-            {tag: "二獎",name: "黃金聚寶盆 (2倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "20,000 寶寶幣"},
-			{tag: "三獎",name: "黃金宇宙巡航 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "13,000 寶寶幣"},
-			{tag: "四獎",name: "冬季金色玫瑰 (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "12,000 寶寶幣"},
-			{tag: "普獎",name: "魔術師卡牌 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "11,000 寶寶幣"},
-            {tag: "普獎",name: "黃金星球漫步 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "11,000 寶寶幣"}
-        ]
-    },
-	
-    Versatile_Magician_Small: { //百變魔術師包你小賺
-        title: "百變魔術師包你小賺",
-        maxCoins: "1,000 寶寶幣 / 次",
-		img: "images/bags/Versatile_Magician_Small/01.png",
-        activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
-        items: [
-            {tag: "頭獎",name: "沖天煙火 (100倍)",rarity: "★★★★★",desc: "【超稀有】100倍大獎，觸發跑馬燈全區播報",reward: "100,000 寶寶幣"},
-            {tag: "二獎",name: "金條海洋 (2倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "2,000 寶寶幣"},
-			{tag: "三獎",name: "金幣海 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "1,300 寶寶幣"},
-			{tag: "四獎",name: "金雨 (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "1,200 寶寶幣"},
-			{tag: "普獎",name: "做鬼臉 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "1,100 寶寶幣"},
-            {tag: "普獎",name: "閃耀金幣 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "1,100 寶寶幣"}
-        ]
-    },
-	
-    Versatile_Magician_Filter: { //百變魔術師濾鏡包你賺
-        title: "百變魔術師濾鏡包你賺",
-        maxCoins: "3,000 寶寶幣 / 次",
-		img: "images/bags/Versatile_Magician_Filter/01.png",
-        activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
-        items: [
-            {tag: "頭獎",name: "五官畢卡索 (2倍)",rarity: "★★★★★",desc: "【超稀有】2倍大獎",reward: "6,000 寶寶幣"},
-            {tag: "二獎",name: "緊湊妹 (1.5倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "4,500 寶寶幣"},
-			{tag: "三獎",name: "我只鼠於你 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "3,900 寶寶幣"},
-			{tag: "四獎",name: "我太難了~ (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "3,600 寶寶幣"},
-			{tag: "普獎",name: "神奇放大鏡 (1.2倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "3,600 寶寶幣"}
-        ]
-    },	
-	
-    Summon_Divine_Beast: { //神獸召喚
-        title: "神獸召喚",
-        maxCoins: "900 寶寶幣 / 次",
-		img: "images/bags/Summon_Divine_Beast/01.png",
-        activityDesc: "【09/24-10/09 神獸召喚II 活動禮包】",
-        items: [
-            {tag: "頭獎",name: "究極真龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "頭獎",name: "浴火鳳凰 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "頭獎",name: "冷冽斑鳩 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "頭獎",name: "炙熱猛虎 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "頭獎",name: "闇夜黑龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "頭獎",name: "震地轟龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "頭獎",name: "暴雪冰龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "頭獎",name: "熾炎火龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "二獎",name: "召喚魔術 (0.5倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "500 寶寶幣"},
-            {tag: "普獎",name: "召喚失敗 (0倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "1 寶寶幣"}
-        ]
-    },
-	
 	Confession: { //告白箴言
         title: "告白箴言",
         maxCoins: "520 寶寶幣 / 次",
@@ -168,37 +105,7 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "冒出頭 (0.3倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "249 寶寶幣"}
         ]
     },
-	
-    Maple_Shiba: { //赤柴登場
-        title: "赤柴登場",
-        maxCoins: "1,500 寶寶幣 / 次",
-		img: "images/bags/Maple_Shiba/01.png",
-        activityDesc: "【10/01-10/12 柴要和你一起賞楓 活動禮包】",
-        items: [
-            {tag: "頭獎",name: "柴一起跳水 (23倍)",rarity: "★★★★☆",desc: "【超稀有】23倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
-			{tag: "二獎",name: "柴一起 (2.3倍)",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "3,500 寶寶幣"},
-			{tag: "三獎",name: "黑柴賞楓 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,500 寶寶幣"},
-            {tag: "普獎",name: "柴一起散步 (0.5倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "750 寶寶幣"}
-			
-        ]
-    },
-	
-    Supply_II: { //物資補給
-        title: "物資補給",
-        maxCoins: "888 寶寶幣 / 次",
-		img: "images/bags/Supply_II/01.png",
-        activityDesc: "【10/01-10/31 全員補給站 活動禮包】",
-        items: [
-            {tag: "頭獎",name: "醫藥箱",rarity: "★★★★★",desc: "【超稀有】11倍大獎，觸發跑馬燈全區播報",reward: "10,000 寶寶幣"},
-			{tag: "二獎",name: "信號彈",rarity: "★★★☆☆",desc: "【幸運獎勵】幸運小獎",reward: "1,200 寶寶幣"},
-            {tag: "二獎",name: "防毒面具",rarity: "★★★☆☆",desc: "【幸運獎勵】幸運小獎",reward: "1,200 寶寶幣"},
-            {tag: "普獎",name: "破爛信號彈",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "650 寶寶幣"},
-            {tag: "普獎",name: "破爛手電筒",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "650 寶寶幣"},
-            {tag: "普獎",name: "破爛打火機",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "600 寶寶幣"},
-            {tag: "普獎",name: "破爛衣物",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "600 寶寶幣"}
-        ]
-    },	
-	
+
     MagicLamp: { //魔法神燈
         title: "魔法神燈",
         maxCoins: "300 寶寶幣 / 次",
@@ -410,6 +317,99 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "熱門推薦",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "330 寶寶幣"},
             {tag: "普獎",name: "17來聊天",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "300 寶寶幣"},
             {tag: "普獎",name: "開播囉",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "150 寶寶幣"}
+        ]
+    },
+    
+        Versatile_Magician_Big: { //百變魔術師包你大賺
+        title: "百變魔術師包你大賺",
+        maxCoins: "10,000 寶寶幣 / 次",
+		img: "images/bags/Versatile_Magician_Big/01.png",
+        activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
+        items: [
+            {tag: "頭獎",name: "燦爛煙火 (100倍)",rarity: "★★★★★",desc: "【超稀有】100倍大獎，觸發跑馬燈全區播報",reward: "1,000,000 寶寶幣"},
+            {tag: "二獎",name: "黃金聚寶盆 (2倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "20,000 寶寶幣"},
+			{tag: "三獎",name: "黃金宇宙巡航 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "13,000 寶寶幣"},
+			{tag: "四獎",name: "冬季金色玫瑰 (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "12,000 寶寶幣"},
+			{tag: "普獎",name: "魔術師卡牌 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "11,000 寶寶幣"},
+            {tag: "普獎",name: "黃金星球漫步 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "11,000 寶寶幣"}
+        ]
+    },
+	
+    Versatile_Magician_Small: { //百變魔術師包你小賺
+        title: "百變魔術師包你小賺",
+        maxCoins: "1,000 寶寶幣 / 次",
+		img: "images/bags/Versatile_Magician_Small/01.png",
+        activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
+        items: [
+            {tag: "頭獎",name: "沖天煙火 (100倍)",rarity: "★★★★★",desc: "【超稀有】100倍大獎，觸發跑馬燈全區播報",reward: "100,000 寶寶幣"},
+            {tag: "二獎",name: "金條海洋 (2倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "2,000 寶寶幣"},
+			{tag: "三獎",name: "金幣海 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "1,300 寶寶幣"},
+			{tag: "四獎",name: "金雨 (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "1,200 寶寶幣"},
+			{tag: "普獎",name: "做鬼臉 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "1,100 寶寶幣"},
+            {tag: "普獎",name: "閃耀金幣 (1.1倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "1,100 寶寶幣"}
+        ]
+    },
+	
+    Versatile_Magician_Filter: { //百變魔術師濾鏡包你賺
+        title: "百變魔術師濾鏡包你賺",
+        maxCoins: "3,000 寶寶幣 / 次",
+		img: "images/bags/Versatile_Magician_Filter/01.png",
+        activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
+        items: [
+            {tag: "頭獎",name: "五官畢卡索 (2倍)",rarity: "★★★★★",desc: "【超稀有】2倍大獎",reward: "6,000 寶寶幣"},
+            {tag: "二獎",name: "緊湊妹 (1.5倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "4,500 寶寶幣"},
+			{tag: "三獎",name: "我只鼠於你 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "3,900 寶寶幣"},
+			{tag: "四獎",name: "我太難了~ (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "3,600 寶寶幣"},
+			{tag: "普獎",name: "神奇放大鏡 (1.2倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "3,600 寶寶幣"}
+        ]
+    },	
+	
+    Summon_Divine_Beast: { //神獸召喚
+        title: "神獸召喚",
+        maxCoins: "900 寶寶幣 / 次",
+		img: "images/bags/Summon_Divine_Beast/01.png",
+        activityDesc: "【09/24-10/09 神獸召喚II 活動禮包】",
+        items: [
+            {tag: "頭獎",name: "究極真龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "頭獎",name: "浴火鳳凰 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "頭獎",name: "冷冽斑鳩 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "頭獎",name: "炙熱猛虎 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "頭獎",name: "闇夜黑龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "頭獎",name: "震地轟龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "頭獎",name: "暴雪冰龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "頭獎",name: "熾炎火龍 (13倍)",rarity: "★★★★★",desc: "【超稀有】13倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "二獎",name: "召喚魔術 (0.5倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "500 寶寶幣"},
+            {tag: "普獎",name: "召喚失敗 (0倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "1 寶寶幣"}
+        ]
+    },
+    
+    Maple_Shiba: { //赤柴登場
+        title: "赤柴登場",
+        maxCoins: "1,500 寶寶幣 / 次",
+		img: "images/bags/Maple_Shiba/01.png",
+        activityDesc: "【10/01-10/12 柴要和你一起賞楓 活動禮包】",
+        items: [
+            {tag: "頭獎",name: "柴一起跳水 (23倍)",rarity: "★★★★☆",desc: "【超稀有】23倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+			{tag: "二獎",name: "柴一起 (2.3倍)",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "3,500 寶寶幣"},
+			{tag: "三獎",name: "黑柴賞楓 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,500 寶寶幣"},
+            {tag: "普獎",name: "柴一起散步 (0.5倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "750 寶寶幣"}
+			
+        ]
+    },
+	
+    Supply_II: { //物資補給
+        title: "物資補給",
+        maxCoins: "888 寶寶幣 / 次",
+		img: "images/bags/Supply_II/01.png",
+        activityDesc: "【10/01-10/31 全員補給站 活動禮包】",
+        items: [
+            {tag: "頭獎",name: "醫藥箱",rarity: "★★★★★",desc: "【超稀有】11倍大獎，觸發跑馬燈全區播報",reward: "10,000 寶寶幣"},
+			{tag: "二獎",name: "信號彈",rarity: "★★★☆☆",desc: "【幸運獎勵】幸運小獎",reward: "1,200 寶寶幣"},
+            {tag: "二獎",name: "防毒面具",rarity: "★★★☆☆",desc: "【幸運獎勵】幸運小獎",reward: "1,200 寶寶幣"},
+            {tag: "普獎",name: "破爛信號彈",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "650 寶寶幣"},
+            {tag: "普獎",name: "破爛手電筒",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "650 寶寶幣"},
+            {tag: "普獎",name: "破爛打火機",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "600 寶寶幣"},
+            {tag: "普獎",name: "破爛衣物",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "600 寶寶幣"}
         ]
     }
 };
