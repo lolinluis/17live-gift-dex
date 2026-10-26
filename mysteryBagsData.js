@@ -166,7 +166,7 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "遊艇派對動滋動",rarity: "★★★★★",desc: "【超稀有】恭喜獲得最大獎",reward: "30,000 寶寶幣"},
 			{tag: "二獎",name: "海是愛著你",rarity: "★★★★☆",desc: "【小獎】幸運獎項",reward: "6,000 寶寶幣"},
-            {tag: "三獎",name: "航海寶寶",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "航海寶寶 寶寶幣"},
+            {tag: "三獎",name: "航海寶寶",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "2,000 寶寶幣"},
 			{tag: "三獎",name: "梅花欸",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "2,000 寶寶幣"},
 			{tag: "普獎",name: "水下夥伴們",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "1,300 寶寶幣"},
             {tag: "普獎",name: "雙人滑水道",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "1,100 寶寶幣"},
@@ -246,7 +246,7 @@ const mysteryBagsDatabase = {
         ]
     },
     
-       	Go_To_School: { //來去上學
+    Go_To_School: { //來去上學
         title: "來去上學",
         maxCoins: "2,000 寶寶幣 / 次",
 		img: "images/bags/Go_To_School/01.png",
@@ -389,7 +389,7 @@ const mysteryBagsDatabase = {
 		img: "images/bags/Maple_Shiba/01.png",
         activityDesc: "【10/01-10/12 柴要和你一起賞楓 活動禮包】",
         items: [
-            {tag: "頭獎",name: "柴一起跳水 (23倍)",rarity: "★★★★☆",desc: "【超稀有】23倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
+            {tag: "頭獎",name: "柴一起跳水 (8倍)",rarity: "★★★★☆",desc: "【超稀有】8倍大獎，觸發跑馬燈全區播報",reward: "12,000 寶寶幣"},
 			{tag: "二獎",name: "柴一起 (2.3倍)",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "3,500 寶寶幣"},
 			{tag: "三獎",name: "黑柴賞楓 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,500 寶寶幣"},
             {tag: "普獎",name: "柴一起散步 (0.5倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "750 寶寶幣"}
