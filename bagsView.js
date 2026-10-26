@@ -48,7 +48,7 @@ const BagsView = {
         const titleEl = document.getElementById("bagTitle");
         if (titleEl) {
         titleEl.innerText = bagData.name || bagData.title; // 依據你 mysteryBagsData 裡的欄位名稱設定
-        }
+        };
         
         document.getElementById("bagPrice").innerText = data.maxCoins || "單次金額未定";
         document.getElementById("bagDesc").innerText = data.activityDesc || "暫無活動說明。";
