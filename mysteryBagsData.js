@@ -242,6 +242,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "萬聖送好禮",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "7,000 寶寶幣"},
             {tag: "普獎",name: "糖果大豐收",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "6,000 寶寶幣"},
             {tag: "普獎",name: "萬聖甜蜜蜜",rarity: "★☆☆☆☆",desc: "【普通獎勵】基礎獎勵",reward: "5,200 寶寶幣"},
+             {tag: "普獎",name: "不給糖就搗蛋",rarity: "★☆☆☆☆",desc: "【普通獎勵】基礎獎勵",reward: "5,000 寶寶幣"}
         ]
     },
     
@@ -289,8 +290,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "開運水晶",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "520 寶寶幣"},
             {tag: "普獎",name: "開運達摩",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "400 寶寶幣"},
             {tag: "普獎",name: "招財貓",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "320 寶寶幣"},
-            {tag: "普獎",name: "幸運御守",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "300 寶寶幣"}
-			
+            {tag: "普獎",name: "幸運御守",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "300 寶寶幣"}		
         ]
     },
     Bingo_Lucky: { //Bingo Lucky
