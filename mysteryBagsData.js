@@ -47,13 +47,16 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "大偉哥霸氣超級火箭",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "11,000 寶寶幣"},
 			{tag: "普獎",name: "葡萄火箭",rarity: "★★★☆☆",desc: "【特別獎勵】幸運小獎獎勵",reward: "2,999 寶寶幣"},
+            {tag: "普獎",name: "愛神火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "1,299 寶寶幣"},
             {tag: "普獎",name: "幽靈火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
+            {tag: "普獎",name: "航天火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "甜點火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "豬萌火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "派對火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "唇膏火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "珠寶火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "蟲蟲火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
+            {tag: "普獎",name: "話筒火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
 			{tag: "普獎",name: "烏龜火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"}
         ]
     },
@@ -91,7 +94,28 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "數字1",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "300 寶寶幣"}
         ]
     },
-	
+    
+    Yi_Jian_Zhong_Qing: { //一見鍾情
+        title: "一見鍾情",
+        maxCoins: "888 寶寶幣 / 次",
+        img: "images/bags/Yi_Jian_Zhong_Qing/01.png",
+        activityDesc: "【常駐型隨機袋-非活動相關】",
+        items: [
+            {tag: "頭獎", name: "寶藏值x20000", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "20,000 寶寶幣"},
+            {tag: "二獎", name: "慶祝煙火", rarity: "★★★★☆", desc: "【極稀有】特別獎勵", reward: "4,999 寶寶幣"},
+            {tag: "三獎", name: "都市寶寶（大）", rarity: "★★★☆☆", desc: "【稀有】特別獎勵", reward: "3,000 寶寶幣"},
+            {tag: "三獎", name: "勇氣寶寶（中）", rarity: "★★★☆☆", desc: "【稀有】特別獎勵", reward: "1,500 寶寶幣"},
+            {tag: "四獎", name: "美的冒泡", rarity: "★★☆☆☆", desc: "【高級】基本分數", reward: "999 寶寶幣"},
+            {tag: "四獎", name: "燭光晚餐", rarity: "★★☆☆☆", desc: "【高級】基本分數", reward: "999 寶寶幣"},
+            {tag: "四獎", name: "愛的天使", rarity: "★★☆☆☆", desc: "【高級】基本分數", reward: "888 寶寶幣"},
+            {tag: "普獎", name: "我愛你", rarity: "★☆☆☆☆", desc: "【常見獎勵】基本分數", reward: "520 寶寶幣"},
+            {tag: "普獎", name: "3D午安禮", rarity: "★☆☆☆☆", desc: "【常見獎勵】基本分數", reward: "500 寶寶幣"},
+            {tag: "普獎", name: "流星劃過", rarity: "★☆☆☆☆", desc: "【常見獎勵】基本分數", reward: "499 寶寶幣"},
+            {tag: "普獎", name: "生氣氣", rarity: "★☆☆☆☆", desc: "【常見獎勵】基本分數", reward: "377 寶寶幣"},
+            {tag: "普獎", name: "您辛苦了", rarity: "★☆☆☆☆", desc: "【常見獎勵】基本分數", reward: "249 寶寶幣"}
+        ]
+    },
+
 	Underwater_Adventure: { //海底探險
         title: "海底探險",
         maxCoins: "888 寶寶幣 / 次",
@@ -138,8 +162,11 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "享受時光 (1倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "3,999 寶寶幣"},
             {tag: "普獎",name: "17驚喜 (0.8倍)",rarity: "★☆☆☆☆",desc: "【普獎】虧了～",reward: "3,000 寶寶幣"},
             {tag: "普獎",name: "滿滿愛心 (0.6倍)",rarity: "★☆☆☆☆",desc: "【普獎】虧了～",reward: "2,499 寶寶幣"},
+            {tag: "普獎",name: "名牌包 (0.6倍)",rarity: "★☆☆☆☆",desc: "【普獎】虧了～",reward: "2,499 寶寶幣"},
+            {tag: "普獎",name: "給你我的心 (0.6倍)",rarity: "★☆☆☆☆",desc: "【普獎】虧了～",reward: "2,499 寶寶幣"},
 			{tag: "普獎",name: "17戀愛 (0.5倍)",rarity: "★☆☆☆☆",desc: "【普獎】虧了～",reward: "2,000 寶寶幣"},
-			{tag: "普獎",name: "送你飛吻 (0.3倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說再接再厲",reward: "1,499 寶寶幣"}
+            {tag: "普獎",name: "你好蜂狂 (0.3倍)",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "1,499 寶寶幣"},
+			{tag: "普獎",name: "送你飛吻 (0.3倍)",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "1,499 寶寶幣"}
         ]
     },
 	
@@ -165,16 +192,30 @@ const mysteryBagsDatabase = {
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "遊艇派對動滋動",rarity: "★★★★★",desc: "【超稀有】恭喜獲得最大獎",reward: "30,000 寶寶幣"},
-			{tag: "二獎",name: "海是愛著你",rarity: "★★★★☆",desc: "【小獎】幸運獎項",reward: "6,000 寶寶幣"},
-            {tag: "三獎",name: "航海寶寶",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "2,000 寶寶幣"},
-			{tag: "三獎",name: "梅花欸",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "2,000 寶寶幣"},
+			{tag: "普獎",name: "海是愛著你",rarity: "★★★★☆",desc: "【小獎】幸運獎項",reward: "6,000 寶寶幣"},
+            {tag: "普獎",name: "遊艇干一杯",rarity: "★★★★☆",desc: "【小獎】幸運獎項",reward: "5,000 寶寶幣"},
+            {tag: "普獎",name: "海上花火",rarity: "★★★★☆",desc: "【小獎】幸運獎項",reward: "3,000 寶寶幣"},
+            {tag: "普獎",name: "墜入愛河",rarity: "★★★★☆",desc: "【小獎】幸運獎項",reward: "2,000 寶寶幣"},
+            {tag: "普獎",name: "航海寶寶",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "2,000 寶寶幣"},
+			{tag: "普獎",name: "梅花欸",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "2,000 寶寶幣"},
 			{tag: "普獎",name: "水下夥伴們",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "1,300 寶寶幣"},
             {tag: "普獎",name: "雙人滑水道",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "1,100 寶寶幣"},
+            {tag: "普獎",name: "漂浮香檳海",rarity: "★★★☆☆",desc: "【小獎】幸運小獎",reward: "1,100 寶寶幣"},
 			{tag: "普獎",name: "夜未眠寶寶",rarity: "★★☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "巨蚌精寶寶",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "小白鯨之舞",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "鯨鯊共游",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
 			{tag: "普獎",name: "3C家電",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "泳池享樂",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
 			{tag: "普獎",name: "未完成的遊戲玩家",rarity: "★☆☆☆☆",desc: "【普獎】沒虧",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "守護海洋",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "800 寶寶幣"},
+            {tag: "普獎",name: "玩水槍",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "800 寶寶幣"},
+            {tag: "普獎",name: "海生館",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "700 寶寶幣"},
             {tag: "普獎",name: "香檳敲杯",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "600 寶寶幣"},
-			{tag: "普獎",name: "請支援抖內",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "??? 寶寶幣"},
+			{tag: "普獎",name: "請支援抖內",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "500 寶寶幣"},
+            {tag: "普獎",name: "寄居蟹",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "300 寶寶幣"},
+            {tag: "普獎",name: "小丑魚",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "300 寶寶幣"},
+            {tag: "普獎",name: "海獺",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "250 寶寶幣"},
 			{tag: "普獎",name: "選物寶寶",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "200 寶寶幣"}
         ]
     },
@@ -206,6 +247,7 @@ const mysteryBagsDatabase = {
             {tag: "頭獎",name: "不倒翁疊疊樂 (19倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "16,888 寶寶幣"},
 			{tag: "二獎",name: "金色不倒翁 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運二獎獎勵",reward: "2,000 寶寶幣"},
             {tag: "三獎",name: "粉色不倒翁 (2倍)",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運獎勵",reward: "1,200 寶寶幣"},
+            {tag: "普獎",name: "黑色不倒翁 (0.6倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "500 寶寶幣"},
 			{tag: "普獎",name: "白色不倒翁 (0.5倍)",rarity: "★☆☆☆☆",desc: "【普獎】只能說63了",reward: "400 寶寶幣"}
         ]
     },
@@ -253,10 +295,12 @@ const mysteryBagsDatabase = {
         activityDesc: "藝起來升級 活動隨機袋",
         items: [
             {tag: "頭獎",name: "碩士寶寶",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "20,000 寶寶幣"},
-			{tag: "二獎",name: "大學寶寶",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "??? 寶寶幣"},
+			{tag: "二獎",name: "大學寶寶",rarity: "★★☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "3,000 寶寶幣"},
 			{tag: "三獎",name: "高中寶寶",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "2,500 寶寶幣"},
             {tag: "普獎",name: "國中寶寶",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "2,200 寶寶幣"},
             {tag: "普獎",name: "國小寶寶",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "2,100 寶寶幣"},
+            {tag: "普獎",name: "幼幼班寶寶",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,600 寶寶幣"},
+            {tag: "普獎",name: "我的好麻吉",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,400 寶寶幣"},
             {tag: "普獎",name: "我的功課",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
         ]
     },
@@ -302,9 +346,12 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "炫砲直升機",rarity: "★★★★☆",desc: "【超稀有】頭獎觸發跑馬燈全區播報",reward: "60,000 寶寶幣"},
 			{tag: "二獎",name: "火箭沖天",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "10,000 寶寶幣"},
+            {tag: "普獎",name: "鑽戒",rarity: "★★☆☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "2,000 寶寶幣"},
 			{tag: "普獎",name: "錢撒滿地",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,800 寶寶幣"},
             {tag: "普獎",name: "家電組",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,200 寶寶幣"},
-            {tag: "普獎",name: "香檳",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,000 寶寶幣"}
+            {tag: "普獎",name: "香檳",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,000 寶寶幣"},
+            {tag: "普獎",name: "錢撒滿地",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "900 寶寶"},
+            {tag: "普獎",name: "耳機",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "900 寶寶幣"}
         ]
     },
         Stream_On_Air: { //直播 on air
@@ -315,6 +362,7 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "魅力巨星",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得頭獎",reward: "3,000 寶寶幣"},
 			{tag: "二獎",name: "吉他新秀",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "500 寶寶幣"},
+            {tag: "普獎",name: "寶寶大聲公",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "380 寶寶幣"},
 			{tag: "普獎",name: "熱門推薦",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "330 寶寶幣"},
             {tag: "普獎",name: "17來聊天",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "300 寶寶幣"},
             {tag: "普獎",name: "開播囉",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "150 寶寶幣"}
@@ -327,7 +375,7 @@ const mysteryBagsDatabase = {
 		img: "images/bags/Versatile_Magician_Big/01.png",
         activityDesc: "【10/02-10/30 百變魔術師包你賺活動】",
         items: [
-            {tag: "頭獎",name: "燦爛煙火 (100倍)",rarity: "★★★★★",desc: "【超稀有】100倍大獎，觸發跑馬燈全區播報",reward: "1,000,000 寶寶幣"},
+            {tag: "頭獎",name: "燦爛煙火 (100倍)",rarity: "★★★★★",desc: "【超稀有】100倍大獎",reward: "1,000,000 寶寶幣"},
             {tag: "二獎",name: "黃金聚寶盆 (2倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎2倍獎勵",reward: "20,000 寶寶幣"},
 			{tag: "三獎",name: "黃金宇宙巡航 (1.3倍)",rarity: "★★★☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "13,000 寶寶幣"},
 			{tag: "四獎",name: "冬季金色玫瑰 (1.2倍)",rarity: "★★☆☆☆",desc: "【紅利獎勵】幸運小獎獎勵",reward: "12,000 寶寶幣"},
@@ -364,7 +412,25 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "神奇放大鏡 (1.2倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本回饋分數",reward: "3,600 寶寶幣"}
         ]
     },	
-	
+    
+    Zhen_Shou_Zhao_Huan: { //珍獸召喚
+        title: "珍獸召喚",
+        maxCoins: "600 寶寶幣 / 次",
+        img: "images/bags/Zhen_Shou_Zhao_Huan/01.png",
+        activityDesc: "【珍獸召喚活動】",
+        items: [
+            {tag: "頭獎", name: "鈍口蠑螈 極彩覺醒", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "12,000 寶寶幣"},
+            {tag: "頭獎", name: "雪人 雪地炫技", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "12,000 寶寶幣"},
+            {tag: "頭獎", name: "閻龍 幻影", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "12,000 寶寶幣"},
+            {tag: "頭獎", name: "海怪 深海帝王", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "12,000 寶寶幣"},
+            {tag: "頭獎", name: "鴨嘴獸 尋寶獵人", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "12,000 寶寶幣"},
+            {tag: "頭獎", name: "傘蜥蜴 巨型環領", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "12,000 寶寶幣"},
+            {tag: "頭獎", name: "大腳獸 龐然蹤跡", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "12,000 寶寶幣"},
+            {tag: "二獎", name: "召喚珍術", rarity: "★★☆☆☆", desc: "【基礎獎勵】基本分數", reward: "300 寶寶幣"},
+            {tag: "普獎", name: "召喚失敗", rarity: "★☆☆☆☆", desc: "【基礎獎勵】基本分數", reward: "1 寶寶幣"}
+        ]
+    },
+
     Summon_Divine_Beast: { //神獸召喚
         title: "神獸召喚",
         maxCoins: "900 寶寶幣 / 次",
@@ -394,7 +460,6 @@ const mysteryBagsDatabase = {
 			{tag: "二獎",name: "柴一起 (2.3倍)",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "3,500 寶寶幣"},
 			{tag: "三獎",name: "黑柴賞楓 (1倍)",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,500 寶寶幣"},
             {tag: "普獎",name: "柴一起散步 (0.5倍)",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "750 寶寶幣"}
-			
         ]
     },
 	
