@@ -220,7 +220,6 @@ const mysteryBagsDatabase = {
         ]
     },
 
-
 	Deep_Blue_3D_UFO: { //深藍3D奇幻UFO
         title: "深藍3D奇幻UFO",
         maxCoins: "500 寶寶幣 / 次",
@@ -304,6 +303,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "我的功課",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
         ]
     },
+    
     Summer_Pistol: { //夏日手槍
         title: "夏日手槍",
         maxCoins: "300 寶寶幣 / 次",
@@ -321,6 +321,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "你是我的巧克力",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"}
         ]
     },
+    
     Bingo_Goods: { //Bingo 開運物
         title: "Bingo 開運物",
         maxCoins: "500 寶寶幣 / 次",
@@ -338,6 +339,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "開運植物",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "250 寶寶幣"}	
         ]
     },
+    
     Bingo_Lucky: { //Bingo Lucky
         title: "Bingo Lucky",
         maxCoins: "1,688寶寶幣 / 次",
@@ -354,7 +356,8 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "耳機",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "900 寶寶幣"}
         ]
     },
-        Stream_On_Air: { //直播 on air
+    
+    Stream_On_Air: { //直播 on air
         title: "直播 on air",
         maxCoins: "300寶寶幣 / 次",
 		img: "images/bags/Stream_On_Air/01.png",
@@ -369,7 +372,7 @@ const mysteryBagsDatabase = {
         ]
     },
     
-        Versatile_Magician_Big: { //百變魔術師包你大賺
+    Versatile_Magician_Big: { //百變魔術師包你大賺
         title: "百變魔術師包你大賺",
         maxCoins: "10,000 寶寶幣 / 次",
 		img: "images/bags/Versatile_Magician_Big/01.png",
