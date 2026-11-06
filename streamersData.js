@@ -29,7 +29,14 @@ const streamersDatabase = [
         name: "💗Queenna🧜‍♀️娜娜💗",
         zodiac: "牡羊座",
         url: "https://17.live/zh-Hant/profile/u/5e3596b9-332c-4f53-bfb0-d146d2ffc71d",
-        intro: "唱歌扮裝 / 高顏值主播"
+        intro: "唱歌扮裝 / 高顏值主播 / 美髮設計師 / 娛樂聊天型"
+    },
+    {
+        date: "03/23",
+        name: "低音炮🎶炮炮🖤",
+        zodiac: "牡羊座",
+        url: "https://17.live/s/u/ed5565a2-ee5b-4f94-baf6-885a33ec581b",
+        intro: "渾厚嗓音 / 實力派歌手 / 美日台混血 / 爽朗率真"
     },
     {
         date: "04/02",
