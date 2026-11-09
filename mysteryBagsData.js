@@ -311,6 +311,7 @@ const mysteryBagsDatabase = {
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "3D魔法鑽戒",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "5,000 寶寶幣"},
+            {tag: "普獎",name: "美的冒泡",rarity: "★★★☆☆",desc: "【普通獎勵】普通獎勵",reward: "999 寶寶幣"},
 			{tag: "普獎",name: "夏日潛水",rarity: "★★☆☆☆",desc: "【回饋獎勵】幸運回饋禮",reward: "500 寶寶幣"},
 			{tag: "普獎",name: "流星划過",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "499 寶寶幣"},
             {tag: "普獎",name: "生氣氣",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "377 寶寶幣"},
@@ -318,7 +319,8 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "17看夕陽",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
             {tag: "普獎",name: "害羞小櫻",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
             {tag: "普獎",name: "喵星人",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
-            {tag: "普獎",name: "你是我的巧克力",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"}
+            {tag: "普獎",name: "你是我的巧克力",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"},
+            {tag: "普獎",name: "愛心光波",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"}
         ]
     },
     
