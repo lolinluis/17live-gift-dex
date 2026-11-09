@@ -71,7 +71,7 @@ const streamersDatabase = [
         name: "九玥99",
         zodiac: "射手座",
         url: "https://17.live/zh-Hant/profile/u/781245ab-f533-4517-8a1b-f1012ed7bdcb",
-        intro: "隱居直播圈的土匪 / 專業S扭深蹲主播 / 現居??"
+        intro: "隱居直播圈的土匪 / 專業S扭舞蹈深蹲主播 / 刀馬 / 現居福建"
     },
     {
         date: "12/16",
@@ -86,6 +86,13 @@ const streamersDatabase = [
         zodiac: "射手座",
         url: "https://17.live/zh-Hant/profile/u/22df38fe-c225-4053-b749-407cc73a2f9e",
         intro: "專業歌唱主播 / 有出單曲EDM / 現居??"
+    },
+    {
+        date: "12/17",
+        name: "林昀心💛",
+        zodiac: "射手座",
+        url: "https://17.live/s/u/a7134ce0-8d72-4d5c-b30a-cf572e553c80",
+        intro: "古靈精怪/實力唱將/總是出乎意料的主播"
     },
     {
         date: "12/23",
