@@ -177,8 +177,9 @@ const mysteryBagsDatabase = {
         activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "太空之旅 (20倍)",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "100,000 寶寶幣"},
-			{tag: "二獎",name: "寶寶我愛你 (1.4倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "7,000 寶寶幣"},
-            {tag: "三獎",name: "浪漫小屋 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "6,000 寶寶幣"},
+            {tag: "二獎",name: "藍色布加迪 (1.8倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "8,800 寶寶幣"},
+			{tag: "三獎",name: "寶寶我愛你 (1.4倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "7,000 寶寶幣"},
+            {tag: "普獎",name: "浪漫小屋 (1.2倍)",rarity: "★★☆☆☆",desc: "【小獎】幸運小獎",reward: "6,000 寶寶幣"},
 			{tag: "普獎",name: "愛情木馬 (1倍)",rarity: "★☆☆☆☆",desc: "【普獎】沒虧沒虧",reward: "5,000 寶寶幣"},
             {tag: "普獎",name: "永恆約定",rarity: "★☆☆☆☆",desc: "【普獎】基礎獎勵",reward: "3,200 寶寶幣"},
             {tag: "普獎",name: "藍色奇蹟",rarity: "★☆☆☆☆",desc: "【普獎】基礎獎勵",reward: "2,500 寶寶幣"}
