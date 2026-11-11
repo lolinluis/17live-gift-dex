@@ -219,7 +219,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "寄居蟹",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "300 寶寶幣"},
             {tag: "普獎",name: "小丑魚",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "300 寶寶幣"},
             {tag: "普獎",name: "海獺",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "250 寶寶幣"},
-			{tag: "普獎",name: "選物寶寶",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "200 寶寶幣"}
+			{tag: "普獎",name: "海螺",rarity: "★☆☆☆☆",desc: "【普獎】基本分數",reward: "200 寶寶幣"}
         ]
     },
 
@@ -303,6 +303,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "國小寶寶",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "2,100 寶寶幣"},
             {tag: "普獎",name: "幼幼班寶寶",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,600 寶寶幣"},
             {tag: "普獎",name: "我的好麻吉",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,400 寶寶幣"},
+            {tag: "普獎",name: "我的成績單",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,300 寶寶幣"},
             {tag: "普獎",name: "我的功課",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
         ]
     },
@@ -353,6 +354,7 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "炫砲直升機",rarity: "★★★★☆",desc: "【超稀有】頭獎觸發跑馬燈全區播報",reward: "60,000 寶寶幣"},
 			{tag: "二獎",name: "火箭沖天",rarity: "★★★☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "10,000 寶寶幣"},
+            {tag: "普獎",name: "精品包",rarity: "★★☆☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "2,400 寶寶幣"},
             {tag: "普獎",name: "鑽戒",rarity: "★★☆☆☆",desc: "【幸運獎勵】恭喜獲得幸運小獎",reward: "2,000 寶寶幣"},
 			{tag: "普獎",name: "錢撒滿地",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,800 寶寶幣"},
             {tag: "普獎",name: "家電組",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,200 寶寶幣"},
