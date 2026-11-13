@@ -32,6 +32,39 @@ const giftsDatabase = {
                 { level: "LV 6", name: "慶生大辦桌 LV6", rarity: "★★★★☆", desc: "【終極型態】金碧輝煌的巨型流水席，滿屏熱鬧煙火與熱烈慶祝動畫！", reqCount: "累計送出 428 個", img: "images/upgrade_gift/Banquet/LV6.png" }
             ]
         },
+	    Dream_Ankylosaurus: { // 夢幻甲龍
+            title: "夢幻甲龍",
+            price: 100,
+            maxCoins: "約 50,000 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "夢幻甲龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dream_Ankylosaurus/LV0.png" },
+                { level: "LV 1", name: "夢幻甲龍 LV1", rarity: "★★☆☆☆", desc: "【升級型態】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Dream_Ankylosaurus/LV1.png" },
+                { level: "LV 2", name: "夢幻甲龍 LV2", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/Dream_Ankylosaurus/LV2.png" },
+                { level: "LV 3", name: "夢幻甲龍 LV3", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Dream_Ankylosaurus/LV3.png" }
+            ]
+        },
+		Dream_Pterosaur: { // 夢幻翼龍
+            title: "夢幻翼龍",
+            price: 100,
+            maxCoins: "約 50,000 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "夢幻翼龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dream_Pterosaur/LV0.png" },
+                { level: "LV 1", name: "夢幻翼龍 LV1", rarity: "★★☆☆☆", desc: "【升級型態】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Dream_Pterosaur/LV1.png" },
+                { level: "LV 2", name: "夢幻翼龍 LV2", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/Dream_Pterosaur/LV2.png" },
+                { level: "LV 3", name: "夢幻翼龍 LV3", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Dream_Pterosaur/LV3.png" }
+            ]
+        },
+		Dream_Thunder_Dragon: { // 夢幻雷龍
+            title: "夢幻雷龍",
+            price: 100,
+            maxCoins: "約 50,000 寶寶幣",
+            levels: [
+                { level: "LV 0", name: "夢幻雷龍 LV0", rarity: "★☆☆☆☆", desc: "【基礎起點】", reqCount: "0 個 (初始解鎖)", img: "images/upgrade_gift/Dream_Thunder_Dragon/LV0.png" },
+                { level: "LV 1", name: "夢幻雷龍 LV1", rarity: "★★☆☆☆", desc: "【升級型態】", reqCount: "累計送出 100 個", img: "images/upgrade_gift/Dream_Thunder_Dragon/LV1.png" },
+                { level: "LV 2", name: "夢幻雷龍 LV2", rarity: "★★★☆☆", desc: "【升級型態】", reqCount: "累計送出 200 個", img: "images/upgrade_gift/Dream_Thunder_Dragon/LV2.png" },
+                { level: "LV 3", name: "夢幻雷龍 LV3", rarity: "★★★★☆", desc: "【終極型態】", reqCount: "累計送出 500 個", img: "images/upgrade_gift/Dream_Thunder_Dragon/LV3.png" }
+            ]
+        },
         LoveYouMost: { // 堡證最愛你
             title: "堡證最愛你",
             price: 522,
