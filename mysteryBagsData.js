@@ -7,7 +7,7 @@ const mysteryBagsDatabase = {
         title: "品牌之星",
         maxCoins: "3,000 寶寶幣 / 次",
 		img: "images/bags/Pin_Pai_Star/01.png",
-        activityDesc: "【品牌大使活動】",
+        activityDesc: "11/07-11/18 品牌大使活動 (重複性活動)",
         items: [
             {tag: "頭獎",name: "你是最耀眼的 (20倍)",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "60,000 寶寶幣"},
             {tag: "二獎",name: "萬人迷",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "6,000 寶寶幣"},
@@ -68,7 +68,7 @@ const mysteryBagsDatabase = {
         title: "可愛小動物扭蛋",
         maxCoins: "200 寶寶幣 / 次",
 		img: "images/bags/Cute_Animal/01.png",
-        activityDesc: "【常駐型隨機袋-非活動相關】",
+        activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "寶寶金幣(虹+虹)",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "4,000 寶寶幣"},
             {tag: "二獎",name: "寶寶鳥居(金+虹)",rarity: "★★★★☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "1,200 寶寶幣"},
@@ -111,7 +111,7 @@ const mysteryBagsDatabase = {
         title: "大偉哥百變火箭",
         maxCoins: "666 寶寶幣 / 次",
 		img: "images/bags/MrDavid_Rocket/01.png",
-        activityDesc: "【常駐型隨機袋-非活動相關】",
+        activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "大偉哥霸氣超級火箭",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "11,000 寶寶幣"},
 			{tag: "普獎",name: "葡萄火箭",rarity: "★★★☆☆",desc: "【特別獎勵】幸運小獎獎勵",reward: "2,999 寶寶幣"},
@@ -133,7 +133,7 @@ const mysteryBagsDatabase = {
         title: "花又開好了",
         maxCoins: "1,000 寶寶幣 / 次",
 		img: "images/bags/Flowers_bloomed/01.png",
-        activityDesc: "【常駐型隨機袋-非活動相關】",
+        activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "牡丹盛宴（小）",rarity: "★★★★★",desc: "【超稀有】觸發跑馬燈全區播報",reward: "50,000 寶寶幣"},
 			{tag: "普獎",name: "黑牡丹（小）",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "1,500 寶寶幣"},
@@ -148,7 +148,7 @@ const mysteryBagsDatabase = {
         title: "告白箴言",
         maxCoins: "520 寶寶幣 / 次",
 		img: "images/bags/Confession/01.png",
-        activityDesc: "【常駐型隨機袋-非活動相關】",
+        activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "數字0",rarity: "★★★★☆",desc: "【超稀有】3倍大獎，觸發跑馬燈全區播報",reward: "1,500 寶寶幣"},
 			{tag: "二獎",name: "數字9",rarity: "★★★☆☆",desc: "【常見獎勵】再接再厲",reward: "800 寶寶幣"},
@@ -167,7 +167,7 @@ const mysteryBagsDatabase = {
         title: "一見鍾情",
         maxCoins: "888 寶寶幣 / 次",
         img: "images/bags/Yi_Jian_Zhong_Qing/01.png",
-        activityDesc: "【常駐型隨機袋-非活動相關】",
+        activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎", name: "寶藏值x20000", rarity: "★★★★★", desc: "【超稀有】幸運大獎", reward: "20,000 寶寶幣"},
             {tag: "二獎", name: "慶祝煙火", rarity: "★★★★☆", desc: "【極稀有】特別獎勵", reward: "4,999 寶寶幣"},
@@ -188,7 +188,7 @@ const mysteryBagsDatabase = {
         title: "海底探險",
         maxCoins: "888 寶寶幣 / 次",
 		img: "images/bags/Underwater_Adventure/01.png",
-        activityDesc: "【常駐型隨機袋-非活動相關】",
+        activityDesc: "常駐型隨機袋-非活動相關",
         items: [
             {tag: "頭獎",name: "海底大舞台 (10倍)",rarity: "★★★★☆",desc: "【超稀有】10倍大獎，觸發跑馬燈全區播報",reward: "8,888 寶寶幣"},
 			{tag: "二獎",name: "鰻愛你 (3.2倍)",rarity: "★★☆☆☆",desc: "【特殊獎勵】恭喜二獎",reward: "2,999 寶寶幣"},
@@ -202,7 +202,7 @@ const mysteryBagsDatabase = {
         title: "魔法神燈",
         maxCoins: "300 寶寶幣 / 次",
 		img: "images/bags/MagicLamp/01.png",
-        activityDesc: "【神燈降臨活動】開袋有機會獲得高倍率獎勵分數，觸發巨鯨動畫！",
+        activityDesc: "常駐型隨機袋-非活動相關",
         items: [
 			{tag: "頭獎",name: "白鯨 (20倍)",rarity: "★★★★★",desc: "【超稀有】觸發全螢幕白鯨動畫與全區播報",reward: "6,000 寶寶幣"},
 			{tag: "二獎",name: "遊樂園 (10倍)",rarity: "★★★☆☆",desc: "【特別獎勵】幸運中獎獎勵",reward: "3,000 寶寶幣"},
@@ -307,9 +307,23 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "我的功課",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
         ]
     },
-   	
+	
+   	Appearance_of_the_Spirit_Beast: { //靈獸現影
+        title: "靈獸現影",
+        maxCoins: "900 寶寶幣 / 次",
+		img: "images/bags/Appearance_of_the_Spirit_Beast/01.png",
+        activityDesc: "11/10-11/23 靈獸現影 活動隨機袋",
+        items: [
+            {tag: "頭獎",name: "3D麒麟",rarity: "★★★★★",desc: "【超稀有】22倍大獎，觸發跑馬燈全區播報",reward: "20,000 寶寶幣"},
+			{tag: "頭獎",name: "3D白澤",rarity: "★★★★★",desc: "【超稀有】22倍大獎，觸發跑馬燈全區播報",reward: "20,000 寶寶幣"},
+			{tag: "頭獎",name: "3D騰蛇",rarity: "★★★★★",desc: "【超稀有】22倍大獎，觸發跑馬燈全區播報",reward: "20,000 寶寶幣"},
+			{tag: "頭獎",name: "3D九尾(風)",rarity: "★★★★★",desc: "【超稀有】22倍大獎，觸發跑馬燈全區播報",reward: "20,000 寶寶幣"},
+			{tag: "普獎",name: "現影失敗",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "1 寶寶幣"}
+        ]
+    },
+	
 	Over_Time: { //此項為分割線
-        title: "Over_Time",
+        title: "✰✰✰✰✰✰✰✰✰✰ 以下為過期隨機袋 ✰✰✰✰✰✰✰✰✰✰",
         maxCoins: "0 寶寶幣 / 次",
 		img: "images/bags/Over_Time/01.png",
         activityDesc: "以下為逾期活動禮包",
