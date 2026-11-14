@@ -95,6 +95,7 @@ const mysteryBagsDatabase = {
         items: [
             {tag: "頭獎",name: "3D魔法鑽戒",rarity: "★★★★☆",desc: "【超稀有】恭喜獲得最大獎",reward: "5,000 寶寶幣"},
             {tag: "普獎",name: "美的冒泡",rarity: "★★★☆☆",desc: "【普通獎勵】普通獎勵",reward: "999 寶寶幣"},
+			{tag: "普獎",name: "給你紅包",rarity: "★★★☆☆",desc: "【普通獎勵】普通獎勵",reward: "999 寶寶幣"},
 			{tag: "普獎",name: "夏日潛水",rarity: "★★☆☆☆",desc: "【回饋獎勵】幸運回饋禮",reward: "500 寶寶幣"},
 			{tag: "普獎",name: "流星划過",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "499 寶寶幣"},
             {tag: "普獎",name: "生氣氣",rarity: "★☆☆☆☆",desc: "【特別獎勵】幸運小獎勵",reward: "377 寶寶幣"},
@@ -103,7 +104,8 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "害羞小櫻",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
             {tag: "普獎",name: "喵星人",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "249 寶寶幣"},
             {tag: "普獎",name: "你是我的巧克力",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"},
-            {tag: "普獎",name: "愛心光波",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"}
+            {tag: "普獎",name: "愛心光波",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "149 寶寶幣"},
+			{tag: "普獎",name: "巴士喇叭",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "100 寶寶幣"}
         ]
     },
 	
@@ -321,9 +323,20 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "現影失敗",rarity: "★☆☆☆☆",desc: "【常見獎勵】您63了~加油",reward: "1 寶寶幣"}
         ]
     },
+
+	Shopping_Annual: { //寶寶買給你
+        title: "寶寶買給你",
+        maxCoins: "1,500 寶寶幣 / 次",
+		img: "images/bags/Shopping_Annual/01.png",
+        activityDesc: "11/13-11/18 血拚周年慶-寶寶買給你 活動隨機袋",
+        items: [
+            {tag: "頭獎",name: "最新款精品包",rarity: "★★★★★",desc: "【超稀有】恭喜獲得最大獎",reward: "35,000 寶寶幣"},
+			{tag: "普獎",name: "名牌服飾",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,500 寶寶幣"}
+        ]
+    },
 	
 	Over_Time: { //此項為分割線
-        title: "✰✰✰✰✰✰✰✰✰✰ 以下為過期隨機袋 ✰✰✰✰✰✰✰✰✰✰",
+        title: "✰✰ 以下為過期隨機袋 ✰✰",
         maxCoins: "0 寶寶幣 / 次",
 		img: "images/bags/Over_Time/01.png",
         activityDesc: "以下為逾期活動禮包",
@@ -372,7 +385,7 @@ const mysteryBagsDatabase = {
     
     Bingo_Lucky: { //Bingo Lucky
         title: "Bingo Lucky",
-        maxCoins: "1,688寶寶幣 / 次",
+        maxCoins: "1,688 寶寶幣 / 次",
 		img: "images/bags/Bingo_Lucky/01.png",
         activityDesc: "【10/13-11/11 17Bingo 活動禮包】",
         items: [
@@ -383,14 +396,14 @@ const mysteryBagsDatabase = {
 			{tag: "普獎",name: "錢撒滿地",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,800 寶寶幣"},
             {tag: "普獎",name: "家電組",rarity: "★★☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,200 寶寶幣"},
             {tag: "普獎",name: "香檳",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "1,000 寶寶幣"},
-            {tag: "普獎",name: "錢撒滿地",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "900 寶寶"},
-            {tag: "普獎",name: "耳機",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "900 寶寶幣"}
+            {tag: "普獎",name: "耳機",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "900 寶寶"},
+            {tag: "普獎",name: "汽車模型",rarity: "★☆☆☆☆",desc: "【常見獎勵】再接再厲",reward: "888 寶寶幣"}
         ]
     },
     
     Stream_On_Air: { //直播 on air
         title: "直播 on air",
-        maxCoins: "300寶寶幣 / 次",
+        maxCoins: "300 寶寶幣 / 次",
 		img: "images/bags/Stream_On_Air/01.png",
         activityDesc: "【10/18-10/28 17潛力新星養成班(10月) 活動禮包】",
         items: [
