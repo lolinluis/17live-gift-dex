@@ -122,6 +122,7 @@ const mysteryBagsDatabase = {
             {tag: "普獎",name: "航天火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "甜點火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
             {tag: "普獎",name: "豬萌火箭",rarity: "★★☆☆☆",desc: "【特別獎勵】小獎獎勵",reward: "888 寶寶幣"},
+			{tag: "普獎",name: "拉斯維加斯火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "派對火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "唇膏火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
             {tag: "普獎",name: "珠寶火箭",rarity: "★☆☆☆☆",desc: "【常見獎勵】基本分數",reward: "399 寶寶幣"},
