@@ -325,14 +325,15 @@ const mysteryBagsDatabase = {
         ]
     },
 
-	Shopping_Annual: { //寶寶買給你
+	Shopping_Annual: { //血拚周年慶_寶寶買給你
         title: "寶寶買給你",
         maxCoins: "1,500 寶寶幣 / 次",
 		img: "images/bags/Shopping_Annual/01.png",
         activityDesc: "11/13-11/18 血拚周年慶-寶寶買給你 活動隨機袋",
         items: [
             {tag: "頭獎",name: "最新款精品包",rarity: "★★★★★",desc: "【超稀有】恭喜獲得最大獎",reward: "35,000 寶寶幣"},
-			{tag: "普獎",name: "名牌服飾",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,500 寶寶幣"}
+			{tag: "普獎",name: "名牌服飾",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,500 寶寶幣"},
+			{tag: "普獎",name: "時尚帽子",rarity: "★☆☆☆☆",desc: "【普通獎勵】普通獎勵",reward: "1,200 寶寶幣"}
         ]
     },
 	
